@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "outDir": "./tsdist/",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "types": ["node","react", "react-dom","mocha", "express"]
+  },
+  "include": [
+      "./server/**/*"
+  ]
+}

@@ -1,0 +1,766 @@
+Aðalgeir T Stefánsson	1811474319	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi, Loftræstikerfi		Já	Já
+Aðalheiður Atladóttir	1209755879	Arkitekt	Aðaluppdrættir	12.09.2006		Já
+Aðalsteinn Snorrason	1611612769	Arkitekt	Aðaluppdrættir	03.10.1994		Já
+Aðalsteinn Viðar Júlíusson	0403443309	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi, Loftræstikerfi	17.03.1982		Já
+Agla Marta Marteinsdóttir	2703414469	Arkitekt	Aðaluppdrættir	24.01.2000		
+Albína Hulda Thordarson	0810392679	Arkitekt	Aðaluppdrættir		Já	Já
+Aldís M. Norðfjörð	2005555119	Arkitekt	Aðaluppdrættir	12.11.1985		
+Alena Friðrikka Anderlova	2101457889	Arkitekt	Aðaluppdrættir	27.06.1988		
+Alexander Lórensson	1205572899	Byggingafræðingur	Aðaluppdrættir	09.09.1993		
+Ali R. Amoushahi	2205562129	Arkitekt	Aðaluppdrættir	07.05.1999		
+Almar Eggertsson	2605774179	Byggingarfræðingur	Aðaluppdrættir	25.03.2013		Já
+Andrés Ásmundsson	1503554279	Byggingafræðingur	Aðaluppdrættir	04.10.1995		
+Andrés Narfi Andrésson	1110586369	Arkitekt	Aðaluppdrættir	29.06.1993		Já
+Andri Martin Sigurðsson	1705834429	Byggingartæknifræðingur	Aðaluppdrættir	14.02.2017		Já
+Anna Kristín Hjartardóttir	1509645989	Arkitekt	Aðaluppdrættir	31.12.1997		Já
+Anna Margrét Birgisdóttir	0610713269	Arkitekt	Aðaluppdrættir	07.07.1999		
+Anna Margrét Hauksdóttir	1206653169	Arkitekt	Aðaluppdrættir	05.03.1998		Já
+Anna Margrét Tómasdóttir	2606655459	Arkitekt	Aðaluppdrættir	28.06.1999		
+Anna María Benediktsdóttir	0412653969	Arkitekt	Aðaluppdrættir	07.11.2014		Já
+Anna María Bogadóttir	0209723359	Arkitekt	Aðaluppdrættir	09.05.2016		
+Anna María Þórhallsdóttir	2907795889	Arkitekt	Aðaluppdrættir	15.05.2017		Já
+Anna Pála Pálsdóttir	1709535179	Arkitekt	Aðaluppdrættir	01.08.1989		Já
+Anna Sigríður Jóhannsdóttir	2802644749	Arkitekt	Aðaluppdrættir	15.11.1999		Já
+Anna Sóley Þorsteinsdóttir	2906724659	Arkitekt	Aðaluppdrættir	09.12.2009		Já
+Anne Bruun Hansen	2703692439	Arkitekt	Aðaluppdrættir	19.04.2006		Já
+Anton Kári Halldórsson	0305833539	Byggingarfræðingur	Aðaluppdrættir	06.04.2011		
+Ari Már Lúðvíksson	0609586459	Arkitekt	Aðaluppdrættir	20.04.1990		Já
+Arinbjörn Vilhjálmsson	1402632149	Arkitekt	Aðaluppdrættir	05.12.1996		
+Arna Sigríður Mathiesen	1904655869	Arkitekt	Aðaluppdrættir	02.11.2017		
+Arnaldur Geir Schram	1509783789	Arkitekt	Aðaluppdrættir	20.04.2015		
+Arnar Ingi Ingólfsson	1401814639	Byggingafræðingur	Aðaluppdrættir	20.02.2008		Já
+Arnar Skjaldarson	0311675829	Byggingafræðingur	Aðaluppdrættir	23.12.2005		Já
+Arnar Þór Jónsson	0101744819	Arkitekt	Aðaluppdrættir	05.10.2010		Já
+Arnfríður Sigurðardóttir	0611565859	Arkitekt	Aðaluppdrættir	08.11.1988		Já
+Arnhildur Pálmadóttir	2207725949	Arkitekt	Aðaluppdrættir	10.02.2010		Já
+Arnór Skúlason	2111592279	Arkitekt	Aðaluppdrættir	05.12.1996		
+Atli Gunnar Arnórsson	1203794029	Byggingarverkfræðingur	Aðaluppdrættir	07.04.2011		Já
+Atli Jóhann Guðbjörnsson	2609785789	Byggingafræðingur	Aðaluppdrættir	04.01.2007		Já
+Atli Stefánsson	1112422679	Byggingaverkfræðingur	Aðaluppdrættir	25.06.1997		Já
+Auðunn Elíson	1108644779	Byggingafræðingur	Aðaluppdrættir	12.09.2008		Já
+Auður Hrönn Guðmundsdóttir	1005623599	Arkitekt	Aðaluppdrættir	19.09.2000		
+Aurelio R. Ferro	1803613839	Arkitekt	Aðaluppdrættir	29.10.1998		
+Axel Davíðsson	2512724419	Byggingafræðingur	Aðaluppdrættir	27.04.2006		
+Ágúst Hafsteinsson	2203614979	Arkitekt	Aðaluppdrættir	13.12.1991		Já
+Ágúst Norðfjörð Jónsson	2204765459	Byggingafræðingur	Aðaluppdrættir	30.07.2009		Já
+Ágúst Þorgeirsson	0802472149	Byggingarverkfræðingur	Aðaluppdrættir	31.03.2015		Já
+Ágúst Þór Gunnarsson	0608574829	Byggingafræðingur	Aðaluppdrættir	19.12.1990		
+Ágúst Þórðarson	0410514509	Byggingafræðingur	Aðaluppdrættir	12.01.1981		Já
+Ármann Halldórsson	0403814499	Tæknifræðingur	Aðaluppdrættir	10.05.2016		Já
+Árni Friðriksson	2710492699	Arkitekt	Aðaluppdrættir		Já	Já
+Árni Gunnar Kristjánsson	2311613849	Tæknifræðingur	Aðaluppdrættir	16.07.1990		Já
+Árni Jón Sigfússon	2201692949	Arkitekt	Aðaluppdrættir	14.06.2005		
+Árni Kjartansson	0403523099	Arkitekt	Aðaluppdrættir	06.06.1983		Já
+Árni Ólafsson	0808552499	Arkitekt	Aðaluppdrættir	22.02.1983		Já
+Árni Ragnarsson	0603494529	Arkitekt	Aðaluppdrættir	24.03.1987		
+Árni Þorvaldur Jónsson	0307532409	Arkitekt	Aðaluppdrættir	02.11.1994		Já
+Árni Þór Helgason	0307553409	Arkitekt	Aðaluppdrættir	22.01.1985		Já
+Árni Þórólfsson	1209446659	Arkitekt	Aðaluppdrættir	17.10.2002		
+Árný Þórarinsdóttir	2901795489	Arkitekt	Aðaluppdrættir	15.01.2013		Já
+Ársæll Vignisson	1012553369	Arkitekt	Aðaluppdrættir	22.01.1985		
+Ásbjörn Þorvarðarson	1109507569	Byggingafræðingur	Aðaluppdrættir	16.02.1981		
+Ásdís H. Ágústsdóttir	1903647399	Arkitekt	Aðaluppdrættir	20.04.1999		Já
+Ásdís Ingþórsdóttir	2102673959	Arkitekt	Aðaluppdrættir	08.12.1997		
+Ásgeir Ásgeirsson	0601615429	Byggingafræðingur	Aðaluppdrættir	01.09.1988		Já
+Áslaug Þorgeirsdóttir	3012784119	Arkitekt	Aðaluppdrættir	01.04.2015		
+Ásmundur Hrafn Sturluson	2807652959	Arkitekt	Aðaluppdrættir	05.03.1998		Já
+Ásmundur Jóhannsson	1704414519	Byggingarfræðingur	Aðaluppdrættir		Já	Já
+Ásmundur Sigvaldason	2405454119	Verkfræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi		Já	Já
+Ástríður Eggertsdóttir	1403685479	Arkitekt	Aðaluppdrættir	18.05.2004		Já
+Baldur Ó. Svavarsson	1203575149	Arkitekt	Aðaluppdrættir	14.02.1989		Já
+Baldur Þór Þorvaldsson	0606514939	Tæknifræðingur	Aðaluppdrættir	01.08.1989		
+Benedikt Björnsson Bjarman	2510502289	Arkitekt	Aðaluppdrættir	07.12.1990		
+Benjamín G Magnússon	1808444149	Arkitekt	Aðaluppdrættir		Já	Já
+Bent Larsen Fróðason	1411773469	Byggingarfræðingur	Aðaluppdrættir	27.04.2011		Já
+Berglind Björg Sigvaldadóttir	2505655939	Byggingafræðingur	Aðaluppdrættir	18.04.2006		
+Bergljót Jónsdóttir	0403643239	Arkitekt	Aðaluppdrættir	27.04.2009		Já
+Bergljót Sigríður Einarsdóttir	2005560039	Arkitekt	Aðaluppdrættir	19.05.1988		
+Bergur Þorsteinsson Briem	2111842139	Arkitekt	Aðaluppdrættir	29.12.2016		
+Birgir Baldursson	3110404999	Tæknifræðingur	Aðaluppdrættir	16.10.1997		
+Birgir Teitsson	0204604589	Arkitekt	Aðaluppdrættir	16.03.1998		Já
+Birgir Þröstur Jóhannsson	1712665059	Arkitekt	Aðaluppdrættir	23.11.2004		Já
+Birkir Árnason	2007873159	Byggingarfræðingur	Aðaluppdrættir	13.02.2017		Já
+Birkir Hallbjörnsson	2306765509	Byggingafræðingur	Aðaluppdrættir	12.09.2008		
+Birkir Kúld Pétursson	0108843499	Byggingarfræðingur	Aðaluppdrættir	30.12.2015		Já
+Birta Fróðadóttir	1005805949	Arkitekt	Aðaluppdrættir	01.04.2015		
+Bjargey Björgvinsdóttir	3003773439	Arkitekt	Aðaluppdrættir	17.08.2010		
+Bjargey Guðmundsdóttir	1903642599	Arkitekt	Aðaluppdrættir	22.08.2000		
+Bjarki Gunnar Halldórsson	0608814139	Arkitekt	Aðaluppdrættir	25.10.2011		Já
+Bjarki Jóhannesson	1007493519	Arkitekt	Aðaluppdrættir	25.07.1980		
+Bjarnfríður Vilhjálmsdóttir arkitekt	2204564639	Arkitekt	Aðaluppdrættir	14.09.1999		
+Bjarni Árnason	2904614489	Tæknifræðingur	Aðaluppdrættir	02.11.1994		Já
+Bjarni Bessason	2407575409	Byggingaverkfræðingur	Aðaluppdrættir	06.12.1985		
+Bjarni Heiðar Geirsson	0108665299	Byggingafræðingur	Aðaluppdrættir	13.08.2008		Já
+Bjarni Kjartansson	0206586069	Arkitekt	Aðaluppdrættir	11.06.1992		
+Bjarni Ólafur Marinósson	0905764459	Byggingarfræðingur	Aðaluppdrættir	06.05.2015		
+Bjarni Óskar Þorsteinsson	3108763729	Arkitekt	Aðaluppdrættir	18.02.2016		Já
+Bjarni Reykjalín	0701493469	Arkitekt	Aðaluppdrættir	23.03.1984		Já
+Bjarni Rúnar Einarsson	1506813599	Byggingarfræðingur	Aðaluppdrættir	26.03.2012		Já
+Bjarni Rúnar Þórðarson	3007504009	Byggingartæknifræðingur	Aðaluppdrættir		Já	
+Bjarni Snæbjörnsson	0207534989	Arkitekt	Aðaluppdrættir	25.02.1988		Já
+Bjarni Vésteinsson	2509454429	Byggingafræðingur	Aðaluppdrættir	14.07.1982		
+Bjarni Vilhelm Stefánsson	2009622659	Byggingafræðingur	Aðaluppdrættir	10.10.2007		
+Bjarni Þór Einarsson	3103482449	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi		Já	Já
+Bjarni Þór Ólafsson	2807693559	Byggingafræðingur	Aðaluppdrættir	11.10.2000		Já
+Björgvin Björgvinsson	2709635449	Tæknifræðingur	Aðaluppdrættir	21.02.1997		Já
+Björgvin Halldórsson	0705715959	Byggingarfræðingur	Aðaluppdrættir	09.10.2013		
+Björgvin Magnússon	1109554569	Byggingafræðingur	Aðaluppdrættir	09.02.1994		
+Björgvin Marinó Pétursson	1901784559	Byggingarfræðingur	Aðaluppdrættir	01.12.2014		Já
+Björgvin Snæbjörnsson	2706645989	Arkitekt	Aðaluppdrættir	06.12.1991		Já
+Björn Guðbrandsson	1701743059	Arkitekt	Aðaluppdrættir	13.06.2007		Já
+Björn Guðmundsson	0512743699	Byggingafræðingur	Aðaluppdrættir	10.02.2006		Já
+Björn Gústafsson	1805504889	Byggingarfræðingur	Aðaluppdrættir		Já	Já
+Björn Helgason	2201462359	Byggingarfræðingur	Aðaluppdrættir		Já	Já
+Björn Jóhannsson	0812527349	Tæknifræðingur	Aðaluppdrættir	06.11.2001		
+Björn Kristleifsson	0112463039	Arkitekt	Aðaluppdrættir		Já	Já
+Björn O Ólafs	0905393459	Arkitekt	Aðaluppdrættir		Já	Já
+Björn Skaptason	2705612259	Arkitekt	Aðaluppdrættir	09.07.1991		Já
+Björn Stefán Hallsson	0808493709	Arkitekt	Aðaluppdrættir	25.11.1986		Já
+Björn Sveinsson	1602654189	Tæknifræðingur	Aðaluppdrættir	14.12.2017		
+Bogi Kristinsson Magnussen	0808705669	Byggingafræðingur	Aðaluppdrættir	16.01.2009		
+Borghildur Sölvey Sturludóttir	0909754479	Arkitekt	Aðaluppdrættir	01.07.2008		
+Bragi B Blumenstein	1505602339	Arkitekt	Aðaluppdrættir	19.01.1994		Já
+Bragi Freyr Bragason	1602685069	Byggingafræðingur	Aðaluppdrættir	13.07.2007		
+Bragi Þór Haraldsson	0803534219	Byggingatæknifræðingur	Aðaluppdrættir	04.07.2007		Já
+Brynhildur Sólveigardóttir	0611805599	Arkitekt	Aðaluppdrættir	06.08.2014		Já
+Brynja Sif Ingibersdóttir	1301583079	Byggingarfræðingur	Aðaluppdrættir	07.02.2014		
+Brynjar Daníelsson	0904675229	Byggingafræðingur	Aðaluppdrættir	23.03.2000		Já
+Brynjar Einarsson	1412654829	Byggingafræðingur	Aðaluppdrættir	24.06.2002		Já
+Bæring Bjarnar Jónsson	0204645509	Arkitekt	Aðaluppdrættir	27.02.1996		Já
+Böðvar Páll Jónsson	0301735629	Arkitekt	Aðaluppdrættir	12.07.2012		
+Börkur Þór Ottósson	0608724229	Byggingafræðingur	Aðaluppdrættir	24.05.2007		
+Dagný Geirdal	0711773519	Byggingafræðingur	Aðaluppdrættir	20.03.2009		
+Dagný Helgadóttir	2208493769	Arkitekt	Aðaluppdrættir	02.02.1982		Já
+Daníel Árnason	2311525719	Tæknifræðingur	Aðaluppdrættir	11.07.1983		Já
+Davíð Friðgeirsson	1310785609	Byggingafræðingur	Aðaluppdrættir	18.06.2010		
+Davíð Karl Karlsson	2312562539	Byggingafræðingur	Aðaluppdrættir	05.07.2000		Já
+Davíð Kristján Chatham Pitt	1010695249	Arkitekt	Aðaluppdrættir	20.03.2001		Já
+Davíð Viðarsson	1201793819	Verkfræðingur	Aðaluppdrættir	12.01.2017		
+Dennis Davíð Jóhannesson	2907464429	Arkitekt	Aðaluppdrættir		Já	Já
+Edda Þórsdóttir	0208627779	Arkitekt	Aðaluppdrættir	16.08.2000		
+Edvarð Júlíus Sólnes	2203372519	Byggingarverkfræðingur	Aðaluppdrættir	01.07.2013		
+Eggert Guðmundsson	2301562399	Byggingafræðingur	Aðaluppdrættir	19.08.1998		Já
+Egill Már Guðmundsson	2701526869	Arkitekt	Aðaluppdrættir	04.11.1980		Já
+Einar Andri Gíslason	1606694549	Byggingarfræðingur	Aðaluppdrættir	03.04.2014		Já
+Einar Bjarndal Jónsson	2610474119	Verkfræðingur	Aðaluppdrættir, Burðarvirki, Eldri réttindi	31.05.2011	Já	Já
+Einar Ingimarsson	2106513819	Arkitekt	Aðaluppdrættir	27.05.1982		Já
+Einar Jóhannsson	2108417099	Byggingafræðingur	Aðaluppdrættir	12.05.1981		Já
+Einar Matthíasson	1302473859	Byggingafræðingur	Aðaluppdrættir	17.03.1981		
+Einar Már Steingrímsson	0108664809	Byggingartæknifræðingur	Aðaluppdrættir	05.11.2009		
+Einar Ólafsson	0105623419	Arkitekt	Aðaluppdrættir	19.10.2004		Já
+Einar Ólafsson	1608655719	Byggingafræðingur	Aðaluppdrættir	16.01.2006		
+Einar Sveinsson	2408504789	Arkitekt	Aðaluppdrættir	09.12.1997		
+Einar V Tryggvason	1702424599	Arkitekt	Aðaluppdrættir		Já	Já
+Einar Þórðarson Waldorff	1210565939	Tæknifræðingur	Aðaluppdrættir	18.12.1998		Já
+Eiríkur Vignir Pálsson	0109754179	Byggingafræðingur	Aðaluppdrættir	27.04.2006		Já
+Elis Benedikt Eiríksson	1510655709	Byggingarverkfræðingur	Aðaluppdrættir	21.12.2017		Já
+Elín Guðrún Gunnlaugsdóttir	0112643449	Arkitekt	Aðaluppdrættir	16.02.2006		Já
+Elín Kjartansdóttir	2603554309	Arkitekt	Aðaluppdrættir	25.03.1988		Já
+Elín Þórólfsdóttir	1608837319	Arkitekt	Aðaluppdrættir	22.06.2015		Já
+Elísabet Gunnarsdóttir	1203583409	Arkitekt	Aðaluppdrættir	16.08.1991		
+Ellert Hreinsson	1210862129	Arkitekt	Aðaluppdrættir	08.12.2016		Já
+Ellert Már Jónsson	3008565789	Byggingaverkfræðingur	Aðaluppdrættir	23.12.1988		Já
+Emil Þór Guðmundsson	2804563499	Byggingatæknifræðingur	Aðaluppdrættir	28.10.1985		Já
+Ene Cordt Andersen	1912692769	Arkitekt	Aðaluppdrættir	02.01.2008		
+Erlendur Árni Hjálmarsson	1003555239	Byggingafræðingur	Aðaluppdrættir	07.03.1986		Já
+Erlendur Sturla Birgisson	2611562539	Verkfræðingur	Aðaluppdrættir	11.07.1998		Já
+Erling Grosen Pedersen	2308566059	Arkitekt	Aðaluppdrættir	30.12.1985		
+Erling Viðar Eggertsson	0507773919	Byggingafræðingur	Aðaluppdrættir	11.09.2007		
+Eva Huld Friðriksdóttir	3001764619	Arkitekt	Aðaluppdrættir	01.04.2014		Já
+Eva Sigvaldadóttir	1406724169	Arkitekt	Aðaluppdrættir	04.03.2016		
+Evgenía G. Hjálmarsson	2203477379	Arkitekt	Aðaluppdrættir	25.07.1980		
+Eyjólfur Björgvin Guðbjörnsson	0207813439	Byggingafræðingur	Aðaluppdrættir	06.10.2009		
+Eyjólfur E. Bragason	1902535389	Arkitekt	Aðaluppdrættir	30.09.1982		
+Eyjólfur Valgarðsson	2808574169	Byggingatæknifræðingur	Aðaluppdrættir	10.01.2006		Já
+Eyjólfur Þór Þórarinsson	1704603759	Byggingartæknifræðingur	Aðaluppdrættir	02.02.2015		Já
+Eyrún Margrét Stefánsdóttir	2007794019	Arkitekt	Aðaluppdrættir	29.04.2015		Já
+Falk Krueger	0611752539	Arkitekt	Aðaluppdrættir	06.05.2016		Já
+Fanney Hauksdóttir	1705617249	Arkitekt	Aðaluppdrættir	16.03.1995		Já
+Fernando Andrés Castro de Mendonca	1001802439	Arkitekt	Aðaluppdrættir	16.02.2018		
+Finnur Björgvinsson	1809463069	Arkitekt	Aðaluppdrættir		Já	Já
+Finnur Dagsson	2005675019	Byggingafræðingur	Aðaluppdrættir	06.06.2005		Já
+Finnur Ingi Hermannsson	2904843329	Byggingarfræðingur	Aðaluppdrættir	06.05.2014		Já
+Freyr Frostason	1704704869	Arkitekt	Aðaluppdrættir	06.12.2000		Já
+Friðrik Friðriksson	2112564519	Arkitekt	Aðaluppdrættir	07.09.1992		Já
+Friðrik Ó. Friðriksson	2105694489	Arkitekt	Aðaluppdrættir	05.07.2000		
+Friðrik Ólafsson	2303592459	Verkfræðingur	Aðaluppdrættir	30.01.2007		Já
+Friðrik Ólafsson	2407532439	Verkfræðingur	Aðaluppdrættir	25.06.1997		Já
+Fríða Sigurðardóttir	2004805469	Arkitekt	Aðaluppdrættir	08.03.2017		
+Frímann Þór Guðleifsson	0107724009	Byggingafræðingur	Aðaluppdrættir	18.01.2008		
+Garðar Guðnason	2405654399	Arkitekt	Aðaluppdrættir	30.08.1995		Já
+Garðar Halldórsson	0507424669	Arkitekt	Aðaluppdrættir		Já	Já
+Garðar Örn Guðmundsson	2905745289	Byggingarfræðingur	Aðaluppdrættir	26.03.2013		
+Gautur Þorsteinsson	2403583959	Byggingaverkfræðingur	Aðaluppdrættir	28.05.1986		Já
+Gestur Ólafsson	0812414499	Arkitekt	Aðaluppdrættir		Já	Já
+Gissur Hans Þórðarson	0312715929	Byggingarfræðingur	Aðaluppdrættir	13.02.2018		
+Gísli Ágúst Guðmundsson	2508607499	Byggingartæknifræðingur	Aðaluppdrættir	30.12.2015		Já
+Gísli Davíð Sævarsson	1712793999	Byggingarfræðingur	Aðaluppdrættir	01.11.2013		
+Gísli G Gunnarsson	0206492409	Byggingafræðingur	Aðaluppdrættir	12.05.1981		Já
+Gísli Gíslason	1606574809	Byggingarfræðingur	Aðaluppdrættir	11.03.1985		Já
+Gísli Gíslason	1606574809	Arkitekt	Aðaluppdrættir	05.02.2015		Já
+Gísli Gunnlaugsson	0509553469	Byggingatæknifræðingur	Aðaluppdrættir	06.12.1985		
+Gísli Gunnlaugsson	2805542869	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi, Loftræstikerfi	09.06.1997		Já
+Gísli Kristinsson	2611503369	Arkitekt	Aðaluppdrættir	05.08.1982		Já
+Gísli Már Ágústsson	1307724559	Byggingafræðingur	Aðaluppdrættir	13.04.2010		Já
+Gísli Norðdahl	0607475989	Byggingatæknifræðingur	Aðaluppdrættir	20.07.1982		
+Gísli Sæmundsson	2906564869	Arkitekt	Aðaluppdrættir	07.12.1990		Já
+Gísli Tryggvason	0406637469	Byggingafræðingur	Aðaluppdrættir	02.03.1998		Já
+Gíslína Guðmundsdóttir	2509512489	Arkitekt	Aðaluppdrættir	14.02.1989		
+Grétar Markússon	2708524169	Arkitekt	Aðaluppdrættir	24.05.1984		Já
+Grétar Snorrason	0608814059	Byggingafræðingur	Aðaluppdrættir	12.09.2008		
+Guðbjartur Á Ólafsson	1212482399	Byggingartæknifræðingur	Aðaluppdrættir	10.06.2014		Já
+Guðbjartur Magnússon	2503773209	Byggingafræðingur	Aðaluppdrættir	26.06.2007		Já
+Guðfinna Bjarnadóttir	2712627019	Byggingarfræðingur	Aðaluppdrættir	04.03.2015		Já
+Guðjón Bjarnason	0702597969	Arkitekt	Aðaluppdrættir	07.09.1992		
+Guðjón Kjartansson	0703755599	Arkitekt	Aðaluppdrættir	22.11.2012		Já
+Guðjón Magnússon	2504564339	Arkitekt	Aðaluppdrættir	13.07.1987		Já
+Guðjón Þór Erlendsson	1508704889	Arkitekt	Aðaluppdrættir	26.02.2001		
+Guðjón Þór Ragnarsson	2103513619	Tæknifræðingur	Aðaluppdrættir	23.07.1991		Já
+Guðjón Þórir Sigfússon	0201623099	Verkfræðingur	Aðaluppdrættir	06.06.2006		Já
+Guðjón Þórisson	2203703569	Byggingafræðingur	Aðaluppdrættir	08.04.2008		
+Guðlaug Erna Jónsdóttir	0504554409	Arkitekt	Aðaluppdrættir	10.05.1989		
+Guðlaugur Gunnólfsson	2412764229	Byggingarfræðingur	Aðaluppdrættir	12.12.2016		Já
+Guðlaugur H Sigurjónsson	0811695869	Byggingafræðingur	Aðaluppdrættir	11.09.2006		
+Guðmann Guðfinnsson	0903743389	Arkitekt	Aðaluppdrættir	24.04.2006		
+Guðmundur Einarsson	1008623609	Byggingafræðingur	Aðaluppdrættir	04.01.2007		
+Guðmundur Gunnarsson	0107545939	Byggingatæknifræðingur	Aðaluppdrættir	11.02.1981		Já
+Guðmundur Gunnarsson	1607512159	Arkitekt	Aðaluppdrættir	26.02.1985		Já
+Guðmundur Gunnlaugsson	1905543419	Arkitekt	Aðaluppdrættir	03.02.1983		Já
+Guðmundur Hjaltason	0709665579	Byggingartæknifræðingur	Aðaluppdrættir	05.11.2013		Já
+Guðmundur Hjálmarsson	0504392329	Byggingatæknifræðingur	Aðaluppdrættir	17.08.1981		
+Guðmundur Hreinsson	0510675099	Byggingafræðingur	Aðaluppdrættir	24.10.2007		Já
+Guðmundur Jónsson	0412604839	Byggingafræðingur	Aðaluppdrættir	02.01.2002		Já
+Guðmundur Jónsson	1112535879	Arkitekt	Aðaluppdrættir	24.06.1996		
+Guðmundur Karl Guðjónsson	1404512079	Tæknifræðingur	Aðaluppdrættir	13.03.1991		
+Guðmundur Lúther Hafsteinsson	2405553019	Arkitekt	Aðaluppdrættir	08.03.1990		
+Guðmundur Möller	1001653339	Arkitekt	Aðaluppdrættir	13.06.2007		
+Guðmundur Oddur Víðisson	2205644369	Arkitekt	Aðaluppdrættir	01.07.1996		Já
+Guðmundur Óskar Unnarsson	1106833409	Byggingarverkfræðingur	Aðaluppdrættir	31.01.2017		Já
+Guðmundur Þór Guðmundsson	2008575269	Byggingafræðingur	Aðaluppdrættir	20.03.1987		Já
+Guðmundur Þór Steinþórsson	2907545859	Arkitekt	Aðaluppdrættir	18.09.1987		
+Guðni Pálsson	2912464519	Arkitekt	Aðaluppdrættir	02.05.1983		Já
+Guðni Sigurbjörn Sigurðsson	2505824479	Byggingartæknifræðingur	Aðaluppdrættir	04.07.2014		Já
+Guðni Tyrfingsson	1009563499	Arkitekt	Aðaluppdrættir	29.08.2006		
+Guðni Walderhaug	2807554279	Byggingafræðingur	Aðaluppdrættir	18.12.1997		
+Guðríður Inga Sigurjónsdóttir	0301594979	Arkitekt	Aðaluppdrættir	18.05.1994		Já
+Guðrún Fanney Sigurðardóttir	3005663409	Arkitekt	Aðaluppdrættir	07.10.1999		Já
+Guðrún Guðmundsdóttir	0204564349	Arkitekt	Aðaluppdrættir	16.03.1989		
+Guðrún Gyða Franklín	0803782979	Arkitekt	Aðaluppdrættir	11.04.2007		
+Guðrún Ingvarsdóttir	2912726069	Arkitekt	Aðaluppdrættir	19.10.2004		Já
+Guðrún Norðdahl	2209565479	Arkitekt	Aðaluppdrættir	25.02.1988		
+Guðrún Ólafía Jónsdóttir	2003354229	Arkitekt	Aðaluppdrættir		Já	Já
+Guðrún Ragna Yngvadóttir	2204823599	Arkitekt	Aðaluppdrættir	02.05.2017		
+Guðrún Stefánsdóttir	0707574789	Arkitekt	Aðaluppdrættir	24.05.1989		
+Gunnar Atli Hafsteinsson	0908725679	Arkitekt	Aðaluppdrættir	15.04.2005		
+Gunnar Bergmann Stefánsson	2508644859	Arkitekt	Aðaluppdrættir	05.03.1998		Já
+Gunnar Bogi Borgarsson	1803584129	Arkitekt	Aðaluppdrættir	17.02.1992		Já
+Gunnar Einarsson	0205502369	Byggingafræðingur	Aðaluppdrættir	07.10.1999		Já
+Gunnar Fannberg Gunnarsson	0410744189	Byggingafræðingur	Aðaluppdrættir	04.07.2007		Já
+Gunnar Guðnason	0101513689	Arkitekt	Aðaluppdrættir	13.05.1983		
+Gunnar Hávarðarson	1403714169	Byggingafræðingur	Aðaluppdrættir	12.06.2009		
+Gunnar Indriðason	0810492979	Byggingartæknifræðingur	Aðaluppdrættir	30.03.2015		Já
+Gunnar Kristinn Ottósson	0509653179	Arkitekt	Aðaluppdrættir	24.09.1999		
+Gunnar Logi Gunnarsson	1204825809	Arkitekt	Aðaluppdrættir	23.03.2016		Já
+Gunnar Már Eðvarðsson	2303567779	Byggingafræðingur	Aðaluppdrættir	27.10.1992		
+Gunnar Páll Kristinsson	2606653679	Arkitekt	Aðaluppdrættir	06.06.2006		Já
+Gunnar Rósinkranz	2106414249	Verkfræðingur	Aðaluppdrættir		Já	Já
+Gunnar Sigurðsson	0808774719	Arkitekt	Aðaluppdrættir	20.07.2011		Já
+Gunnar Sigurgeir Ragnarsson	0709665229	Byggingafræðingur	Aðaluppdrættir	03.06.2010		Já
+Gunnar Stefán Larsson	2908713799	Byggingartæknifræðingur	Aðaluppdrættir	08.04.2013		Já
+Gunnar Sveinbjörn Óskarsson	1805444299	Arkitekt	Aðaluppdrættir		Já	Já
+Gunnar Valdimarsson	2703743879	Byggingafræðingur	Aðaluppdrættir	22.02.2006		Já
+Gunnar Valur Gíslason	0603586809	Byggingaverkfræðingur	Aðaluppdrættir	06.01.1987		
+Gunnar Örn Sigurðsson	1306663379	Arkitekt	Aðaluppdrættir	30.08.2001		Já
+Gunnhildur Gunnarsdóttir	2605635219	Arkitekt	Aðaluppdrættir	22.07.1998		
+Gunnlaugur Baldursson	1509432059	Arkitekt	Aðaluppdrættir	08.06.1983		
+Gunnlaugur Björn Jónsson	1102543349	Arkitekt	Aðaluppdrættir	09.12.1997		Já
+Gunnlaugur Helgason	2009493669	Byggingatæknifræðingur	Aðaluppdrættir	11.02.1981		
+Gunnlaugur Jónasson	0904622299	Arkitekt	Aðaluppdrættir	25.06.1997		Já
+Gunnlaugur Magnússon	2808573519	Arkitekt	Aðaluppdrættir	06.06.1997		Já
+Gunnlaugur Ó. Johnson	0806577819	Arkitekt	Aðaluppdrættir	23.08.1996		Já
+Gunnlaugur Rúnar Sigurðsson	2305723219	Byggingarfræðingur	Aðaluppdrættir	29.04.2011		
+Gunnþóra Guðmundsdóttir	1505763859	Arkitekt	Aðaluppdrættir	15.01.2015		
+Gústaf B. Ólafsson	2007597619	Byggingafræðingur	Aðaluppdrættir	25.08.1992		
+Gylfi Guðjónsson	2708472509	Arkitekt	Aðaluppdrættir		Já	Já
+Hafdís Hafliðadóttir	0305542729	Arkitekt	Aðaluppdrættir	16.10.1989		
+Halla Haraldsdóttir Hamar	1110663539	Arkitekt	Aðaluppdrættir	11.05.2001		Já
+Halldór Arnarson	1601713329	Byggingafræðingur	Aðaluppdrættir	03.05.2006		Já
+Halldór Eiríksson	1302725769	Arkitekt	Aðaluppdrættir	03.11.2006		Já
+Halldór Gíslason	2508524449	Arkitekt	Aðaluppdrættir	27.05.1982		
+Halldór Guðmundsson	1405482439	Arkitekt	Aðaluppdrættir		Já	Já
+Halldór Ingi Hannesson	1411392159	Verkfræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi		Já	Já
+Halldór Jón Karlsson	2809695919	Byggingafræðingur	Aðaluppdrættir	18.02.2005		Já
+Halldór Jónsson	0311372769	Verkfræðingur	Aðaluppdrættir, Boðveitur, Burðarvirki, Lagnakerfi, Loftræstikerfi, L		Já	
+Halldór Rúnar Karlsson	1601783459	Byggingarfræðingur	Aðaluppdrættir	23.01.2018		Já
+Halldór Stefánsson	2912615909	Byggingatæknifræðingur	Aðaluppdrættir	03.02.2009		Já
+Halldóra Bragadóttir	2105603279	Arkitekt	Aðaluppdrættir	14.05.1990		Já
+Halldóra Vífilsdóttir	0607683909	Arkitekt	Aðaluppdrættir	06.10.1999		
+Hallur Kristmundsson	2205733899	Byggingafræðingur	Aðaluppdrættir	17.10.2007		Já
+Hallur Kristvinsson	2204535539	Byggingafræðingur	Aðaluppdrættir	20.03.2009		Já
+Hans Olav Andersen	1201602069	Arkitekt	Aðaluppdrættir	15.01.1992		Já
+Haraldur Birgir Haraldsson	0304654319	Byggingarfræðingur	Aðaluppdrættir	06.06.2016		Já
+Haraldur Helgason	0912474299	Arkitekt	Aðaluppdrættir		Já	
+Haraldur Ingvarsson	0309563389	Arkitekt	Aðaluppdrættir	24.04.1987		Já
+Haraldur Valbergsson	2901625999	Byggingafræðingur	Aðaluppdrættir	14.08.1990		Já
+Haraldur Örn Jónsson	1112543899	Arkitekt	Aðaluppdrættir	14.02.1989		Já
+Harpa Stefánsdóttir	1005673779	Arkitekt	Aðaluppdrættir	27.02.1996		
+Haukur Arnar Viktorsson	2105357219	Arkitekt	Aðaluppdrættir		Já	
+Haukur Ásgeirsson	3012554629	Verkfræðingur	Aðaluppdrættir	30.10.2007		Já
+Haukur Harðarson	2211622269	Arkitekt	Aðaluppdrættir	07.09.1992		
+Heba Hertervig arkitekt	2107633179	Arkitekt	Aðaluppdrættir	09.12.1997		Já
+Helga Benediktsdóttir	1906493939	Arkitekt	Aðaluppdrættir	04.01.1994		Já
+Helga Bragadóttir	0501544919	Arkitekt	Aðaluppdrættir	24.05.1984		Já
+Helga G. Gunnarsdóttir	3108532169	Arkitekt	Aðaluppdrættir	19.02.1988		Já
+Helga Guðmundsdóttir	2605505009	Arkitekt	Aðaluppdrættir	04.11.1980		
+Helga Guðrún Vilmundardóttir	0803794719	Arkitekt	Aðaluppdrættir	15.01.2013		Já
+Helga K. Lund	1012754509	Arkitekt	Aðaluppdrættir	15.07.2011		
+Helgi Bergmann Sigurðsson	3112492749	Arkitekt	Aðaluppdrættir	29.11.1984		Já
+Helgi Bollason Thoroddsen	1002613249	Arkitekt	Aðaluppdrættir	12.10.1992		Já
+Helgi Davíð Ingason	2102806189	Byggingarfræðingur	Aðaluppdrættir	01.12.2014		
+Helgi Guðjón Bjarnason	2805654669	Byggingarfræðingur	Aðaluppdrættir	07.05.2015		
+Helgi Hafliðason	0203412979	Arkitekt	Aðaluppdrættir		Já	Já
+Helgi Helgason	0109632579	Byggingafræðingur	Aðaluppdrættir	02.04.1997		
+Helgi Hjálmarsson	2204364549	Arkitekt	Aðaluppdrættir		Já	Já
+Helgi Indriðason	1609786199	Arkitekt	Aðaluppdrættir	07.02.2018		
+Helgi Kjartansson	0302705419	Byggingatæknifræðingur	Aðaluppdrættir	02.04.2008		Já
+Helgi Mar Hallgrímsson	2102793429	Arkitekt	Aðaluppdrættir	20.05.2009		Já
+Helgi Már Halldórsson	3012587049	Arkitekt	Aðaluppdrættir	25.01.1990		Já
+Helgi S. Gunnarsson	0709602819	Verkfræðingur	Aðaluppdrættir	15.09.1995		
+Helgi Sigursteinn Ólafsson	0304794679	Byggingarverkfræðingur	Aðaluppdrættir	02.02.2016		Já
+Helgi Steinar Helgason	0304823449	Arkitekt	Aðaluppdrættir	09.08.2012		Já
+Helgi Vignir Bragason	0612724889	Byggingafræðingur	Aðaluppdrættir	23.07.2010		Já
+Helgi Örn Eyþórsson	2507713399	Byggingarfræðingur	Aðaluppdrættir	27.04.2011		
+Herborg Harpa Ingvarsdóttir	0207795869	Arkitekt	Aðaluppdrættir	27.06.2017		
+Hildigunnur Haraldsdóttir	0806544219	Arkitekt	Aðaluppdrættir	03.02.1983		Já
+Hildigunnur Sverrisdóttir	1111725879	Arkitekt	Aðaluppdrættir	22.12.2008		
+Hildur Bjarnadóttir	2003626409	Arkitekt	Aðaluppdrættir	18.10.1990		Já
+Hildur Gunnarsdóttir	2005724919	Arkitekt	Aðaluppdrættir	06.07.2004		Já
+Hildur Steinþórsdóttir	1111823889	Arkitekt	Aðaluppdrættir	13.03.2012		
+Hildur Ýr Ottósdóttir	3008765019	Arkitekt	Aðaluppdrættir	16.06.2015		Já
+Hilmar Gunnarsson	1505714059	Arkitekt	Aðaluppdrættir	16.03.2011		
+Hilmar Þór Björnsson	2808453109	Arkitekt	Aðaluppdrættir		Já	Já
+Hilmir Þór Gunnarsson	2408712979	Byggingafræðingur	Aðaluppdrættir	24.05.2007		
+Hjalti Brynjarsson	0109863549	Arkitekt	Aðaluppdrættir	02.01.2017		
+Hjálmar Ingvarsson	2004615769	Byggingafræðingur	Aðaluppdrættir	09.12.2003		Já
+Hjálmar Örn Guðmarsson	2006723809	Byggingafræðingur	Aðaluppdrættir	01.12.2006		Já
+Hjördís Sigurgísladóttir	1510567849	Arkitekt	Aðaluppdrættir	12.10.1992		Já
+Hjördís Sóley Sigurðardóttir	2203763389	Arkitekt	Aðaluppdrættir	01.06.2011		Já
+Hjörleifur Sigurþórsson	2210725029	Byggingarfræðingur	Aðaluppdrættir	13.04.2015		Já
+Hjörleifur Stefánsson	1212473489	Arkitekt	Aðaluppdrættir		Já	Já
+Hjörtur Hans Kolsöe	2202533419	Byggingafræðingur	Aðaluppdrættir	22.04.2009		
+Hjörtur Pálsson	0801524429	Byggingafræðingur	Aðaluppdrættir	23.10.1986		Já
+Hjörtur Pálsson	2905872989	Byggingarfræðingur	Aðaluppdrættir	29.08.2016		
+Hjörtur Stefánsson	0806642579	Verkfræðingur	Aðaluppdrættir	10.03.2005		Já
+Hlédís Sveinsdóttir	0205653659	Arkitekt	Aðaluppdrættir	22.11.1999		Já
+Hlín Finnsdóttir	0512823029	Arkitekt	Aðaluppdrættir	21.09.2016		
+Hlynur Örn Björgvinsson	2701753769	Byggingarfræðingur	Aðaluppdrættir	21.12.2015		Já
+Hólmfríður Ósmann Jónsdóttir	0309665039	Arkitekt	Aðaluppdrættir	09.12.1997		Já
+Hrafnhildur Sverrisdóttir	2011765659	Arkitekt	Aðaluppdrættir	01.09.2008		
+Hrefna Björg Þorsteinsdóttir	1802675819	Arkitekt	Aðaluppdrættir	09.12.1997		Já
+Hrólfur Karl Cela	2806794539	Arkitekt	Aðaluppdrættir	08.09.2010		Já
+Hugrún Þorsteinsdóttir	1109723429	Arkitekt	Aðaluppdrættir	23.03.2005		Já
+Húnbogi Þór Árnason	2108793589	Byggingafræðingur	Aðaluppdrættir	31.05.2005		Já
+Hörður Harðarson	3005494899	Arkitekt	Aðaluppdrættir	24.04.1987		Já
+Höskuldur Sveinsson	2607542469	Arkitekt	Aðaluppdrættir	02.11.1983		
+Indro Indriði Candi	1703647599	Arkitekt	Aðaluppdrættir	29.11.1993		Já
+Inga B. Dagfinnsdóttir	1704547749	Arkitekt	Aðaluppdrættir	11.04.1989		
+Inga Hersteinsdóttir	0801474659	Byggingarverkfræðingur	Aðaluppdrættir		Já	
+Ingi Gunnar Þórðarson	2804533239	Byggingatæknifræðingur	Aðaluppdrættir	29.08.1983		Já
+Ingimundur Sveinsson	2104422869	Arkitekt	Aðaluppdrættir		Já	Já
+Ingiþór Björnsson	1302642639	Byggingafræðingur	Aðaluppdrættir	04.05.2001		Já
+Ingólfur H Eyfells	0401457969	Verkfræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi	07.09.2017	Já	Já
+Ingólfur Steinar Margeirsson	0702523099	Tæknifræðingur	Aðaluppdrættir	01.03.1993		Já
+Ingunn Helga Hafstað	0208617469	Arkitekt	Aðaluppdrættir	02.07.1997		Já
+Ingunn Katrín Lilliendahl	2407695579	Arkitekt	Aðaluppdrættir	11.04.2011		
+Ingvar Bjarnason	0502607719	Byggingafræðingur	Aðaluppdrættir	16.02.2001		Já
+Ingvar Gýgjar Sigurðarson	0208843639	Byggingartæknifræðingur	Aðaluppdrættir	05.04.2017		Já
+Ingvar Þór Gunnlaugsson	2707735169	Byggingafræðingur	Aðaluppdrættir	26.11.2008		
+Ivon Stefán Cilia	1411554159	Arkitekt	Aðaluppdrættir	31.07.1985		Já
+Ívar Eysteinsson	0307537399	Arkitekt	Aðaluppdrættir	15.03.1985		
+Ívar Hauksson	1103835339	Byggingartæknifræðingur	Aðaluppdrættir	01.12.2014		Já
+Ívar Ragnarsson	2607564949	Byggingafræðingur	Aðaluppdrættir	02.09.2009		Já
+Ívar Örn Guðmundsson	1308653489	Arkitekt	Aðaluppdrættir	26.04.2001		Já
+Jakob E. Líndal	0509573229	Arkitekt	Aðaluppdrættir	25.08.1987		Já
+Jeannot A Tsirenge	2110682489	Arkitekt	Aðaluppdrættir	05.09.2000		Já
+Jens Karl Bernharðsson	0608563709	Byggingafræðingur	Aðaluppdrættir	22.04.2009		Já
+Jon Ivar Nordsteien	1807562139	Arkitekt	Aðaluppdrættir	30.05.1994		
+Jorge Gonzalez Enriquez	3103722699	Arkitekt	Aðaluppdrættir	22.04.2009		
+Jóhann Einar Jónsson	0909823549	Arkitekt	Aðaluppdrættir	16.02.2011		Já
+Jóhann Einarsson	0502527799	Arkitekt	Aðaluppdrættir	29.09.1982		Já
+Jóhann Gunnar Ragnarsson	3009793789	Tæknifræðingur	Aðaluppdrættir	01.02.2018		Já
+Jóhann Harðarson	0802735419	Byggingarfræðingur	Aðaluppdrættir	29.04.2016		Já
+Jóhann Magnús Kristinsson	0606625689	Byggingafræðingur	Aðaluppdrættir	08.11.2002		Já
+Jóhann Sigurðsson	0308743239	Arkitekt	Aðaluppdrættir	06.01.2004		Já
+Jóhanna Ellen Valgeirsdóttir	2702586469	Byggingarfræðingur	Aðaluppdrættir	01.04.2015		
+Jóhannes Pétursson	0104483959	Byggingatæknifræðingur	Aðaluppdrættir	05.03.1984		Já
+Jóhannes Rafn Kristjánsson	0602483119	Tæknifræðingur	Aðaluppdrættir	07.08.1997		Já
+Jóhannes Snorrason	2704572829	Byggingatæknifræðingur	Aðaluppdrættir	25.11.1986		
+Jóhannes Þórðarson	1210576039	Arkitekt	Aðaluppdrættir	03.09.2003		Já
+Jón Benjamín Einarsson.	1906654299	Byggingafræðingur	Aðaluppdrættir	26.06.2002		
+Jón Davíð Ásgeirsson	2502805729	Arkitekt	Aðaluppdrættir	15.04.2014		Já
+Jón Eiríkur Guðmundsson	1207595319	Byggingarfræðingur	Aðaluppdrættir	31.01.2013		Já
+Jón Friðrik Matthíasson	0211715069	Byggingafræðingur	Aðaluppdrættir	23.04.2007		Já
+Jón Grétar Magnússon	0105734679	Byggingafræðingur	Aðaluppdrættir	24.05.2007		Já
+Jón Grétar Ólafsson	1309753219	Arkitekt	Aðaluppdrættir	12.11.2013		Já
+Jón Guðmundsson	1701642299	Arkitekt	Aðaluppdrættir	05.09.2013		Já
+Jón Guðmundsson	3105513259	Arkitekt	Aðaluppdrættir	09.05.1984		Já
+Jón Gunnar Eysteinsson	0307862709	Byggingarfræðingur	Aðaluppdrættir	08.02.2018		Já
+Jón Hrafn Hlöðversson	2606626519	Byggingafræðingur	Aðaluppdrættir	05.07.2000		Já
+Jón Júlíusson	2104474669	Byggingatæknifræðingur	Aðaluppdrættir	12.10.1992		
+Jón Kjell Seljeseth	1910547179	Arkitekt	Aðaluppdrættir	09.05.1984		
+Jón Logi Sigurbjörnsson	1905563959	Byggingarverkfræðingur	Aðaluppdrættir	12.10.2017		Já
+Jón Magnús Halldórsson	0911623509	Byggingafræðingur	Aðaluppdrættir	13.03.2001		Já
+Jón Ólafur Erlendsson	2903735069	Byggingarverkfræðingur	Aðaluppdrættir	02.02.2018		Já
+Jón Ólafur Ólafsson	0906584099	Arkitekt	Aðaluppdrættir	23.09.1987		Já
+Jón Richard Sigmundsson	0306513919	Byggingatæknifræðingur	Aðaluppdrættir	24.04.2006		Já
+Jón S. Möller	0711563039	Byggingaverkfræðingur	Aðaluppdrættir	11.10.1983		
+Jón Stefán Einarsson	2709763609	Arkitekt	Aðaluppdrættir	16.02.2006		Já
+Jón Þór Jónsson	0504764569	Byggingafræðingur	Aðaluppdrættir	26.06.2007		Já
+Jón Þór Þorvaldsson	0212567579	Arkitekt	Aðaluppdrættir	07.10.1986		Já
+Jón Örn Berndsen	2009512129	Byggingarverkfræðingur	Aðaluppdrættir	13.01.2015		Já
+Jónas Vigfússon	1311512419	Verkfræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi		Já	Já
+Jónas Þórðarson	1608674699	Byggingafræðingur	Aðaluppdrættir	20.02.2008		Já
+Jóninna Harpa Ingólfsdóttir	0812693009	Byggingafræðingur	Aðaluppdrættir	05.07.2006		
+Jórunn Ragnarsdóttir	2806572989	Arkitekt	Aðaluppdrættir	16.02.2006		
+Jökull Helgason	1506735939	Byggingarfræðingur	Aðaluppdrættir	12.01.2017		
+Karl Ásbjörn Hjartarson	0607605199	Byggingafræðingur	Aðaluppdrættir	28.11.1997		
+Karl Erik Rocksén	2808395669	Arkitekt	Aðaluppdrættir		Já	Já
+Karl Kvaran	1912785859	Arkitekt	Aðaluppdrættir	21.07.2014		
+Karl M Karlsson	1405665949	Arkitekt	Aðaluppdrættir	25.03.1999		Já
+Katla Maríudóttir	1509842469	Arkitekt	Aðaluppdrættir	01.02.2018		
+Kári Eiríksson	0703654059	Arkitekt	Aðaluppdrættir	01.03.2000		Já
+Kári Magnússon	0811715649	Byggingarfræðingur	Aðaluppdrættir	12.07.2012		
+Kjartan Ólafur Sigurðsson	1210665809	Byggingarfræðingur	Aðaluppdrættir	05.08.1998		Já
+Kjartan Rafnsson	2208502189	Byggingatæknifræðingur	Aðaluppdrættir	19.08.1981		Já
+Kjartan Sigurbjartsson	1902755319	Byggingafræðingur	Aðaluppdrættir	23.02.2006		Já
+Kjartan Sævarsson	0506685099	Byggingafræðingur	Aðaluppdrættir	09.12.2003		
+Klaus Holm	1712448039	Arkitekt	Aðaluppdrættir	09.05.1984		
+Kristinn Arnarson	2602705599	Byggingafræðingur	Aðaluppdrættir	27.05.2002		Já
+Kristinn Baldursson	1004544599	Byggingatæknifræðingur	Aðaluppdrættir	25.10.1982		Já
+Kristinn L Aðalbjörnsson	1711523649	Byggingafræðingur	Aðaluppdrættir	12.06.2006		
+Kristinn Már Þorsteinsson	1302572409	Byggingarverkfræðingur	Aðaluppdrættir	09.02.2015		Já
+Kristinn Ragnarsson	1209442669	Arkitekt	Aðaluppdrættir	07.12.2010		Já
+Kristinn Sveinbjörnsson	2905452939	Byggingafræðingur	Aðaluppdrættir	07.01.1981		
+Kristinn Þór Guðbjartsson	2111635349	Byggingarfræðingur	Aðaluppdrættir	21.07.2014		
+Kristín Brynja Gunnarsdóttir	0407665889	Arkitekt	Aðaluppdrættir	02.04.2001		
+Kristín Jónsdóttir	0807514199	Arkitekt	Aðaluppdrættir	21.01.1987		
+Kristjana Margrét Sigurðardóttir	1007773209	Arkitekt	Aðaluppdrættir	04.05.2015		
+Kristján A. Ólason	1306543399	Arkitekt	Aðaluppdrættir	19.01.1988		
+Kristján Ásgeirsson	1409564309	Arkitekt	Aðaluppdrættir	10.04.1989		Já
+Kristján Bjarnason	1203695479	Byggingafræðingur	Aðaluppdrættir	01.03.2007		Já
+Kristján Eggertsson	1508735769	Arkitekt	Aðaluppdrættir	13.06.2007		Já
+Kristján Eldjárn Hjartarson	1009563309	Byggingafræðingur	Aðaluppdrættir	26.05.2010		Já
+Kristján Garðarsson	2702695679	Arkitekt	Aðaluppdrættir	18.12.2003		Já
+Kristján Georg Leifsson	2308735699	Byggingafræðingur	Aðaluppdrættir	02.02.2005		Já
+Kristján Heiðar Kristjánsson	0803795289	Byggingarfræðingur	Aðaluppdrættir	24.05.2011		Já
+Kristján Karl Kristjánsson	1801783689	Byggingafræðingur	Aðaluppdrættir	05.07.2006		
+Kristján S Guðmundsson	0702545819	Byggingarverkfræðingur	Aðaluppdrættir		Já	Já
+Kristján Þórarinsson	1004577849	Byggingafræðingur	Aðaluppdrættir	16.10.1989		
+Kristján Örn Kjartansson	0401764979	Arkitekt	Aðaluppdrættir	03.04.2013		Já
+Kristrún Þórðardóttir	1505543659	Arkitekt	Aðaluppdrættir	30.11.1984		
+Laufey Agnarsdóttir	0210735049	Arkitekt	Aðaluppdrættir	10.04.2001		Já
+Lára Kristjana Lárusdóttir	1912803509	Arkitekt	Aðaluppdrættir	02.03.2017		
+Lárus Bergþór Guðmarsson	1610633209	Arkitekt	Aðaluppdrættir	11.10.2002		
+Lárus Guðmundsson	3103615269	Arkitekt	Aðaluppdrættir	02.11.1994		
+Lárus Kristinn Ragnarsson	2201603439	Byggingafræðingur	Aðaluppdrættir	09.01.2006		Já
+Leifur Stefánsson	0204584619	Byggingafræðingur	Aðaluppdrættir	08.08.1988		Já
+Lena Helgadóttir	1408615109	Arkitekt	Aðaluppdrættir	12.02.1998		Já
+Lilja Grétarsdóttir	1306615059	Arkitekt	Aðaluppdrættir	12.10.1992		
+Lilja Ómarsdóttir	0105783889	Byggingarfræðingur	Aðaluppdrættir	28.12.2017		Já
+Loftur Guðni Þorsteinsson	1707544099	Byggingafræðingur	Aðaluppdrættir	10.01.1990		
+Logi Már Einarsson	2108642969	Arkitekt	Aðaluppdrættir	16.09.1996		Já
+Luigi Bartolozzi	1306592099	Arkitekt	Aðaluppdrættir	09.07.2001		Já
+Lulu Munk Andersen	2404665549	Byggingafræðingur	Aðaluppdrættir	24.06.2009		
+Lúðvík Davíð Björnsson	1410543259	Byggingatæknifræðingur	Aðaluppdrættir	23.06.2006		Já
+Lúðvík Ver Smárason	2908617649	Byggingarfræðingur	Aðaluppdrættir	07.05.2015		Já
+Lúther Ólason	1411724769	Byggingafræðingur	Aðaluppdrættir	15.08.2007		Já
+Maggi Jónsson	2805373069	Arkitekt	Aðaluppdrættir		Já	Já
+Magnea Þóra Guðmundsdóttir	1703783779	Arkitekt	Aðaluppdrættir	27.04.2016		
+Magnús Albert Jensson	0103723569	Arkitekt	Aðaluppdrættir	17.03.2006		Já
+Magnús Freyr Gíslason	0510843149	Arkitekt	Aðaluppdrættir	26.03.2015		
+Magnús G. Björnsson	3101434219	Arkitekt	Aðaluppdrættir	08.01.1980		
+Magnús Gylfason	2012514199	Byggingatæknifræðingur	Aðaluppdrættir	30.01.1986		Já
+Magnús H. Ólafsson	1505504759	Arkitekt	Aðaluppdrættir	17.03.1982		Já
+Magnús Ingvarsson	1711603249	Byggingafræðingur	Aðaluppdrættir	14.11.2006		Já
+Magnús Orri Einarsson	2704764819	Byggingarfræðingur	Aðaluppdrættir	23.04.2014		
+Magnús Sigsteinsson	1604444959	Búfræðikandidat	Aðaluppdrættir að landbúnaðarbyggingum	22.06.1981		
+Magnús Skúlason	1510374969	Arkitekt	Aðaluppdrættir		Já	Já
+Magnús Þórðarson	0504564209	Byggingafræðingur	Aðaluppdrættir	22.06.1993		
+Marcos Zotes López	2006772699	Arkitekt	Aðaluppdrættir	14.11.2014		Já
+Margrét Harðardóttir	1405592459	Arkitekt	Aðaluppdrættir	27.10.1987		Já
+Margrét Leifsdóttir	2508695339	Arkitekt	Aðaluppdrættir	08.08.2003		Já
+Margrét Pálína Cassaro	1005725169	Byggingafræðingur	Aðaluppdrættir	05.07.2006		Já
+Margrét Þormar	0104513619	Arkitekt	Aðaluppdrættir	16.03.1989		
+Marinó Stefánsson	2002713949	Byggingarfræðingur	Aðaluppdrættir	21.12.2017		
+María Björk Gunnarsdóttir	1002803029	Arkitekt	Aðaluppdrættir	23.01.2018		Já
+María Guðmundsdóttir	2712675769	Byggingarfræðingur	Aðaluppdrættir	16.01.2018		Já
+Marteinn Huntingdon-Williams	1307558019	Arkitekt	Aðaluppdrættir	16.02.1993		
+Marvin Ívarsson	1705734399	Byggingafræðingur	Aðaluppdrættir	20.02.2008		Já
+Málfríður Klara Kristiansen	1106564329	Arkitekt	Aðaluppdrættir	15.12.1987		
+Málfríður Kristjánsdóttir	0406463299	Arkitekt	Aðaluppdrættir	25.07.1980		
+Melanie Ingeborg Lorenz	2602792629	Arkitekt	Aðaluppdrættir	03.01.2018		
+Michael Blikdal Erichsen	2512772659	Arkitekt	Aðaluppdrættir	14.04.2015		
+Móheiður Helga Huldudóttir Obel	0809785969	Arkitekt	Aðaluppdrættir	08.06.2015		
+Nikulás Ú. Másson	0812565009	Arkitekt	Aðaluppdrættir	25.02.1988		
+Oddur C. G. Hjaltason	1206493969	Byggingatæknifræðingur	Aðaluppdrættir	08.04.1987		
+Oddur Kristján Finnbjarnarson	2802593229	Arkitekt	Aðaluppdrættir	25.01.1990		Já
+Olga Guðrún Sigfúsdóttir	1102694399	Arkitekt	Aðaluppdrættir	10.04.2001		Já
+Orri Árnason	0808645749	Arkitekt	Aðaluppdrættir	18.03.1999		Já
+Ólafur I Halldórsson	0312573799	Byggingafræðingur	Aðaluppdrættir	28.06.2004		
+Ólafur Jakobsson	2604564669	Tæknifræðingur	Aðaluppdrættir	26.05.2015		
+Ólafur Jónsson	2007743969	Arkitekt	Aðaluppdrættir	10.06.2009		
+Ólafur Óskar Axelsson	0412513019	Arkitekt	Aðaluppdrættir	07.11.1988		Já
+Ólafur Sigurður Einarsson	2203714689	Byggingarfræðingur	Aðaluppdrættir	03.11.2014		
+Ólafur Tage Bjarnason	1504823489	Byggingarfræðingur	Aðaluppdrættir	15.04.2014		Já
+Ólafur Tryggvi Mathiesen	0104602559	Arkitekt	Aðaluppdrættir	21.10.1997		
+Ólafur Þ. Hersisson	0604668239	Arkitekt	Aðaluppdrættir	01.03.2000		Já
+Óli H. Hertervig	2006322499	Arkitekt	Aðaluppdrættir	06.07.1982		
+Óli Hilmar Jónsson	1402503929	Arkitekt	Aðaluppdrættir	26.07.1982		
+Óli Jón Gunnarsson	0707497699	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi		Já	Já
+Óli Rúnar Eyjólfsson	2102774049	Byggingafræðingur	Aðaluppdrættir	22.12.2005		Já
+Óli Þór Magnússon	0405635559	Byggingarverkfræðingur	Aðaluppdrættir	05.01.2016		Já
+Ólöf Flygenring	1009554669	Arkitekt	Aðaluppdrættir	13.08.1993		Já
+Ólöf Guðný Valdimarsdóttir	2109544659	Arkitekt	Aðaluppdrættir	12.09.1986		Já
+Ólöf Pálsdóttir	1601743589	Arkitekt	Aðaluppdrættir	10.02.2006		
+Ólöf Örvarsdóttir	1701683729	Arkitekt	Aðaluppdrættir	05.03.1998		
+Ómar Pétursson	0505715569	Byggingafræðingur	Aðaluppdrættir	15.05.2006		Já
+Ómar Þröstur Björgólfsson	1707484419	Byggingatæknifræðingur	Aðaluppdrættir	03.06.2010		Já
+Ómar Örn Kristófersson	0106824799	Byggingafræðingur	Aðaluppdrættir	20.03.2009		
+Ósk Soffía Valtýsdóttir	0411612649	Arkitekt	Aðaluppdrættir	24.02.2003		Já
+Óskar Ingi Húnfjörð	0702553329	Byggingafræðingur	Aðaluppdrættir	28.06.2007		
+Óskar Torfi Þorvaldsson	1508673399	Verkfræðingur	Aðaluppdrættir	18.12.2009		
+Óskar Þór Óskarsson	1909643889	Byggingafræðingur	Aðaluppdrættir	16.03.2009		Já
+Óttar Guðmundsson	1912403919	Arkitekt	Aðaluppdrættir	17.07.1995		
+Páll Björgvinsson	0509533439	Arkitekt	Aðaluppdrættir	11.06.1992		
+Páll Gunnlaugsson	2105522199	Arkitekt	Aðaluppdrættir	11.12.1981		Já
+Páll Hjaltdal Zóphóníasson	1207423379	Byggingatæknifræðingur	Aðaluppdrættir	30.10.1990		Já
+Páll Poulsen	2003674729	Byggingafræðingur	Aðaluppdrættir	07.01.2000		
+Páll R. Valdimarsson	2103632549	Byggingafræðingur	Aðaluppdrættir	09.12.2003		
+Páll Tómasson	0406562439	Arkitekt	Aðaluppdrættir	11.05.1989		
+Páll V Bjarnason	0603462249	Arkitekt	Aðaluppdrættir		Já	Já
+Pálmar Halldórsson	1408602639	Byggingafræðingur	Aðaluppdrættir	13.12.2010		Já
+Pálmar Kristmundsson	0804555269	Arkitekt	Aðaluppdrættir	20.05.1986		Já
+Pálmi Guðmundsson	2002583719	Arkitekt	Aðaluppdrættir	19.09.1989		
+Per Langsöe Christensen	3008452079	Arkitekt	Aðaluppdrættir	11.08.2000		
+Perla Dís Kristinsdóttir	1610825119	Arkitekt	Aðaluppdrættir	03.05.2013		
+Pétur Bolli Jóhannesson	1507595609	Arkitekt	Aðaluppdrættir	13.02.1991		
+Pétur Bragason	2801755289	Byggingarverkfræðingur	Aðaluppdrættir	05.01.2016		Já
+Pétur H. Jónsson	1503565479	Arkitekt	Aðaluppdrættir	17.07.1995		
+Pétur Hrafn Ármannsson	2908612259	Arkitekt	Aðaluppdrættir	11.06.1992		Já
+Pétur Jón Geirsson	2101612959	Arkitekt	Aðaluppdrættir	11.09.2006		
+Pétur Örn Björnsson	1004553159	Arkitekt	Aðaluppdrættir	24.05.1989		Já
+Rafael Cao Romero Millan	2903743089	Arkitekt	Aðaluppdrættir	22.04.2009		Já
+Rafn Guðmundsson	3108457019	Tæknifræðingur	Aðaluppdrættir		Já	Já
+Rafn Hermannsson	0408755229	Byggingafræðingur	Aðaluppdrættir	16.10.2008		Já
+Ragnar Auðunn Birgisson	2301604499	Arkitekt	Aðaluppdrættir	04.11.1987		Já
+Ragnar Emilsson	0310237349	Arkitekt	Aðaluppdrættir	25.05.1988		
+Ragnar Georg Gunnarsson	1109472839	Byggingartæknifræðingur	Aðaluppdrættir		Já	Já
+Ragnar Hermannsson	1904803489	Byggingarfræðingur	Aðaluppdrættir	12.04.2016		Já
+Ragnar Jón Gunnarsson	2001574949	Arkitekt	Aðaluppdrættir	22.08.1986		
+Ragnar Magnússon	1901622229	Byggingarfræðingur	Aðaluppdrættir	13.12.2016		Já
+Ragnar Már Ragnarsson	2003735109	Byggingafræðingur	Aðaluppdrættir	09.12.2009		Já
+Ragnar Ólafsson	1512545869	Arkitekt	Aðaluppdrættir	16.08.1991		Já
+Ragnar Ómarsson	2109634059	Byggingafræðingur	Aðaluppdrættir	23.04.2003		Já
+Ragnar Ragnarsson	2712444879	Verkfræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi, Loftræstikerfi	25.09.1995		
+Ragnheiður Aradóttir	0205674819	Arkitekt	Aðaluppdrættir	21.11.2000		
+Ragnheiður Ragnarsdóttir	1209493579	Arkitekt	Aðaluppdrættir	10.06.1985		
+Ragnhildur Ingólfsdóttir	2603554069	Arkitekt	Aðaluppdrættir	25.03.1993		Já
+Ragnhildur Kristjánsdóttir	0302817139	Arkitekt	Aðaluppdrættir	29.05.2013		Já
+Reynir Adamsson	2404482469	Arkitekt	Aðaluppdrættir	09.05.1979		Já
+Reynir Kristjánsson	1003614779	Byggingafræðingur	Aðaluppdrættir	20.02.2008		Já
+Reynir Sæmundsson	0106565759	Arkitekt	Aðaluppdrættir	11.10.1991		
+Richard Briem	2108504499	Arkitekt	Aðaluppdrættir	11.07.1983		Já
+Ríkarð (Ríkharður) Oddsson	2702615159	Byggingafræðingur	Aðaluppdrættir	09.06.1995		Já
+Róbert Árni Róbertsson	0804694549	Byggingafræðingur	Aðaluppdrættir	03.02.2006		
+Róbert Pétursson	2208404259	Arkitekt	Aðaluppdrættir	25.11.1986		
+Runólfur Þór Sigurðsson	0901572489	Byggingatæknifræðingur	Aðaluppdrættir	16.04.2003		Já
+Rúnar Guðmundsson	2102624589	Byggingafræðingur	Aðaluppdrættir	09.12.2003		
+Rúnar Gunnarsson	0905507999	Arkitekt	Aðaluppdrættir	22.05.1981		Já
+Rúnar Hauksson	0412477469	Arkitekt	Aðaluppdrættir		Já	Já
+Rúnar Ingi Guðjónsson	1406694319	Byggingarfræðingur	Aðaluppdrættir	24.03.2014		Já
+Rúnar Ólafsson	0807664599	Byggingarfræðingur	Aðaluppdrættir	08.05.2013		Já
+Rögnvaldur Harðarson	0803793319	Byggingafræðingur	Aðaluppdrættir	03.06.2010		Já
+Samúel S. Hreggviðsson	2007524659	Byggingatæknifræðingur	Aðaluppdrættir	19.08.1981		Já
+Samúel Örn Erlingsson	2008483739	Arkitekt	Aðaluppdrættir	15.06.1979		
+Sara Axelsdóttir	2702806179	Arkitekt	Aðaluppdrættir	28.04.2010		
+Shirin Erla Naimy	1702632359	Arkitekt	Aðaluppdrættir	29.04.2004		
+Shruthi Basappa	2308863429	Arkitekt	Aðaluppdrættir	01.06.2015		Já
+Sigbjörn Kjartansson	1212582269	Arkitekt	Aðaluppdrættir	10.09.1991		Já
+Sigmar Björgvin Árnason	3001684779	Byggingarfræðingur	Aðaluppdrættir	13.06.2012		Já
+Sigríður Anna Eggertsdóttir	1210685329	Arkitekt	Aðaluppdrættir	02.06.2014		
+Sigríður Halldórsdóttir	0106614719	Arkitekt	Aðaluppdrættir	12.06.2003		Já
+Sigríður Maack	0811634649	Arkitekt	Aðaluppdrættir	15.04.1998		Já
+Sigríður Magnúsdóttir	2603626589	Arkitekt	Aðaluppdrættir	12.11.1996		Já
+Sigríður Ólafsdóttir	0710705069	Arkitekt	Aðaluppdrættir	15.02.2000		Já
+Sigríður S Sigþórsdóttir	3006533169	Arkitekt	Aðaluppdrættir	11.07.1983		Já
+Sigríður Sigurðardóttir	2602664709	Arkitekt	Aðaluppdrættir	30.04.1998		
+Sigrún Birgisdóttir	3105686199	Arkitekt	Aðaluppdrættir	26.06.2007		
+Sigrún Guðjónsdóttir	0504713659	Arkitekt	Aðaluppdrættir	18.12.2003		
+Sigrún Guðmundsdóttir	0308685369	Arkitekt	Aðaluppdrættir	08.09.2010		Já
+Sigrún Óladóttir	1107534119	Arkitekt	Aðaluppdrættir	11.04.1989		
+Sigrún Sigurðardóttir	0308513749	Arkitekt	Aðaluppdrættir	19.08.1981		
+Sigrún Sumarliðadóttir	1006804599	Arkitekt	Aðaluppdrættir	22.04.2016		Já
+Sigrún Svafa Ólafsdóttir	0802802979	Arkitekt	Aðaluppdrættir	06.10.2009		
+Sigurbergur Árnason	0506563229	Arkitekt	Aðaluppdrættir	04.05.1984		
+Sigurbjartur Halldórsson	2306563479	Byggingartæknifræðingur	Aðaluppdrættir	22.06.1998		Já
+Sigurbjartur Loftsson	1201733329	Byggingafræðingur	Aðaluppdrættir	10.04.2007		Já
+Sigurbjörg Helga Gunnbjörnsdóttir	3110764269	Byggingafræðingur	Aðaluppdrættir	04.01.2007		
+Sigurbjörn Hallsson	2705483779	Arkitekt	Aðaluppdrættir	10.04.1985		
+Sigurður Ágúst Haraldsson	0701703969	Byggingafræðingur	Aðaluppdrættir	14.03.2007		Já
+Sigurður Björgúlfsson	2201502839	Arkitekt	Aðaluppdrættir	27.06.1984		Já
+Sigurður Einarsson	1104572789	Arkitekt	Aðaluppdrættir	22.03.1988		Já
+Sigurður Einarsson	1404324749	Byggingarfræðingur	Aðaluppdrættir		Já	Já
+Sigurður Guðbjörnsson	0102665999	Byggingafræðingur	Aðaluppdrættir	19.01.2011		
+Sigurður Gústafsson	2412627319	Arkitekt	Aðaluppdrættir	19.01.1994		Já
+Sigurður Hafsteinsson	0308597749	Tæknifræðingur	Aðaluppdrættir	10.05.1996		Já
+Sigurður Halldórsson	1008572009	Arkitekt	Aðaluppdrættir	19.12.1988		Já
+Sigurður Hallgrímsson	1707533139	Byggingafræðingur	Aðaluppdrættir	29.08.1983		Já
+Sigurður Harðarson	0304463999	Arkitekt	Aðaluppdrættir		Já	Já
+Sigurður Hilmar Ólafsson	2402685829	Byggingafræðingur	Aðaluppdrættir	17.07.2002		Já
+Sigurður Ingi Kristófersson	2507764389	Byggingartæknifræðingur	Aðaluppdrættir	30.09.2013		Já
+Sigurður Ingi Ólafsson	1804494699	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi		Já	
+Sigurður Ingi Ólafsson	1804494699	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi		Já	
+Sigurður Ingólfsson	1709443569	Tæknifræðingur	Aðaluppdrættir		Já	Já
+Sigurður Jóhann Jóhannsson	0806534689	Arkitekt	Aðaluppdrættir	17.08.1994		
+Sigurður Jónsson	1702514319	Byggingafræðingur	Aðaluppdrættir	29.08.1983		
+Sigurður Jónsson	3105586729	Verkfræðingur	Aðaluppdrættir	16.01.2018		Já
+Sigurður Kolbeinsson	0105665099	Arkitekt	Aðaluppdrættir	19.03.2002		Já
+Sigurður Pálmi Ásbergsson	0702593469	Arkitekt	Aðaluppdrættir	16.03.1998		
+Sigurður R. Halldórsson	2406344149	Byggingatæknifræðingur	Aðaluppdrættir	03.04.1981		
+Sigurður Sigurðsson	1603454469	Byggingatæknifræðingur	Aðaluppdrættir	07.03.1986		
+Sigurður Sigurðsson	2503637969	Byggingartæknifræðingur	Aðaluppdrættir	27.06.2014		Já
+Sigurður Smári Benónýsson	1411724099	Byggingafræðingur	Aðaluppdrættir	24.05.2007		
+Sigurður Sverrir Gunnarsson	3108555299	Byggingafræðingur	Aðaluppdrættir	12.11.2003		
+Sigurður Unnar Sigurðsson	2907724279	Byggingarverkfræðingur	Aðaluppdrættir	27.04.2016		Já
+Sigurður V Ásbjarnarson	1303503999	Byggingartæknifræðingur	Aðaluppdrættir	15.07.2016		
+Sigurður Þ Jakobsson	1007456589	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi		Já	Já
+Sigurður Þorvarðarson	1412504189	Byggingafræðingur	Aðaluppdrættir	10.09.1991		Já
+Sigurður Þórisson	2803632869	Arkitekt	Aðaluppdrættir	16.01.2001		
+Sigurjón Guttormsson	0906813899	Byggingarfræðingur	Aðaluppdrættir	16.03.2017		Já
+Sigurjón Hauksson	1802552659	Byggingarverkfræðingur	Aðaluppdrættir	27.10.1992		Já
+Sigurjón Pálsson	2407592339	Byggingartæknifræðingur	Aðaluppdrættir	12.01.2015		Já
+Sigurlaug Sigurjónsdóttir	0607678319	Arkitekt	Aðaluppdrættir	25.01.2000		Já
+Sigursteinn Sigurðsson	1603825119	Arkitekt	Aðaluppdrættir	16.04.2015		Já
+Sigurþór Aðalsteinsson	2501443939	Arkitekt	Aðaluppdrættir		Já	Já
+Silja Traustadóttir	2702743239	Arkitekt	Aðaluppdrættir	27.03.2001		
+Skúli Ágústsson	0609574529	Byggingartæknifræðingur	Aðaluppdrættir	26.01.2015		Já
+Skúli Hermann Bragason	2802723619	Byggingarfræðingur	Aðaluppdrættir	05.05.2015		Já
+Skúli Lýðsson	0911514729	Byggingafræðingur	Aðaluppdrættir	19.05.1989		
+Smári Björnsson	1002755899	Byggingafræðingur	Aðaluppdrættir	09.05.2006		Já
+Smári Smárason	1706544559	Arkitekt	Aðaluppdrættir	14.02.1989		
+Smári Þorvaldsson	0907545999	Byggingaverkfræðingur	Aðaluppdrættir	06.02.1987		
+Snorri Steinn Þórðarson	0905753769	Arkitekt	Aðaluppdrættir	16.10.2008		
+Sóley Jónsdóttir	0611623809	Arkitekt	Aðaluppdrættir	22.03.1993		
+Sóley Lilja Brynjarsdóttir	1509795879	Arkitekt	Aðaluppdrættir	16.02.2011		
+Sólveig Berg Emilsdóttir	2601665819	Arkitekt	Aðaluppdrættir	14.08.2013		Já
+Sólveig Lísa Tryggvadóttir	2403803319	Arkitekt	Aðaluppdrættir	07.12.2010		Já
+Sólveig Ragna Guðmundsdóttir	1403823029	Arkitekt	Aðaluppdrættir	14.07.2014		
+Stefán Agnar Magnússon	1305522429	Byggingafræðingur	Aðaluppdrættir	11.05.2001		Já
+Stefán Árnason	0203464269	Byggingafræðingur	Aðaluppdrættir	09.01.2006		Já
+Stefán Guðmundsson	3011714989	Byggingatæknifræðingur	Aðaluppdrættir	30.06.2004		Já
+Stefán Hallsson	1804543579	Byggingafræðingur	Aðaluppdrættir	22.06.1994		Já
+Stefán Jörundsson	2301457099	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi		Já	
+Stefán Þ. Ingólfsson	0102514359	Arkitekt	Aðaluppdrættir	04.08.1989		Já
+Stefán Þór Steindórsson	2605784059	Byggingarfræðingur	Aðaluppdrættir	21.12.2015		
+Stefán Örn Stefánsson	1401474519	Arkitekt	Aðaluppdrættir	03.01.1980		Já
+Steffan Iwersen	1210672269	Arkitekt	Aðaluppdrættir	29.09.2010		
+Steinar Geirdal	0401383829	Byggingarfræðingur	Aðaluppdrættir		Já	Já
+Steinar Sigurðsson	1309583899	Arkitekt	Aðaluppdrættir	21.02.1990		Já
+Steindór Hinrik Stefánsson	0510695019	Arkitekt	Aðaluppdrættir	19.02.2014		Já
+Steingrímur Sigurjónsson	2008443359	Byggingafræðingur	Aðaluppdrættir	12.05.1981		
+Steinmar Heiðar Rögnvaldsson	1405743769	Byggingatæknifræðingur	Aðaluppdrættir	22.02.2007		Já
+Steinunn Kristjánsdóttir	2305645239	Arkitekt	Aðaluppdrættir	18.05.1994		
+Steinunn M Guðmundsdóttir	0605643619	Arkitekt	Aðaluppdrættir	08.01.2015		Já
+Steinþór Kári Kárason	1608675319	Arkitekt	Aðaluppdrættir	20.04.1999		Já
+Steve Christer	0803603639	Arkitekt	Aðaluppdrættir	21.06.1988		Já
+Sturla Sighvatsson	1811473939	Arkitekt	Aðaluppdrættir	04.11.1980		
+Sturla Þór Jónsson	2804654459	Arkitekt	Aðaluppdrættir	30.08.2004		Já
+Svanlaugur Sveinsson	2501473099	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi		Já	Já
+Svanur Geir Bjarnason	0403655679	Tæknifræðingur	Aðaluppdrættir	14.10.2005		Já
+Svanur Þór Brandsson	0307713709	Byggingarfræðingur	Aðaluppdrættir	28.12.2017		Já
+Svava Björk Bragadóttir	2010764719	Byggingafræðingur	Aðaluppdrættir	05.07.2006		
+Svava Björk Jónsdóttir	2812782239	Arkitekt	Aðaluppdrættir	30.05.2011		Já
+Svavar M Sigurjónsson	1808673419	Byggingatæknifræðingur	Aðaluppdrættir	03.02.2009		Já
+Sveinbjörn Jónsson	2612547949	Byggingarverkfræðingur	Aðaluppdrættir	12.02.2013		Já
+Sveinbjörn Steingrímsson	0211444609	Byggingatæknifræðingur	Aðaluppdrættir	21.01.2011		Já
+Sveinbjörn Sveinbjörnsson	1308503919	Byggingaverkfræðingur	Aðaluppdrættir	01.04.1992		
+Sveinn Arnarson	1507675479	Byggingafræðingur	Aðaluppdrættir	24.06.2002		Já
+Sveinn Björnsson	0507735829	Byggingafræðingur	Aðaluppdrættir	22.12.2005		
+Sveinn Bragason	2201625759	Arkitekt	Aðaluppdrættir	12.11.1998		Já
+Sveinn Daníel Kristjánsson Lyngmo	2905552059	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi, Loftræstikerfi	29.11.2005		Já
+Sveinn Ívarsson	1302547649	Arkitekt	Aðaluppdrættir	08.06.1983		Já
+Sveinn Karlsson	1312472069	Byggingatæknifræðingur	Aðaluppdrættir	26.01.1981		Já
+Sveinn Valdimarsson	2710683879	Verkfræðingur	Aðaluppdrættir	31.01.2007		Já
+Sveinn Þór Hallgrímsson	2211675469	Byggingafræðingur	Aðaluppdrættir	26.06.2002		Já
+Sverrir Ágústsson	2205654089	Arkitekt	Aðaluppdrættir	24.11.2000		Já
+Sæmundur Ágúst Óskarsson	1801603109	Byggingartæknifræðingur	Aðaluppdrættir	24.03.2014		Já
+Sæmundur Eiríksson	2612492949	Byggingatæknifræðingur	Aðaluppdrættir	22.02.1983		Já
+Tómas Ellert Tómasson	2011703979	Byggingarverkfræðingur	Aðaluppdrættir	03.08.2016		Já
+Tómas Högni Unnsteinsson	1902733349	Byggingafræðingur	Aðaluppdrættir	23.08.2006		
+Trausti Hafsteinsson	0101663229	Byggingartæknifræðingur	Aðaluppdrættir	31.05.2011		
+Trausti Leósson	3108463769	Byggingarfræðingur	Aðaluppdrættir		Já	Já
+Trausti S. Harðarson	2310543919	Arkitekt	Aðaluppdrættir	18.05.1994		
+Trausti Valsson	0701462239	Arkitekt	Aðaluppdrættir	15.09.1981		
+Tryggvi Jakobsson	0405492509	Byggingafræðingur	Aðaluppdrættir	27.02.1995		Já
+Tryggvi Tryggvason	0909633689	Byggingartæknifræðingur	Aðaluppdrættir	20.07.1994		Já
+Tryggvi Tryggvason	2612565769	Arkitekt	Aðaluppdrættir	19.12.1988		Já
+Una Eydís Finnsdóttir	2212755279	Arkitekt	Aðaluppdrættir	25.01.2011		Já
+Unnar Jónsson	1305387469	Tæknifræðingur	Aðaluppdrættir	12.08.1982		
+Úlfar Trausti Þórðarson	0802724999	Byggingafræðingur	Aðaluppdrættir	09.12.2009		
+Valbjörn Ægir Vilhjálmsson	2306784729	Byggingarfræðingur	Aðaluppdrættir	16.03.2012		Já
+Valdimar G. Guðmundsson	1311553289	Byggingafræðingur	Aðaluppdrættir	10.08.1990		
+Valdimar Gunnarsson	0808773319	Byggingartæknifræðingur	Aðaluppdrættir	24.05.2011		
+Valdimar Harðarson	0501512559	Arkitekt	Aðaluppdrættir	05.08.1982		Já
+Valgeir Berg Steindórsson	2504642319	Byggingatæknifræðingur	Aðaluppdrættir	03.06.2008		Já
+Valur Arnarson	0510735099	Byggingartæknifræðingur	Aðaluppdrættir	29.10.2014		Já
+Valur Sveinsson	1608673969	Byggingafræðingur	Aðaluppdrættir	05.04.2001		
+Valþór Brynjarsson	2404635209	Byggingarfræðingur	Aðaluppdrættir	24.05.2011		Já
+Viðar Steinn Árnason	1705765009	Byggingafræðingur	Aðaluppdrættir	06.06.2006		
+Vigfús Halldórsson	1007605849	Byggingafræðingur	Aðaluppdrættir	01.02.2000		Já
+Vigfús Þór Hróbjartsson	0710853339	Byggingarfræðingur	Aðaluppdrættir	01.02.2016		
+Viggó Magnússon	1408715919	Byggingafræðingur	Aðaluppdrættir	08.05.2008		
+Vignir Albertsson	2109472649	Byggingafræðingur	Aðaluppdrættir	20.09.1982		
+Vignir Freyr Helgason	2212838059	Arkitekt	Aðaluppdrættir	03.01.2017		
+Vignir Jónsson	0205614759	Byggingatæknifræðingur	Aðaluppdrættir	30.01.2007		Já
+Viktor Þór Sigurðsson	2003694759	Byggingafræðingur	Aðaluppdrættir	05.12.1996		
+Vilhjálmur Hjálmarsson	2906384379	Arkitekt	Aðaluppdrættir		Já	Já
+Vilmar Þór Kristinsson	0506484439	Tæknifræðingur	Aðaluppdrættir, Burðarvirki, Lagnakerfi, Loftræstikerfi	10.02.1992		Já
+Vífill Björnsson	2804785639	Byggingafræðingur	Aðaluppdrættir	12.06.2009		Já
+Vífill M Magnússon	1712384639	Arkitekt	Aðaluppdrættir		Já	Já
+Vífill Oddsson	1012373629	Byggingarverkfræðingur	Aðaluppdrættir		Já	Já
+Þorgeir Jónsson	0510557219	Arkitekt	Aðaluppdrættir	18.05.1987		Já
+Þorgeir Þorgeirsson	2406575469	Byggingafræðingur	Aðaluppdrættir	01.03.1989		Já
+Þorkell Magnússon	0903646939	Arkitekt	Aðaluppdrættir	02.07.1997		Já
+Þorleifur Björnsson	0306733799	Byggingafræðingur	Aðaluppdrættir	11.04.2003		Já
+Þorleifur Eggertsson	0401634849	Arkitekt	Aðaluppdrættir	10.04.2007		Já
+Þormóður Sveinsson arkitekt	0506535529	Arkitekt	Aðaluppdrættir	28.01.1982		Já
+Þorsteinn Aðalbjörnsson	0603745709	Byggingafræðingur	Aðaluppdrættir	26.11.2008		Já
+Þorsteinn Friðþjófsson	2110555299	Byggingatæknifræðingur	Aðaluppdrættir	15.04.1991		Já
+Þorsteinn Geirharðsson	1808555999	Arkitekt	Aðaluppdrættir	14.06.1985		
+Þorsteinn Haraldsson	1904524179	Byggingafræðingur	Aðaluppdrættir	07.11.1997		Já
+Þorsteinn Helgason	1508586319	Arkitekt	Aðaluppdrættir	19.09.1991		Já
+Þorsteinn Olof Johny Blomberg	0104745669	Arkitekt	Aðaluppdrættir	22.08.2012		
+Þorvarður Árni Þorvarðarson	0611644999	Byggingafræðingur	Aðaluppdrættir	24.06.1996		Já
+Þorvarður Lárus Björgvinsson	2505723529	Byggingafræðingur	Aðaluppdrættir	24.04.2006		Já
+Þór Sigurðsson	1002688419	Arkitekt	Aðaluppdrættir	17.08.2015		Já
+Þóra Jóhannesdóttir Kjarval	2804804529	Arkitekt	Aðaluppdrættir	12.08.2010		
+Þórarinn Friðrik Malmquist	0310715269	Arkitekt	Aðaluppdrættir	01.09.2008		Já
+Þórdís Halldórsdóttir	2405773569	Byggingarfræðingur	Aðaluppdrættir	12.09.2006		
+Þórður Einar Leifsson	0607595109	Byggingatæknifræðingur	Aðaluppdrættir	03.02.2009		Já
+Þórður Steingrímsson	0710613459	Arkitekt	Aðaluppdrættir	26.05.1993		Já
+Þórður Þorvaldsson	2104634619	Arkitekt	Aðaluppdrættir	10.04.2000		Já
+Þórhallur Garðarsson	0203704599	Byggingarfræðingur	Aðaluppdrættir	15.03.2013		Já
+Þórhallur Pálsson	1601523899	Arkitekt	Aðaluppdrættir	06.06.1983		
+Þórhallur Sigurðsson	0708644019	Arkitekt	Aðaluppdrættir	02.01.2008		
+Þórir Guðmundsson	0403815389	Byggingarfræðingur	Aðaluppdrættir	04.04.2014		Já
+Þórir Jónsson	1901775139	Byggingarfræðingur	Aðaluppdrættir	15.03.2013		
+Þórólfur Óskarsson	2707552839	Byggingafræðingur	Aðaluppdrættir	05.01.1995		
+Þráinn V Ragnarsson	1305515569	Tæknifræðingur	Aðaluppdrættir, Lagnakerfi, Loftræstikerfi	18.12.1989		Já
+Þröstur Sigurðsson	1605634439	Byggingartæknifræðingur	Aðaluppdrættir	03.04.1995		Já
+Ævar Harðarson	0205570019	Arkitekt	Aðaluppdrættir	25.01.1990		Já
+Ögmundur Skarphéðinsson	2301586149	Arkitekt	Aðaluppdrættir	02.10.1997		Já
+Örn Arnarson	1106862939	Byggingarfræðingur	Aðaluppdrættir	08.02.2018		
+Örn Baldursson	0810673929	Arkitekt	Aðaluppdrættir	31.05.2001		
+Örn Sigurðsson	0906422949	Arkitekt	Aðaluppdrættir			Já
+Örn Þór Halldórsson	0906655029	Arkitekt	Aðaluppdrættir	28.06.1999		
+Össur Imsland	2211714629	Byggingafræðingur	Aðaluppdrættir	12.09.2008		Já
