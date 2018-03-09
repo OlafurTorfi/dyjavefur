@@ -39,52 +39,43 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var assert = require("assert");
 var db_1 = require("../db");
 var materials_1 = require("./materials");
-var floorPrices = [
+var roofTypes = [
     {
-        type: 'Generic 150mm',
+        type: 'Generic - 400mm',
         materials: [
-            { type: 'Steypa', amount: 0.15 },
-        ]
-    },
-    {
-        type: 'Einangrun 100mm',
-        materials: [
-            { type: 'Einangrun', amount: 1 },
-        ]
-    },
-    {
-        type: 'Gólfefni 100mm',
-        materials: [
-            { type: 'Gólfefni innanhúss-meðaltal', amount: 1 },
+            { type: 'Timbur', amount: 1 },
+            { type: 'Tjörupappi', amount: 1 },
+            { type: 'Bárujárn', amount: 1 },
+            { type: 'Skrúfur', amount: 1 }
         ]
     }
 ];
-exports.getFloors = function () { return __awaiter(_this, void 0, void 0, function () {
-    var res, floors;
+exports.getRoofs = function () { return __awaiter(_this, void 0, void 0, function () {
+    var res, roofs;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, db_1.query("select \"Area\", \"FamilyName\", \"TypeName\", \"Level\" from \"Floors\" as w\n    join \"FloorTypes\" as wt on w.\"TypeId\"=wt.\"Id\"")];
+            case 0: return [4 /*yield*/, db_1.query("select \"Area\", \"FamilyName\", \"TypeName\" from \"Roofs\" as w\n    join \"RoofTypes\" as wt on w.\"TypeId\"=wt.\"Id\"")];
             case 1:
                 res = _a.sent();
-                floors = res.rows.map(function (floor) {
-                    var floorType = floorPrices.find(function (floorp) { return floorp.type === floor.TypeName; });
-                    assert(floorType, 'no price found for ' + floor.TypeName);
-                    var calc = floorType && floorType.materials.reduce(function (prev, curr) {
-                        var materialprice = materials_1.materials.find(function (materialp) { return materialp.type === curr.type; });
-                        assert(materialprice, 'no price found for ' + curr.type);
-                        return prev + curr.amount * (materialprice ? materialprice.price : 0);
+                roofs = res.rows.map(function (roof) {
+                    var roofType = roofTypes.find(function (Roofp) { return Roofp.type === roof.TypeName; });
+                    assert(roofType, 'no price found for ' + roof.TypeName);
+                    var calc = roofType && roofType.materials.reduce(function (prev, curr) {
+                        var materialType = materials_1.materials.find(function (materialp) { return materialp.type === curr.type; });
+                        assert(materialType, 'no price found for ' + curr.type);
+                        return prev + curr.amount * (materialType ? materialType.price : 0);
                     }, 0);
-                    var price = (calc ? calc : 0) * floor.Area;
+                    var price = (calc ? calc : 0) * roof.Area;
                     return {
                         price: price,
-                        area: floor.Area,
-                        family: floor.FamilyName,
-                        type: floor.TypeName,
-                        materials: floorType ? floorType.materials : []
+                        area: roof.Area,
+                        family: roof.FamilyName,
+                        type: roof.TypeName,
+                        materials: roofType ? roofType.materials : []
                     };
                 });
-                return [2 /*return*/, floors];
+                return [2 /*return*/, roofs];
         }
     });
 }); };
-//# sourceMappingURL=floor.js.map
+//# sourceMappingURL=roof.js.map

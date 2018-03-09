@@ -36,73 +36,40 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
-var door_1 = require("./door");
-var wall_1 = require("./wall");
-var floor_1 = require("./floor");
-var roof_1 = require("./roof");
-exports.getPrice = function () { return __awaiter(_this, void 0, void 0, function () {
-    var doors, doorPrice, walls, wallPrice, floors, floorPrice, roofs, roofPrice;
+var pg_1 = require("pg");
+var pool = new pg_1.Pool({
+    database: 'schedules',
+    host: 'localhost',
+    password: 'olivici',
+    port: 5432,
+    user: 'postgres',
+});
+// the pool with emit an error on behalf of any idle clients
+// it contains if a backend error or network partition happens
+pool.on('error', function (err, client) {
+    console.error('Unexpected error on idle client', err);
+    process.exit(-1);
+});
+// async/await - check out a client
+exports.query = function (qstring, params) { return __awaiter(_this, void 0, void 0, function () {
+    var client, res;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, door_1.getDoors()];
+            case 0: return [4 /*yield*/, pool.connect()];
             case 1:
-                doors = _a.sent();
-                doorPrice = doors.reduce(function (prev, curr) { return prev + curr.price; }, 0);
-                console.log('price of doors ', doorPrice);
-                return [4 /*yield*/, wall_1.getWalls()];
+                client = _a.sent();
+                _a.label = 2;
             case 2:
-                walls = _a.sent();
-                wallPrice = walls.reduce(function (prev, curr) { return prev + (curr.price ? curr.price : 0); }, 0);
-                console.log('price of walls ', wallPrice);
-                return [4 /*yield*/, floor_1.getFloors()];
+                _a.trys.push([2, , 4, 5]);
+                return [4 /*yield*/, client.query(qstring, params)];
             case 3:
-                floors = _a.sent();
-                floorPrice = floors.reduce(function (prev, curr) { return prev + (curr.price ? curr.price : 0); }, 0);
-                console.log('price of floors ', floorPrice);
-                return [4 /*yield*/, roof_1.getRoofs()];
+                res = _a.sent();
+                return [2 /*return*/, res];
             case 4:
-                roofs = _a.sent();
-                roofPrice = roofs.reduce(function (prev, curr) { return prev + (curr.price ? curr.price : 0); }, 0);
-                console.log('price of roofs ', roofPrice);
-                return [2 /*return*/, floorPrice + doorPrice + wallPrice + roofPrice];
+                client.release();
+                return [7 /*endfinally*/];
+            case 5: return [2 /*return*/];
         }
     });
 }); };
-exports.groupByType = function (items) {
-    var distinct = [];
-    items.forEach(function (item) {
-        if (distinct.indexOf(item.type) === -1) {
-            distinct.push(item.type);
-        }
-    });
-    var result = distinct.map(function (dist) {
-        var area = 0;
-        var price = 0;
-        var materials = [];
-        var type = '';
-        var family = '';
-        items.forEach(function (item) {
-            if (item.type === dist) {
-                price += item.price;
-                area += item.area;
-                materials = item.materials;
-                type = item.type;
-                family = item.family;
-            }
-        });
-        return {
-            type: type,
-            area: area,
-            price: price,
-            materials: materials,
-            family: family
-        };
-    });
-    return result;
-};
-exports.groupAll = function (items) {
-    return items.reduce(function (prev, curr) {
-        return { price: prev.price + curr.price, area: prev.area + curr.area };
-    }, { price: 0, area: 0 });
-};
-//# sourceMappingURL=calc.js.map
+//# sourceMappingURL=db.js.map

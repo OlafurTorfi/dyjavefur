@@ -1,7 +1,7 @@
 import { query } from '../db'
 import * as assert from 'assert'
 
-const doorPrices: { type: string, price: number }[] = [
+const doorTypes: { type: string, price: number }[] = [
     {
         type: '2000 x 2100mm',
         price: 400000
@@ -37,7 +37,7 @@ export const getDoors = async () => {
     join "DoorTypes" as "dt" on d."TypeId"=dt."Id"`)
 
     const doors = res.rows.map(d => {
-        const doorPrice = doorPrices.find(dp => { return dp.type === d.TypeName })
+        const doorPrice = doorTypes.find(dp => { return dp.type === d.TypeName })
         assert(doorPrice, 'no price found for ' + d.TypeName)
         return Object.assign({
             price: doorPrice ? doorPrice.price : 0

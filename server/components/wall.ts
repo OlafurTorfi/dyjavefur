@@ -1,17 +1,16 @@
 import * as assert from 'assert'
 import { query } from '../db'
-import { materials } from './materials'
+import { materials, Material, AreaType, MaterialAmount } from './materials'
 
-export interface WallMaterial { type: string, amount: number }
-export interface Wall { type: string, materials: Array<WallMaterial>, price?: number }
-
-const wallPrices: Wall[] = [
+export interface Wall extends AreaType { }
+const wallTypes: { type: string, materials: MaterialAmount[] }[] = [
     {
         type: 'Varmamót-5/20/5 - Völun',
         materials: [
             { amount: 1, type: 'Gips' },
             { amount: 1, type: 'Múrklæðning' },
             { type: 'Steypa', amount: 0.2 },
+            { type: 'Varmamót', amount: 1 / (1.2 * 0.3) }
         ]
     },
     {
@@ -35,13 +34,16 @@ const wallPrices: Wall[] = [
         materials: [
             { type: 'Völun', amount: 1 },
             { type: 'Steypa', amount: 0.15 },
-            { type: 'Gips', amount: 1 }]
+            { type: 'Gips', amount: 1 },
+            { type: 'Varmamót', amount: 1 / (1.2 * 0.3) }
+        ]
     },
     {
         type: 'Varmamót-5/20/5 - Sökkull',
         materials: [
             { type: 'Tjöruolía', amount: 1 },
-            { type: 'Steypa', amount: 0.2 }
+            { type: 'Steypa', amount: 0.2 },
+            { type: 'Varmamót', amount: 1 / (1.2 * 0.3) }
         ]
     },
     {
@@ -50,7 +52,8 @@ const wallPrices: Wall[] = [
             { type: 'Timbur', amount: 1 },
             { type: 'Steinull', amount: 1 },
             { type: 'Steypa', amount: 0.15 },
-            { type: 'Gips', amount: 1 }]
+            { type: 'Gips', amount: 1 },
+            { type: 'Varmamót', amount: 1 / (1.2 * 0.3) }]
     },
     {
         type: 'Generic - 200mm',
@@ -63,7 +66,7 @@ const wallPrices: Wall[] = [
             { type: 'Cembrit', amount: 1 },
             { type: 'Steypa', amount: 0.2 },
             { type: 'Leiðarar', amount: 1 },
-            { type: 'Skrúfur', amount: 1 }]
+            { type: 'Skrúfur í Cembritvegg', amount: 1 }]
     },
     {
         type: 'Steypt m. timbri 20/10',
@@ -84,17 +87,22 @@ export const getWalls = async (): Promise<Wall[]> => {
     join "WallTypes" as wt on w."TypeId"=wt."Id"`)
 
     const walls = res.rows.map(wall => {
-        const wallPrice = wallPrices.find(wallp => { return wallp.type === wall.TypeName })
-        assert(wallPrice, 'no price found for ' + wall.TypeName)
-        const calc = wallPrice && wallPrice.materials.reduce((prev, curr) => {
+        const wallType = wallTypes.find(wallp => { return wallp.type === wall.TypeName })
+        assert(wallType, 'no price found for ' + wall.TypeName)
+        const calc = wallType && wallType.materials.reduce((prev, curr) => {
             const materialprice = materials.find(materialp => materialp.type === curr.type)
             assert(materialprice, 'no price found for ' + curr.type)
             return prev + curr.amount * (materialprice ? materialprice.price : 0)
 
         }, 0)
-        return Object.assign({
-            price: calc
-        }, wall)
+        const price = (calc ? calc : 0) * wall.Area
+        return {
+            price,
+            area: wall.Area,
+            family: wall.FamilyName,
+            type: wall.TypeName,
+            materials: wallType ? wallType.materials : []
+        }
     })
     return walls
 }

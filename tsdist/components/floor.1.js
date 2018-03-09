@@ -67,24 +67,19 @@ exports.getFloors = function () { return __awaiter(_this, void 0, void 0, functi
             case 1:
                 res = _a.sent();
                 floors = res.rows.map(function (floor) {
-                    var floorType = floorPrices.find(function (floorp) { return floorp.type === floor.TypeName; });
-                    assert(floorType, 'no price found for ' + floor.TypeName);
-                    var calc = floorType && floorType.materials.reduce(function (prev, curr) {
+                    var floorPrice = floorPrices.find(function (floorp) { return floorp.type === floor.TypeName; });
+                    assert(floorPrice, 'no price found for ' + floor.TypeName);
+                    var calc = floorPrice && floorPrice.materials.reduce(function (prev, curr) {
                         var materialprice = materials_1.materials.find(function (materialp) { return materialp.type === curr.type; });
                         assert(materialprice, 'no price found for ' + curr.type);
                         return prev + curr.amount * (materialprice ? materialprice.price : 0);
                     }, 0);
-                    var price = (calc ? calc : 0) * floor.Area;
-                    return {
-                        price: price,
-                        area: floor.Area,
-                        family: floor.FamilyName,
-                        type: floor.TypeName,
-                        materials: floorType ? floorType.materials : []
-                    };
+                    return Object.assign({
+                        price: calc
+                    }, floor);
                 });
                 return [2 /*return*/, floors];
         }
     });
 }); };
-//# sourceMappingURL=floor.js.map
+//# sourceMappingURL=floor.1.js.map

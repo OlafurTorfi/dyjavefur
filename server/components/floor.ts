@@ -1,11 +1,10 @@
 import * as assert from 'assert'
 import { query } from '../db'
-import { materials } from './materials'
+import { materials, Material, AreaType, MaterialAmount } from './materials'
 
-export interface FloorMaterial { type: string, amount: number }
-export interface Floor { type: string, materials: Array<FloorMaterial>, price?: number }
+export interface Floor extends AreaType { }
 
-const floorPrices: Floor[] = [
+const floorPrices: { type: string, materials: MaterialAmount[] }[] = [
     {
         type: 'Generic 150mm',
         materials: [
@@ -15,13 +14,13 @@ const floorPrices: Floor[] = [
     {
         type: 'Einangrun 100mm',
         materials: [
-            { type: 'Einangrun', amount: 0.1 },
+            { type: 'Einangrun', amount: 1 },
         ]
     },
     {
         type: 'Gólfefni 100mm',
         materials: [
-            { type: 'Gólfefni innanhúss-meðaltal', amount: 0.1 },
+            { type: 'Gólfefni innanhúss-meðaltal', amount: 1 },
         ]
     }
 ]
@@ -30,17 +29,22 @@ export const getFloors = async (): Promise<Floor[]> => {
     join "FloorTypes" as wt on w."TypeId"=wt."Id"`)
 
     const floors = res.rows.map(floor => {
-        const floorPrice = floorPrices.find(floorp => { return floorp.type === floor.TypeName })
-        assert(floorPrice, 'no price found for ' + floor.TypeName)
-        const calc = floorPrice && floorPrice.materials.reduce((prev, curr) => {
+        const floorType = floorPrices.find(floorp => { return floorp.type === floor.TypeName })
+        assert(floorType, 'no price found for ' + floor.TypeName)
+        const calc = floorType && floorType.materials.reduce((prev, curr) => {
             const materialprice = materials.find(materialp => materialp.type === curr.type)
             assert(materialprice, 'no price found for ' + curr.type)
             return prev + curr.amount * (materialprice ? materialprice.price : 0)
 
         }, 0)
-        return Object.assign({
-            price: calc
-        }, floor)
+        const price: number = (calc ? calc : 0) * floor.Area
+        return {
+            price,
+            area: floor.Area,
+            family: floor.FamilyName,
+            type: floor.TypeName,
+            materials: floorType ? floorType.materials : []
+        }
     })
     return floors
 }
