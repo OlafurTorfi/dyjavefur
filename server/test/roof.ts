@@ -1,6 +1,3 @@
-
-import * as React from "react";
-import * as ReactDOM from "react-dom";
 import { getRoofs } from "../components/roof";
 import { expect } from 'chai'
 

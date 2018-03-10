@@ -1,12 +1,6 @@
-
-
-export interface Material { type: string, price: number, unit?: string, utility?: string }
-
-export interface MaterialAmount { type: string, amount: number }
-
-export interface AreaType { type: string, materials: MaterialAmount[], price: number, area: number, family: string }
-
-export const materials: Material[] = [
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.materials = [
     { type: 'Ál-listar', price: 6000, unit: 'm' },
     { type: 'Cembrit', price: 6000, unit: 'sqrm' },
     { type: 'Einangrun', price: 1000, unit: 'cubem', utility: 'floor' },
@@ -24,4 +18,5 @@ export const materials: Material[] = [
     { type: 'Tjörupappi', price: 2000, unit: 'sqrm' },
     { type: 'Bárujárn', price: 5000, unit: 'sqrm' },
     { type: 'Varmamót', price: 7900, unit: 'sqrm' }
-]
+];
+//# sourceMappingURL=materials.js.map

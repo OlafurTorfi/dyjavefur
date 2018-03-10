@@ -1,6 +1,3 @@
-
-import * as React from "react";
-import * as ReactDOM from "react-dom";
 import { getFloors } from "../components/floor";
 import { expect } from 'chai'
 

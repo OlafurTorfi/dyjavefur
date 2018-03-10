@@ -1,6 +1,4 @@
 
-import * as React from "react";
-import * as ReactDOM from "react-dom";
 import { getDoors } from "../components/door";
 import { expect } from 'chai'
 
