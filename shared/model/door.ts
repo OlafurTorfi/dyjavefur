@@ -12,6 +12,7 @@ export interface Door extends BaseType {
 export const createGetDoors: (db: DB) => { query: () => Promise<Door[]> } = (db: DB) => {
     return {
         query: async () => {
+            console.log('Debug db: ', db);
             const res: QueryResult = await db.query()
             const doors = res.rows.map(d => {
                 const doorPrice = doorChoice.find(dp => { return dp.type === d.TypeName })

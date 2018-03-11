@@ -1,15 +1,7 @@
-import * as assert from 'assert'
-export interface DoorSuggestion {
-    name: string
-    heatloss?: number,
-    price: number,
-    currency?: string,
-    unit?: string,
-    link?: string,
-    minOrder?: number
-}
-
-export const doorSuggestion: DoorSuggestion[] = [
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var assert = require("assert");
+exports.doorSuggestion = [
     {
         name: 'Byko sliding glass door',
         price: 400000
@@ -65,7 +57,6 @@ export const doorSuggestion: DoorSuggestion[] = [
         unit: 'sqrm',
         link: 'https://www.alibaba.com/product-detail/Economical-type-white-PVC-glass-sliding_60224146067.html?spm=a2700.7724856.2017115.71.727a64eb9Kzodp',
     },
-
     {
         name: 'aluminium sliding glass door',
         price: 200,
@@ -140,22 +131,15 @@ export const doorSuggestion: DoorSuggestion[] = [
         minOrder: 5,
         unit: 'sqrm'
     },
-]
-
-
-export interface DoorChoice {
-    type: string,
-    price: number
-}
-const choose = (choice: string) => {
-    const door = doorSuggestion.find(suggestion => {
-        return suggestion.name === choice
-    })
-    assert(door, 'choice of door not found amond door suggestions. Choice: ' + choice)
-    return door ? door.price : 99999999999
-}
-
-export const doorChoice: DoorChoice[] = [
+];
+var choose = function (choice) {
+    var door = exports.doorSuggestion.find(function (suggestion) {
+        return suggestion.name === choice;
+    });
+    assert(door, 'choice of door not found amond door suggestions. Choice: ' + choice);
+    return door ? door.price : 99999999999;
+};
+exports.doorChoice = [
     {
         type: '2000 x 2100mm',
         price: choose('Byko sliding glass door')
@@ -184,4 +168,5 @@ export const doorChoice: DoorChoice[] = [
         type: '4750 x 2600mm',
         price: choose('Byko garage door')
     }
-]
+];
+//# sourceMappingURL=door.js.map

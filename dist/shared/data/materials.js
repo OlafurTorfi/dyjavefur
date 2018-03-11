@@ -1,20 +1,6 @@
-import { QueryResult } from 'pg'
-
-export interface Material { type: string, price: number, unit?: string, utility?: string }
-
-export interface MaterialAmount { type: string, amount: number }
-
-export interface AreaType extends BaseType {
-    materials: MaterialAmount[],
-    area: number
-}
-export interface BaseType {
-    family: string,
-    type: string,
-    price: number
-}
-
-export const materials: Material[] = [
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.materials = [
     { type: 'Ál-listar', price: 6000, unit: 'm' },
     { type: 'Cembrit', price: 6000, unit: 'sqrm' },
     { type: 'Einangrun', price: 1000, unit: 'cubem', utility: 'floor' },
@@ -35,4 +21,5 @@ export const materials: Material[] = [
     { type: 'Varmamót', price: 7900, unit: 'sqrm' },
     { type: 'CLT', price: 20000, unit: 'sqrm' },
     { type: 'Sto Venturi', price: 8000, unit: 'sqrm' }
-]
+];
+//# sourceMappingURL=materials.js.map

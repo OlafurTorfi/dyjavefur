@@ -7,7 +7,7 @@
     "alwaysStrict": true,
     "strictNullChecks": true,
     "noImplicitAny": true,
-    "outDir": "./dist/server",
+    "outDir": "./dist",
     "sourceMap": true,
     "moduleResolution": "node",
     "module": "commonjs",
@@ -22,6 +22,7 @@
     ]
   },
   "include": [
-    "./server/**/*"
+    "./server/**/*",
+    "./shared/**/*"
   ]
 }

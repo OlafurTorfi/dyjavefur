@@ -4,12 +4,13 @@
   "description": "Torfhóll on the web",
   "main": "./lib/index",
   "scripts": {
-    "test": "mocha tsdist/test/*.js -w",
+    "server-test": "mocha dist/server/test/*.js -w",
+    "shared-test": "mocha dist/shared/test/*.js -w",
+    "test": "npm run server-test",
     "test-karma": "karma start",
     "build": "webpack",
     "compile": "rm -rf dist && webpack && tsc",
     "dev": "npm run compile && nodemon dist/server/index.js",
-    "ts-dev": "rm -rf tsdist/",
     "ts": "tsc"
   },
   "author": "olafurtorfi",

@@ -1,15 +1,15 @@
-import { createGetDoors } from './door'
-import { createGetWalls } from './wall'
-import { createGetFloors } from './floor'
-import { createGetRoofs } from './roof'
+import { createGetDoors, Door } from './door'
+import { createGetWalls, Wall } from './wall'
+import { createGetFloors, Floor } from './floor'
+import { createGetRoofs, Roof } from './roof'
 import { DB } from '../db'
 import { AreaType, Material, MaterialAmount } from '../data/materials'
 
 export const createGetPrice = (doorDB: any, floorDB: any, roofDB: any, wallDB: any) => {
-    const getDoors = createGetDoors(doorDB).query
-    const getFloors = createGetFloors(floorDB).query
-    const getRoofs = createGetRoofs(roofDB).query
-    const getWalls = createGetWalls(wallDB).query
+    const getDoors = doorDB as () => Promise<Door[]>// createGetDoors(doorDB).query
+    const getFloors = floorDB as () => Promise<Floor[]> // createGetFloors(floorDB).query
+    const getRoofs = roofDB as () => Promise<Roof[]> // createGetRoofs(roofDB).query
+    const getWalls = wallDB as () => Promise<Wall[]> // createGetWalls(wallDB).query
     return {
         getPrice: async (): Promise<number> => {
             const doors = await getDoors()

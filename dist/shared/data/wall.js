@@ -1,5 +1,6 @@
-import { MaterialAmount } from './materials'
-export const wallChoices: { type: string, materials: MaterialAmount[] }[] = [
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.wallChoices = [
     {
         type: 'CLT-2010 - Sto Venturi klæðning',
         materials: [
@@ -19,11 +20,11 @@ export const wallChoices: { type: string, materials: MaterialAmount[] }[] = [
     {
         type: 'Interior - gipsklætt timbur/stálull',
         materials: [{
-            type: 'Gips', amount: 2
-        },
-        {
-            type: 'Timbur', amount: 1
-        }
+                type: 'Gips', amount: 2
+            },
+            {
+                type: 'Timbur', amount: 1
+            }
         ]
     },
     {
@@ -56,12 +57,14 @@ export const wallChoices: { type: string, materials: MaterialAmount[] }[] = [
             { type: 'Steinull', amount: 1 },
             { type: 'Steypa', amount: 0.15 },
             { type: 'Gips', amount: 1 },
-            { type: 'Varmamót', amount: 1 / (1.2 * 0.3) }]
+            { type: 'Varmamót', amount: 1 / (1.2 * 0.3) }
+        ]
     },
     {
         type: 'Generic - 200mm',
         materials: [
-            { type: 'Steypa', amount: 0.2 }]
+            { type: 'Steypa', amount: 0.2 }
+        ]
     },
     {
         type: 'Steypt m. Cembrit 20/10',
@@ -69,19 +72,23 @@ export const wallChoices: { type: string, materials: MaterialAmount[] }[] = [
             { type: 'Cembrit', amount: 1 },
             { type: 'Steypa', amount: 0.2 },
             { type: 'Leiðarar', amount: 1 },
-            { type: 'Skrúfur í Cembritvegg', amount: 1 }]
+            { type: 'Skrúfur í Cembritvegg', amount: 1 }
+        ]
     },
     {
         type: 'Steypt m. timbri 20/10',
         materials: [
             { type: 'Steinull', amount: 1 },
             { type: 'Steypa', amount: 0.2 },
-            { type: 'Gips', amount: 1 }]
+            { type: 'Gips', amount: 1 }
+        ]
     },
     {
         type: 'Gluggi',
         materials: [
             { type: 'Gler', amount: 1 },
-            { type: 'Ál-listar', amount: 6 }]
+            { type: 'Ál-listar', amount: 6 }
+        ]
     }
-]
+];
+//# sourceMappingURL=wall.js.map
