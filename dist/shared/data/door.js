@@ -165,7 +165,7 @@ exports.doorChoice = [
         price: choose('Byko internal door')
     },
     {
-        type: '4750 x 2600mm',
+        type: '4800 x 2600mm',
         price: choose('Byko garage door')
     }
 ];

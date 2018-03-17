@@ -6,6 +6,7 @@ var wall_1 = require("../components/wall");
 var door_1 = require("../components/door");
 var floor_1 = require("../components/floor");
 var roof_1 = require("../components/roof");
+var room_1 = require("../components/room");
 exports.getPrice = calc_1.createGetPrice(door_1.getDoors, floor_1.getFloors, roof_1.getRoofs, wall_1.getWalls).getPrice;
 describe('calculate test', function () {
     it('should be able to calculate total price', function () {
@@ -24,7 +25,7 @@ describe('calculate test', function () {
             });
         });
     });
-    describe('should do grouping', function () {
+    describe('should do materials grouping', function () {
         var example = [{
                 price: 1,
                 area: 2,
@@ -56,6 +57,15 @@ describe('calculate test', function () {
         it('should be able to group all', function () {
             var grouped = calc_1.groupAll(example);
             chai_1.expect(grouped).to.deep.eq({ price: 111, area: 222 });
+        });
+    });
+    describe('schedule data', function () {
+        it('should get matshlutar', function () {
+            return Promise.all([room_1.getRooms(), wall_1.getWalls(), roof_1.getRoofs()]).then(function (_a) {
+                var rooms = _a[0], walls = _a[1], roofs = _a[2];
+                var matshlutar = calc_1.calculateMatshlutar(rooms, walls, roofs);
+                console.log('Debug matshlutar: ', matshlutar);
+            });
         });
     });
 });

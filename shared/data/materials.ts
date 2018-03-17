@@ -4,8 +4,10 @@ export interface Material { type: string, price: number, unit?: string, utility?
 
 export interface MaterialAmount { type: string, amount: number }
 
+export interface MaterialType extends AreaType {
+    materials: MaterialAmount[]
+}
 export interface AreaType extends BaseType {
-    materials: MaterialAmount[],
     area: number
 }
 export interface BaseType {
@@ -34,5 +36,6 @@ export const materials: Material[] = [
     { type: 'Bárujárn', price: 5000, unit: 'sqrm' },
     { type: 'Varmamót', price: 7900, unit: 'sqrm' },
     { type: 'CLT', price: 20000, unit: 'sqrm' },
-    { type: 'Sto Venturi', price: 8000, unit: 'sqrm' }
+    { type: 'Sto Venturi', price: 9000, unit: 'sqrm' },
+    { type: 'Sto Venturi Brick', price: 15000, unit: 'sqrm' }
 ]

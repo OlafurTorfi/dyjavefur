@@ -37,39 +37,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var assert = require("assert");
-var wall_1 = require("../data/wall");
-var materials_1 = require("../data/materials");
-exports.createGetWalls = function (db) {
+var room_1 = require("../data/room");
+exports.parseRoom = function (roomData) {
+    return {
+        area: Number(roomData.Area),
+        number: Number(roomData.Number),
+        volume: Number(roomData.Volume),
+        elevation: Number(roomData.Elevation),
+        name: roomData.Name,
+        level: roomData.Level
+    };
+};
+exports.createGetRooms = function (db) {
     return {
         query: function () { return __awaiter(_this, void 0, void 0, function () {
-            var res, walls;
+            var res, rooms;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0: return [4 /*yield*/, db.query()];
                     case 1:
                         res = _a.sent();
-                        walls = res.rows.map(function (wall) {
-                            var wallType = wall_1.wallChoices.find(function (wallp) { return wallp.type === wall.TypeName; });
-                            assert(wallType, 'no price found for ' + wall.TypeName);
-                            var calc = wallType && wallType.materials.reduce(function (prev, curr) {
-                                var materialprice = materials_1.materials.find(function (materialp) { return materialp.type === curr.type; });
-                                assert(materialprice, 'no price found for ' + curr.type);
-                                return prev + curr.amount * (materialprice ? materialprice.price : 0);
-                            }, 0);
-                            var price = (calc ? calc : 0) * wall.Area;
-                            return Object.assign({
-                                price: price,
-                                area: wall.Area,
-                                family: wall.FamilyName,
-                                type: wall.TypeName,
-                                purpose: wallType ? wallType.purpose : '',
-                                materials: wallType ? wallType.materials : []
-                            }, wall);
+                        rooms = res.rows.map(exports.parseRoom).map(function (room) {
+                            var alloc = room_1.roomAllocations.find(function (roomAlloc) {
+                                return roomAlloc.number === room.number;
+                            });
+                            assert(alloc, 'unable to find allocation for room number: ' + room.number + ' room.Level: ' + room.level + ' room.name: ' + room.name);
+                            var res = {
+                                area: room.area,
+                                level: room.level,
+                                volume: room.volume,
+                                elevation: room.elevation,
+                                number: room.number,
+                                name: room.name,
+                                type: '',
+                                price: 0,
+                                family: ''
+                            };
+                            if (alloc) {
+                                assert(alloc.name === room.name, 'alloc.name must match room.name. Alloc: ' + JSON.stringify(alloc) + ' room.name: ' + room.name);
+                                res.type = alloc.type;
+                            }
+                            return res;
                         });
-                        return [2 /*return*/, walls];
+                        return [2 /*return*/, rooms];
                 }
             });
         }); }
     };
 };
-//# sourceMappingURL=wall.js.map
+//# sourceMappingURL=room.js.map

@@ -1,5 +1,6 @@
 import * as express from 'express'
 import * as path from "path"
+import { } from './components/'
 
 const app: express.Express = express()
 

@@ -1,9 +1,9 @@
 import * as assert from 'assert'
 import { wallChoices } from '../data/wall'
 import { DB } from '../db'
-import { materials, AreaType } from '../data/materials'
+import { materials, MaterialType } from '../data/materials'
 
-export interface Wall extends AreaType { }
+export interface Wall extends MaterialType { purpose: string }
 
 export const createGetWalls: (db: DB) => { query: () => Promise<Wall[]> } = (db: DB) => {
 
@@ -26,6 +26,7 @@ export const createGetWalls: (db: DB) => { query: () => Promise<Wall[]> } = (db:
                     area: wall.Area,
                     family: wall.FamilyName,
                     type: wall.TypeName,
+                    purpose: wallType ? wallType.purpose : '',
                     materials: wallType ? wallType.materials : []
                 }, wall)
             })

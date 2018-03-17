@@ -17,5 +17,11 @@ export const floorChoices: { type: string, materials: MaterialAmount[] }[] = [
         materials: [
             { type: 'Gólfefni innanhúss-meðaltal', amount: 1 },
         ]
+    },
+    {
+        type: 'CLT Floor',
+        materials: [
+            { type: 'CLT', amount: 2 }
+        ]
     }
 ]

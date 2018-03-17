@@ -18,6 +18,12 @@ exports.floorChoices = [
         materials: [
             { type: 'Gólfefni innanhúss-meðaltal', amount: 1 },
         ]
+    },
+    {
+        type: 'CLT Floor',
+        materials: [
+            { type: 'CLT', amount: 2 }
+        ]
     }
 ];
 //# sourceMappingURL=floor.js.map

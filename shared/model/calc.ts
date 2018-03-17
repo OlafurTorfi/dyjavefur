@@ -2,8 +2,9 @@ import { createGetDoors, Door } from './door'
 import { createGetWalls, Wall } from './wall'
 import { createGetFloors, Floor } from './floor'
 import { createGetRoofs, Roof } from './roof'
+import { Room } from './room'
 import { DB } from '../db'
-import { AreaType, Material, MaterialAmount } from '../data/materials'
+import { MaterialType, Material, MaterialAmount, AreaType } from '../data/materials'
 
 export const createGetPrice = (doorDB: any, floorDB: any, roofDB: any, wallDB: any) => {
     const getDoors = doorDB as () => Promise<Door[]>// createGetDoors(doorDB).query
@@ -29,7 +30,7 @@ export const createGetPrice = (doorDB: any, floorDB: any, roofDB: any, wallDB: a
     }
 }
 
-export const groupByType = (items: AreaType[]) => {
+export const groupByType = (items: MaterialType[]) => {
     const distinct: string[] = []
 
     items.forEach(item => {
@@ -38,7 +39,7 @@ export const groupByType = (items: AreaType[]) => {
         }
     })
 
-    const result: AreaType[] = distinct.map(dist => {
+    const result: MaterialType[] = distinct.map(dist => {
         let area: number = 0
         let price: number = 0
         let materials: MaterialAmount[] = []
@@ -64,8 +65,68 @@ export const groupByType = (items: AreaType[]) => {
     return result
 }
 
-export const groupAll = (items: AreaType[]) => {
+export const groupAll = (items: MaterialType[]) => {
     return items.reduce((prev, curr) => {
         return { price: prev.price + curr.price, area: prev.area + curr.area }
     }, { price: 0, area: 0 })
+}
+const sumArea = (rooms: AreaType[]) => {
+    return rooms.reduce((prev, curr) => {
+        return prev + curr.area
+    }, 0)
+}
+const sumVolume = (rooms: Room[]) => {
+    return rooms.reduce((prev, curr) => {
+        return prev + curr.volume
+    }, 0)
+}
+const filterType = (rooms: Room[], type: string) => {
+    rooms.forEach(r => console.log)
+    return rooms.filter(room => room.type === type)
+}
+
+export const calculateMatshlutar = (rooms: Room[], walls: Wall[], roofs: Roof[]) => {
+    const levels = rooms.reduce((prev, curr) => {
+        if (prev.indexOf(curr.level) === -1) {
+            return prev.concat(curr.level)
+        } else {
+            return prev
+        }
+    }, [] as string[])
+    const stigaopFlotur = rooms.filter(r => r.name === 'Stigaop').reduce((prev, curr) => {
+        return prev + curr.area
+    }, 0)
+    return {
+        botnplataRummal: sumArea(filterType(rooms.filter(r => r.level === '1. Hæð'), 'A')) * 0.2,
+        botnplataFlatarmal: sumArea(filterType(rooms.filter(r => r.level === '1. Hæð'), 'A')),
+        utveggir: sumArea(walls.filter(w => w.purpose === 'Útveggur')),
+        gluggar: sumArea(walls.filter(w => w.type === 'Gluggi')),
+        þakFlotur: sumArea(roofs),
+        þakgluggar: 0,
+        A: {
+            Botnflotur: sumArea(filterType(rooms, 'A')),
+            Bruttoflotur: sumArea(filterType(rooms, 'A')) - stigaopFlotur,
+            Bruttorummal: 0,
+            Nettoflotur: 0,
+            BirtFlatarmal: 0,
+            Skiptarummal: 0
+        },
+        B: {
+            Botnflotur: sumArea(filterType(rooms, 'B')),
+            Bruttoflotur: sumArea(filterType(rooms, 'B')),
+            Bruttorummal: sumVolume(filterType(rooms, 'B')),
+        },
+        C: {
+            Botnflotur: sumArea(filterType(rooms, 'C')),
+            Bruttoflotur: sumArea(filterType(rooms, 'C')),
+        },
+        total: {
+            Botnflotur: 0,
+            Bruttoflotur: 0,
+            Bruttorummal: 0,
+            Nettoflotur: 0,
+            BirtFlatarmal: 0,
+            Skiptarummal: 0
+        }
+    }
 }

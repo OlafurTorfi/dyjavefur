@@ -44,9 +44,7 @@ exports.createGetDoors = function (db) {
             var res, doors;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0:
-                        console.log('Debug db: ', db);
-                        return [4 /*yield*/, db.query()];
+                    case 0: return [4 /*yield*/, db.query()];
                     case 1:
                         res = _a.sent();
                         doors = res.rows.map(function (d) {

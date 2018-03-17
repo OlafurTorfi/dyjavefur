@@ -1,10 +1,11 @@
-import { createGetPrice, groupAll, groupByType } from '../../shared/model/calc'
+import { createGetPrice, groupAll, groupByType, calculateMatshlutar } from '../../shared/model/calc'
 import { expect } from 'chai'
-import { AreaType } from '../../shared/data/materials'
+import { MaterialType } from '../../shared/data/materials'
 import { getWalls } from '../components/wall'
 import { getDoors } from '../components/door'
 import { getFloors } from '../components/floor'
 import { getRoofs } from '../components/roof'
+import { getRooms } from '../components/room'
 
 export const getPrice = createGetPrice(getDoors, getFloors, getRoofs, getWalls).getPrice
 
@@ -25,8 +26,8 @@ describe('calculate test', () => {
             })
         })
     })
-    describe('should do grouping', () => {
-        const example: AreaType[] = [{
+    describe('should do materials grouping', () => {
+        const example: MaterialType[] = [{
             price: 1,
             area: 2,
             family: 'Basic Roof',
@@ -57,6 +58,14 @@ describe('calculate test', () => {
         it('should be able to group all', () => {
             const grouped = groupAll(example)
             expect(grouped).to.deep.eq({ price: 111, area: 222 })
+        })
+    })
+    describe('schedule data', () => {
+        it('should get matshlutar', () => {
+            return Promise.all([getRooms(), getWalls(), getRoofs()]).then(([rooms, walls, roofs]) => {
+                const matshlutar = calculateMatshlutar(rooms, walls, roofs)
+                console.log('Debug matshlutar: ', matshlutar);
+            })
         })
     })
 })

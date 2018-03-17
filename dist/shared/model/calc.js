@@ -109,4 +109,64 @@ exports.groupAll = function (items) {
         return { price: prev.price + curr.price, area: prev.area + curr.area };
     }, { price: 0, area: 0 });
 };
+var sumArea = function (rooms) {
+    return rooms.reduce(function (prev, curr) {
+        return prev + curr.area;
+    }, 0);
+};
+var sumVolume = function (rooms) {
+    return rooms.reduce(function (prev, curr) {
+        return prev + curr.volume;
+    }, 0);
+};
+var filterType = function (rooms, type) {
+    rooms.forEach(function (r) { return console.log; });
+    return rooms.filter(function (room) { return room.type === type; });
+};
+exports.calculateMatshlutar = function (rooms, walls, roofs) {
+    var levels = rooms.reduce(function (prev, curr) {
+        if (prev.indexOf(curr.level) === -1) {
+            return prev.concat(curr.level);
+        }
+        else {
+            return prev;
+        }
+    }, []);
+    var stigaopFlotur = rooms.filter(function (r) { return r.name === 'Stigaop'; }).reduce(function (prev, curr) {
+        return prev + curr.area;
+    }, 0);
+    return {
+        botnplataRummal: sumArea(filterType(rooms.filter(function (r) { return r.level === '1. Hæð'; }), 'A')) * 0.2,
+        botnplataFlatarmal: sumArea(filterType(rooms.filter(function (r) { return r.level === '1. Hæð'; }), 'A')),
+        utveggir: sumArea(walls.filter(function (w) { return w.purpose === 'Útveggur'; })),
+        gluggar: sumArea(walls.filter(function (w) { return w.type === 'Gluggi'; })),
+        þakFlotur: sumArea(roofs),
+        þakgluggar: 0,
+        A: {
+            Botnflotur: sumArea(filterType(rooms, 'A')),
+            Bruttoflotur: sumArea(filterType(rooms, 'A')) - stigaopFlotur,
+            Bruttorummal: 0,
+            Nettoflotur: 0,
+            BirtFlatarmal: 0,
+            Skiptarummal: 0
+        },
+        B: {
+            Botnflotur: sumArea(filterType(rooms, 'B')),
+            Bruttoflotur: sumArea(filterType(rooms, 'B')),
+            Bruttorummal: sumVolume(filterType(rooms, 'B')),
+        },
+        C: {
+            Botnflotur: sumArea(filterType(rooms, 'C')),
+            Bruttoflotur: sumArea(filterType(rooms, 'C')),
+        },
+        total: {
+            Botnflotur: 0,
+            Bruttoflotur: 0,
+            Bruttorummal: 0,
+            Nettoflotur: 0,
+            BirtFlatarmal: 0,
+            Skiptarummal: 0
+        }
+    };
+};
 //# sourceMappingURL=calc.js.map
