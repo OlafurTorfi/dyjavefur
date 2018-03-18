@@ -7,6 +7,9 @@ export interface MaterialAmount { type: string, amount: number }
 export interface MaterialType extends AreaType {
     materials: MaterialAmount[]
 }
+export interface LevelType extends MaterialType {
+    level: string
+}
 export interface AreaType extends BaseType {
     area: number
 }

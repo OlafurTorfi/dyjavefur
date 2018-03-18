@@ -1,9 +1,9 @@
 import * as assert from 'assert'
-import { materials, Material, MaterialType, MaterialAmount } from '../data/materials'
+import { materials, Material, MaterialType, MaterialAmount, LevelType } from '../data/materials'
 import { DB } from '../db'
 import { floorChoices } from '../data/floor'
 
-export interface Floor extends MaterialType { }
+export interface Floor extends LevelType { }
 
 export const createGetFloors: (db: DB) => { query: () => Promise<Floor[]> } = (db: DB) => {
     return {
@@ -23,6 +23,7 @@ export const createGetFloors: (db: DB) => { query: () => Promise<Floor[]> } = (d
                     price,
                     area: floor.Area,
                     family: floor.FamilyName,
+                    level: floor.Level,
                     type: floor.TypeName,
                     materials: floorType ? floorType.materials : []
                 }, floor)

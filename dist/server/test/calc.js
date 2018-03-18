@@ -7,6 +7,7 @@ var door_1 = require("../components/door");
 var floor_1 = require("../components/floor");
 var roof_1 = require("../components/roof");
 var room_1 = require("../components/room");
+var fs_1 = require("fs");
 exports.getPrice = calc_1.createGetPrice(door_1.getDoors, floor_1.getFloors, roof_1.getRoofs, wall_1.getWalls).getPrice;
 describe('calculate test', function () {
     it('should be able to calculate total price', function () {
@@ -60,11 +61,12 @@ describe('calculate test', function () {
         });
     });
     describe('schedule data', function () {
-        it('should get matshlutar', function () {
-            return Promise.all([room_1.getRooms(), wall_1.getWalls(), roof_1.getRoofs()]).then(function (_a) {
-                var rooms = _a[0], walls = _a[1], roofs = _a[2];
-                var matshlutar = calc_1.calculateMatshlutar(rooms, walls, roofs);
+        it.only('should get matshlutar', function () {
+            return Promise.all([room_1.getRooms(), wall_1.getWalls(), roof_1.getRoofs(), floor_1.getFloors()]).then(function (_a) {
+                var rooms = _a[0], walls = _a[1], roofs = _a[2], floors = _a[3];
+                var matshlutar = calc_1.calculateMatshlutar(rooms, walls, roofs, floors);
                 console.log('Debug matshlutar: ', matshlutar);
+                fs_1.writeFileSync(__dirname + '/../../../export/matshlutar.json', JSON.stringify(matshlutar));
             });
         });
     });

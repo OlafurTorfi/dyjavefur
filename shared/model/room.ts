@@ -1,7 +1,7 @@
 import * as assert from 'assert'
 import { materials, Material, AreaType, MaterialAmount } from '../data/materials'
 import { DB } from '../db'
-import { RoomAllocation, roomAllocations } from '../data/room'
+import { RoomAllocation, roomAllocations, RoomDimensions } from '../data/room'
 
 
 export interface RoomDataType {
@@ -23,7 +23,7 @@ export const parseRoom = (roomData: any): RoomDataType => {
     }
 }
 
-export interface Room extends AreaType {
+export interface Room extends AreaType, RoomDimensions {
     area: number
     level: string,
     volume: number,
@@ -42,20 +42,34 @@ export const createGetRooms: (db: DB) => { query: () => Promise<Room[]> } = (db:
                     return roomAlloc.number === room.number
                 })
                 assert(alloc, 'unable to find allocation for room number: ' + room.number + ' room.Level: ' + room.level + ' room.name: ' + room.name)
+                let dims: RoomDimensions = {
+                    heightMax: 3,
+                    heightMin: 3,
+                    avgHeight: 3,
+                    volume: room.volume
+                }
+                let type: string = ''
+                if (alloc) {
+                    assert(alloc.name === room.name, 'alloc.name must match room.name. Alloc: ' + JSON.stringify(alloc) + ' room.name: ' + room.name)
+                    type = alloc.type
+                    if (alloc.volumeOverride) {
+                        dims = alloc.volumeOverride(room.area)
+                    }
+                }
                 let res: Room = {
                     area: room.area,
                     level: room.level,
-                    volume: room.volume,
                     elevation: room.elevation,
                     number: room.number,
                     name: room.name,
-                    type: '',
+                    type,
                     price: 0,
-                    family: ''
-                }
-                if (alloc) {
-                    assert(alloc.name === room.name, 'alloc.name must match room.name. Alloc: ' + JSON.stringify(alloc) + ' room.name: ' + room.name)
-                    res.type = alloc.type
+                    family: '',
+                    heightMax: dims.heightMax,
+                    heightMin: dims.heightMin,
+                    avgHeight: dims.avgHeight,
+                    volume: dims.volume
+
                 }
                 return res
             })

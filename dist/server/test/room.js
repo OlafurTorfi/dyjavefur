@@ -8,6 +8,8 @@ describe("Room tests", function () {
             chai_1.expect(res.length).to.be.greaterThan(0);
             res.forEach(function (room) {
                 chai_1.expect(room.volume).to.be.greaterThan(0);
+                chai_1.expect(room.area).to.be.greaterThan(0);
+                chai_1.expect(room.level.length).to.be.greaterThan(0);
             });
         });
     });

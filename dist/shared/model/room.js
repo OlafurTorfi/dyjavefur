@@ -62,21 +62,34 @@ exports.createGetRooms = function (db) {
                                 return roomAlloc.number === room.number;
                             });
                             assert(alloc, 'unable to find allocation for room number: ' + room.number + ' room.Level: ' + room.level + ' room.name: ' + room.name);
+                            var dims = {
+                                heightMax: 3,
+                                heightMin: 3,
+                                avgHeight: 3,
+                                volume: room.volume
+                            };
+                            var type = '';
+                            if (alloc) {
+                                assert(alloc.name === room.name, 'alloc.name must match room.name. Alloc: ' + JSON.stringify(alloc) + ' room.name: ' + room.name);
+                                type = alloc.type;
+                                if (alloc.volumeOverride) {
+                                    dims = alloc.volumeOverride(room.area);
+                                }
+                            }
                             var res = {
                                 area: room.area,
                                 level: room.level,
-                                volume: room.volume,
                                 elevation: room.elevation,
                                 number: room.number,
                                 name: room.name,
-                                type: '',
+                                type: type,
                                 price: 0,
-                                family: ''
+                                family: '',
+                                heightMax: dims.heightMax,
+                                heightMin: dims.heightMin,
+                                avgHeight: dims.avgHeight,
+                                volume: dims.volume
                             };
-                            if (alloc) {
-                                assert(alloc.name === room.name, 'alloc.name must match room.name. Alloc: ' + JSON.stringify(alloc) + ' room.name: ' + room.name);
-                                res.type = alloc.type;
-                            }
                             return res;
                         });
                         return [2 /*return*/, rooms];

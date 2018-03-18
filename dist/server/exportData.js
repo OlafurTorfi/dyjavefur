@@ -36,40 +36,52 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
-var assert = require("assert");
-var materials_1 = require("../data/materials");
-var floor_1 = require("../data/floor");
-exports.createGetFloors = function (db) {
-    return {
-        query: function () { return __awaiter(_this, void 0, void 0, function () {
-            var res, floors;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0: return [4 /*yield*/, db.query()];
-                    case 1:
-                        res = _a.sent();
-                        floors = res.rows.map(function (floor) {
-                            var floorType = floor_1.floorChoices.find(function (floorp) { return floorp.type === floor.TypeName; });
-                            assert(floorType, 'no price found for ' + floor.TypeName);
-                            var calc = floorType && floorType.materials.reduce(function (prev, curr) {
-                                var materialprice = materials_1.materials.find(function (materialp) { return materialp.type === curr.type; });
-                                assert(materialprice, 'no price found for ' + curr.type);
-                                return prev + curr.amount * (materialprice ? materialprice.price : 0);
-                            }, 0);
-                            var price = (calc ? calc : 0) * floor.Area;
-                            return Object.assign({
-                                price: price,
-                                area: floor.Area,
-                                family: floor.FamilyName,
-                                level: floor.Level,
-                                type: floor.TypeName,
-                                materials: floorType ? floorType.materials : []
-                            }, floor);
-                        });
-                        return [2 /*return*/, floors];
-                }
-            });
-        }); }
-    };
-};
-//# sourceMappingURL=floor.js.map
+var wall_1 = require("./components/wall");
+var door_1 = require("./components/door");
+var floor_1 = require("./components/floor");
+var roof_1 = require("./components/roof");
+var room_1 = require("./components/room");
+var fs_1 = require("fs");
+exports.exportModel = function () { return __awaiter(_this, void 0, void 0, function () {
+    var _this = this;
+    var exportData, wd, dd, fd, rfd, rmd;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                exportData = function (name, func) { return __awaiter(_this, void 0, void 0, function () {
+                    var d;
+                    return __generator(this, function (_a) {
+                        switch (_a.label) {
+                            case 0: return [4 /*yield*/, func()];
+                            case 1:
+                                d = _a.sent();
+                                return [2 /*return*/, 'export const ' + name + ' = ' + JSON.stringify(d) + ';\n'];
+                        }
+                    });
+                }); };
+                return [4 /*yield*/, exportData('walls', wall_1.getWalls)];
+            case 1:
+                wd = _a.sent();
+                return [4 /*yield*/, exportData('doors', door_1.getDoors)];
+            case 2:
+                dd = _a.sent();
+                return [4 /*yield*/, exportData('floors', floor_1.getFloors)];
+            case 3:
+                fd = _a.sent();
+                return [4 /*yield*/, exportData('roofs', roof_1.getRoofs)];
+            case 4:
+                rfd = _a.sent();
+                return [4 /*yield*/, exportData('rooms', room_1.getRooms)];
+            case 5:
+                rmd = _a.sent();
+                fs_1.writeFileSync(__dirname + '/../../shared/data/export/walls.js', wd);
+                fs_1.writeFileSync(__dirname + '/../../shared/data/export/doors.js', dd);
+                fs_1.writeFileSync(__dirname + '/../../shared/data/export/floors.js', fd);
+                fs_1.writeFileSync(__dirname + '/../../shared/data/export/roofs.js', rfd);
+                fs_1.writeFileSync(__dirname + '/../../shared/data/export/rooms.js', rmd);
+                return [2 /*return*/];
+        }
+    });
+}); };
+exports.exportModel();
+//# sourceMappingURL=exportData.js.map

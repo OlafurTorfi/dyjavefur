@@ -1,0 +1,33 @@
+[{
+    "type": "CLT Floor",
+    "level": "3. Hæð",
+    "area": 159.273517399995
+}, {
+    "type": "Generic 150mm",
+    "level": "Bílskúr",
+    "area": 126.233604404346
+}, {
+    "type": "Einangrun 100mm",
+    "level": "Bílskúr",
+    "area": 143.46647870761
+}, {
+    "type": "Gólfefni 100mm",
+    "level": "2. Hæð",
+    "area": 201.98354874663
+}, {
+    "type": "Gólfefni 100mm",
+    "level": "1. Hæð",
+    "area": 81.5403600000021
+}, {
+    "type": "Generic 150mm",
+    "level": "2. Hæð",
+    "area": 300.323529999998
+}, {
+    "type": "Generic 150mm",
+    "level": "1. Hæð",
+    "area": 92.2155100000004
+}, {
+    "type": "Einangrun 100mm",
+    "level": "1. Hæð",
+    "area": 79.1372980000019
+}]

@@ -6,6 +6,7 @@ import { getDoors } from '../components/door'
 import { getFloors } from '../components/floor'
 import { getRoofs } from '../components/roof'
 import { getRooms } from '../components/room'
+import { writeFileSync, write } from 'fs'
 
 export const getPrice = createGetPrice(getDoors, getFloors, getRoofs, getWalls).getPrice
 
@@ -61,10 +62,11 @@ describe('calculate test', () => {
         })
     })
     describe('schedule data', () => {
-        it('should get matshlutar', () => {
-            return Promise.all([getRooms(), getWalls(), getRoofs()]).then(([rooms, walls, roofs]) => {
-                const matshlutar = calculateMatshlutar(rooms, walls, roofs)
+        it.only('should get matshlutar', () => {
+            return Promise.all([getRooms(), getWalls(), getRoofs(), getFloors()]).then(([rooms, walls, roofs, floors]) => {
+                const matshlutar = calculateMatshlutar(rooms, walls, roofs, floors)
                 console.log('Debug matshlutar: ', matshlutar);
+                writeFileSync(__dirname + '/../../../export/matshlutar.json', JSON.stringify(matshlutar))
             })
         })
     })
