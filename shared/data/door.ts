@@ -23,6 +23,10 @@ export const doorSuggestion: DoorSuggestion[] = [
         price: 100000
     },
     {
+        name: 'sliding internal door',
+        price: 100000
+    },
+    {
         name: 'Byko internal door',
         price: 50000
     },
@@ -145,7 +149,8 @@ export const doorSuggestion: DoorSuggestion[] = [
 
 export interface DoorChoice {
     type: string,
-    price: number
+    price: number,
+    area: number
 }
 const choose = (choice: string) => {
     const door = doorSuggestion.find(suggestion => {
@@ -158,30 +163,38 @@ const choose = (choice: string) => {
 export const doorChoice: DoorChoice[] = [
     {
         type: '2000 x 2100mm',
-        price: choose('Byko sliding glass door')
+        price: choose('Byko sliding glass door'),
+        area: 2000 * 2100
     },
     {
         type: '1200 x 2100mm',
-        price: choose('Byko sliding glass door')
+        price: choose('sliding internal door'),
+        area: 1200 * 2100
+
     },
     {
         type: 'Útihurð 950 x 2134mm',
-        price: choose('Byko external back door')
+        price: choose('Byko external back door'),
+        area: 950 * 2134
     },
     {
         type: 'Innihurð 850 x 2134mm',
-        price: choose('Byko internal door')
+        price: choose('Byko internal door'),
+        area: 850 * 2134
     },
     {
         type: 'Útihurð 1000 x 2134mm',
-        price: choose('Byko external main door')
+        price: choose('Byko external main door'),
+        area: 1000 * 2134
     },
     {
         type: 'Innihurð 950 x 2134mm',
-        price: choose('Byko internal door')
+        price: choose('Byko internal door'),
+        area: 950 * 2134
     },
     {
         type: '4800 x 2600mm',
-        price: choose('Byko garage door')
+        price: choose('Byko garage door'),
+        area: 4800 * 2600
     }
 ]

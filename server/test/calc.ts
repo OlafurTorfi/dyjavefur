@@ -1,4 +1,4 @@
-import { createGetPrice, groupAll, groupByType, calculateMatshlutar } from '../../shared/model/calc'
+import { createGetPrice, groupAll, groupByType, calculateMatshlutar, groupByTypeString } from '../../shared/model/calc'
 import { expect } from 'chai'
 import { MaterialType } from '../../shared/data/materials'
 import { getWalls } from '../components/wall'
@@ -23,8 +23,27 @@ describe('calculate test', () => {
             grouped.forEach(wall => {
                 const average = wall.price / wall.area
                 expect(average).to.be.greaterThan(2000)
-                console.log('The house has ', wall.area, ' of ', wall.type, '. Total price: ', wall.price, '. Average price: ', average)
+                console.log('The house has ', wall.area, ' of ', wall.type, '. Total price: ', wall.price, '. Average price: ', average, '. resistance:', wall.resistance, '. isolation:', wall.isolation)
             })
+            console.log('and then with further grouping')
+            const groupFull = groupByTypeString(grouped, ['CLT-15/15', 'Steypt', 'Gluggi'])
+            groupFull.forEach(wall => {
+                const average = wall.price / wall.area
+                expect(average).to.be.greaterThan(2000)
+                console.log('The house has ', wall.area, ' of ', wall.type, '. Total price: ', wall.price, '. Average price: ', average, '. resistance:', wall.resistance, '. isolation:', wall.isolation)
+            })
+        })
+    })
+    it('should get roofs, group by type and print average', () => {
+        return getRoofs().then(roofs => {
+            const grouped = groupByType(roofs)
+            grouped.forEach(roof => {
+                const average = roof.price / roof.area
+                expect(average).to.be.greaterThan(2000)
+                console.log('The house has ', roof.area, ' of ', roof.type, '. Total price: ', roof.price, '. Average price: ', average, '. resistance:', roof.resistance, '. isolation:', roof.isolation)
+            })
+
+            console.log('roofs : ', grouped);
         })
     })
     describe('should do materials grouping', () => {
@@ -33,27 +52,41 @@ describe('calculate test', () => {
             area: 2,
             family: 'Basic Roof',
             type: 'Generic - 400mm',
-            materials: []
+            materials: [],
+            resistance: 0,
+            isolation: 0
         },
         {
             price: 10,
             area: 20,
             family: 'Basic Roof',
             type: 'Generic - 400mm',
-            materials: []
+            materials: [],
+            resistance: 0,
+            isolation: 0
         },
         {
             price: 100,
             area: 200,
             family: 'Basic Roof',
             type: 'Other Roof',
-            materials: []
+            materials: [],
+            resistance: 0,
+            isolation: 0,
         }]
         it('should be able to group by type', () => {
             const grouped = groupByType(example)
             expect(grouped).to.deep.eq([
-                { price: 11, area: 22, family: 'Basic Roof', type: 'Generic - 400mm', materials: [] },
-                { price: 100, area: 200, family: 'Basic Roof', type: 'Other Roof', materials: [] }
+                {
+                    price: 11, area: 22, family: 'Basic Roof', type: 'Generic - 400mm', materials: [],
+                    resistance: 0,
+                    isolation: 0,
+                },
+                {
+                    price: 100, area: 200, family: 'Basic Roof', type: 'Other Roof', materials: [],
+                    resistance: 0,
+                    isolation: 0,
+                }
             ])
         })
         it('should be able to group all', () => {
@@ -62,9 +95,9 @@ describe('calculate test', () => {
         })
     })
     describe('schedule data', () => {
-        it.only('should get matshlutar', () => {
-            return Promise.all([getRooms(), getWalls(), getRoofs(), getFloors()]).then(([rooms, walls, roofs, floors]) => {
-                const matshlutar = calculateMatshlutar(rooms, walls, roofs, floors)
+        it('should get matshlutar', () => {
+            return Promise.all([getRooms(), getWalls(), getRoofs(), getFloors(), getDoors()]).then(([rooms, walls, roofs, floors, doors]) => {
+                const matshlutar = calculateMatshlutar(rooms, walls, roofs, floors, doors)
                 console.log('Debug matshlutar: ', matshlutar);
                 writeFileSync(__dirname + '/../../../export/matshlutar.json', JSON.stringify(matshlutar))
             })

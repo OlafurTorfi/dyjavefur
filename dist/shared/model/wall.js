@@ -39,6 +39,34 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var assert = require("assert");
 var wall_1 = require("../data/wall");
 var materials_1 = require("../data/materials");
+exports.groupWall = function (items) {
+    var area = 0;
+    var price = 0;
+    var materials = [];
+    var type = '';
+    var family = '';
+    var resistenceArea = 0;
+    var isolationArea = 0;
+    var level = '';
+    items.forEach(function (item) {
+        price += item.price;
+        area += item.area;
+        materials = item.materials;
+        type = item.type;
+        family = item.family;
+        resistenceArea += item.resistance * area;
+        isolationArea += item.isolation * area;
+    });
+    return {
+        type: type,
+        area: area,
+        price: price,
+        materials: materials,
+        family: family,
+        resistance: resistenceArea / area,
+        isolation: isolationArea / area
+    };
+};
 exports.createGetWalls = function (db) {
     return {
         query: function () { return __awaiter(_this, void 0, void 0, function () {
@@ -50,20 +78,32 @@ exports.createGetWalls = function (db) {
                         res = _a.sent();
                         walls = res.rows.map(function (wall) {
                             var wallType = wall_1.wallChoices.find(function (wallp) { return wallp.type === wall.TypeName; });
-                            assert(wallType, 'no price found for ' + wall.TypeName);
-                            var calc = wallType && wallType.materials.reduce(function (prev, curr) {
-                                var materialprice = materials_1.materials.find(function (materialp) { return materialp.type === curr.type; });
-                                assert(materialprice, 'no price found for ' + curr.type);
-                                return prev + curr.amount * (materialprice ? materialprice.price : 0);
-                            }, 0);
-                            var price = (calc ? calc : 0) * wall.Area;
+                            assert(wallType, 'no type found for ' + wall.TypeName);
+                            if (!wallType) {
+                                throw new Error('no type found for ' + wall.TypeName);
+                            }
+                            var calc = wallType.materials.reduce(function (prev, curr) {
+                                var material = materials_1.materials.find(function (materialp) { return materialp.type === curr.type; });
+                                assert(material, 'no price found for ' + curr.type);
+                                if (material) {
+                                    return {
+                                        price: prev.price + (curr.amount * material.price),
+                                        resistance: material.lambda ? prev.resistance + (curr.amount / material.lambda) : prev.resistance
+                                    };
+                                }
+                                return prev;
+                            }, { price: 0, resistance: 0 });
+                            var cost = calc.price * wall.Area;
                             return Object.assign({
-                                price: price,
+                                price: cost,
                                 area: wall.Area,
                                 family: wall.FamilyName,
                                 type: wall.TypeName,
+                                level: wall.Level,
                                 purpose: wallType ? wallType.purpose : '',
-                                materials: wallType ? wallType.materials : []
+                                materials: wallType ? wallType.materials : [],
+                                resistance: calc.resistance,
+                                isolation: calc.resistance !== 0 ? 1 / calc.resistance : 0
                             }, wall);
                         });
                         return [2 /*return*/, walls];

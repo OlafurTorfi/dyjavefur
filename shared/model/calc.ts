@@ -1,5 +1,5 @@
 import { createGetDoors, Door } from './door'
-import { createGetWalls, Wall } from './wall'
+import { createGetWalls, Wall, groupWall } from './wall'
 import { createGetFloors, Floor } from './floor'
 import { createGetRoofs, Roof } from './roof'
 import { Room } from './room'
@@ -32,7 +32,39 @@ export const createGetPrice = (doorDB: any, floorDB: any, roofDB: any, wallDB: a
         }
     }
 }
-
+export const groupByTypeString = (items: MaterialType[], groups: string[]) => {
+    const result: MaterialType[] = groups.map(group => {
+        let area: number = 0
+        let price: number = 0
+        let materials: MaterialAmount[] = []
+        let type: string = ''
+        let family: string = ''
+        let resistance: number = 0
+        let isolation: number = 0
+        items.forEach(item => {
+            if (item.type.indexOf(group) !== -1) {
+                console.log('item in group', group, ' found. ', item.area, ' big, type was ', item.type)
+                price += item.price
+                area += item.area
+                materials = item.materials
+                type = group
+                family = item.family
+                resistance = item.resistance
+                isolation = item.isolation
+            }
+        })
+        return {
+            type,
+            area,
+            price,
+            materials,
+            family,
+            resistance,
+            isolation
+        }
+    })
+    return result
+}
 export const groupByType = (items: MaterialType[]) => {
     const distinct: string[] = []
 
@@ -48,6 +80,8 @@ export const groupByType = (items: MaterialType[]) => {
         let materials: MaterialAmount[] = []
         let type: string = ''
         let family: string = ''
+        let resistance: number = 0
+        let isolation: number = 0
         items.forEach(item => {
             if (item.type === dist) {
                 price += item.price
@@ -55,6 +89,8 @@ export const groupByType = (items: MaterialType[]) => {
                 materials = item.materials
                 type = item.type
                 family = item.family
+                resistance = item.resistance
+                isolation = item.isolation
             }
         })
         return {
@@ -62,7 +98,9 @@ export const groupByType = (items: MaterialType[]) => {
             area,
             price,
             materials,
-            family
+            family,
+            resistance,
+            isolation
         }
     })
     return result
@@ -125,7 +163,7 @@ export interface Eining {
 }
 
 
-export const calculateMatshlutar = (rooms: Room[], walls: Wall[], roofs: Roof[], floors: Floor[]) => {
+export const calculateMatshlutar = (rooms: Room[], walls: Wall[], roofs: Roof[], floors: Floor[], doors: Door[]) => {
     const levels = rooms.reduce((prev, curr) => {
         if (prev.indexOf(curr.level) === -1) {
             return prev.concat(curr.level)
@@ -150,10 +188,44 @@ export const calculateMatshlutar = (rooms: Room[], walls: Wall[], roofs: Roof[],
     const aRoomsArea = sumArea(aRooms)
     const bRoomsArea = sumArea(bRooms)
 
+    const findFloorByLevelAndType = (floors: Floor[], level: string, type: string) => {
+        const tempFloors = floors.filter(f => { return (f.level === level && f.type === type) })
+        return tempFloors[0]
+    }
+    const getMaxHeight = (rooms: Room[]) => {
+        return rooms.reduce((prev, curr) => {
+            const hm = curr.heightMax
+            return Math.max(prev, curr.heightMax)
+        }, 0)
+    }
+    const getMinHeight = (rooms: Room[]) => {
+        return rooms.reduce((prev, curr) => {
+            const hm = curr.heightMin
+            return Math.min(prev, curr.heightMin)
+        }, 999)
+    }
+    const getAverageHeight = (rooms: Room[]) => {
+        const totalVolume = rooms.reduce((prev, curr) => {
+            return prev + curr.avgHeight * curr.area
+        }, 0)
+        const totalArea = rooms.reduce((prev, curr) => {
+            return prev + curr.area
+        }, 0)
+        return totalVolume / totalArea
+    }
+
+
     const bilskurRooms = rooms.filter(r => r.level === 'Bílskúr')
     const h1Rooms = rooms.filter(r => r.level === '1. Hæð')
     const h2Rooms = rooms.filter(r => r.level === '2. Hæð')
     const h3Rooms = rooms.filter(r => r.level === '3. Hæð')
+
+    const bilskurDoors = doors.filter(d => d.level === 'Bílskúr')
+    const h1Doors = doors.filter(d => d.level === '1. Hæð')
+    const h2Doors = doors.filter(d => d.level === '2. Hæð')
+    const h3Doors = doors.filter(d => d.level === '3. Hæð')
+
+    const gluggar = walls.filter(w => w.type === 'Gluggi')
 
     const inngangsskjol = findRoomByName(bRooms, 'Inngangsskjól')
     const idurgardur = findRoomByName(bRooms, 'Iðurgarður')
@@ -173,34 +245,6 @@ export const calculateMatshlutar = (rooms: Room[], walls: Wall[], roofs: Roof[],
     const burdarvirkiArea = 11.2
     const sudArea = 11.1
 
-
-    const findFloorByLevelAndType = (floors: Floor[], level: string, type: string) => {
-        const tempFloors = floors.filter(f => { return (f.level === level && f.type === type) })
-        return tempFloors[0]
-    }
-    const getMaxHeight = (rooms: Room[]) => {
-        return rooms.reduce((prev, curr) => {
-            const hm = curr.heightMax
-            return Math.max(prev, curr.heightMax)
-        }, 0)
-    }
-    const getMinHeight = (rooms: Room[]) => {
-        return rooms.reduce((prev, curr) => {
-            console.log('Debug curr.heightMin: ', curr.heightMin);
-            const hm = curr.heightMin
-            return Math.min(prev, curr.heightMin)
-        }, 999)
-    }
-    const getAverageHeight = (rooms: Room[]) => {
-        const totalVolume = rooms.reduce((prev, curr) => {
-            return prev + curr.avgHeight * curr.area
-        }, 0)
-        const totalArea = rooms.reduce((prev, curr) => {
-            return prev + curr.area
-        }, 0)
-        return totalVolume / totalArea
-    }
-
     const bilskurFloor = findFloorByLevelAndType(floors, 'Bílskúr', 'Generic 150mm')
     const h1Floor = findFloorByLevelAndType(floors, '1. Hæð', 'Generic 150mm')
     const h2Floor = findFloorByLevelAndType(floors, '2. Hæð', 'Generic 150mm')
@@ -213,13 +257,19 @@ export const calculateMatshlutar = (rooms: Room[], walls: Wall[], roofs: Roof[],
     const botnfloturM2 = sumArea(floors.filter(f => { return f.type === 'CLT Floor' || f.type === 'Generic 150mm' }))
     const botnplataM2 = bilskurFloor.area + h1Floor.area
 
-    console.log('Debug h3Rooms: ', h3Rooms);
+    // console.log('Debug bilskurRooms: ', rooms);
     return {
+        botnplataRooms: formatNumber(sumArea(h1Rooms) + sumArea(bilskurRooms) - idurgardur.area - inngangsskjol.area),
         botnplataRummal: formatNumber(botnplataM2 * 0.2),
         botnplataFlatarmal: formatNumber(botnplataM2),
-        utveggir: sumArea(walls.filter(w => w.purpose === 'Útveggur')),
-        gluggar: sumArea(walls.filter(w => w.type === 'Gluggi')),
+        utveggir: groupWall(walls.filter(w => w.purpose === 'Útveggur')),
+        gluggar: groupWall(gluggar),
+        cltExternalWalls: groupWall(walls.filter(w => w.type.indexOf('CLT-15/15') !== -1).filter(w => w.purpose === 'Útveggur')),
+        stoneExternalWalls: groupWall(walls.filter(w => w.type.indexOf('Steypt m.') !== -1).filter(w => w.purpose === 'Útveggur')),
         þakFlotur: sumArea(roofs),
+        gfDoors: sumArea(h1Doors) + sumArea(bilskurDoors),
+        topDoors: sumArea(h2Doors) + sumArea(h3Doors),
+        externalDoors: sumArea(doors.filter(d => d.type !== '1200 x 2100mm').filter(d => d.type.indexOf('Innihurð') === -1)),
         þakgluggar: 0,
         A: {
             Botnflotur: formatNumber(botnfloturM2),

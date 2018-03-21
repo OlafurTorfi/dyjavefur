@@ -2,8 +2,8 @@ import { doorSuggestion, doorChoice, DoorSuggestion, DoorChoice } from '../data/
 import { QueryResult, Query } from 'pg'
 import * as assert from 'assert'
 import { DB } from '../db'
-import { BaseType } from '../data/materials'
-export interface Door extends BaseType {
+import { AreaType, LevelType } from '../data/materials'
+export interface Door extends LevelType {
     choice: DoorSuggestion,
     width: number,
     height: number
@@ -14,10 +14,13 @@ export const createGetDoors: (db: DB) => { query: () => Promise<Door[]> } = (db:
         query: async () => {
             const res: QueryResult = await db.query()
             const doors = res.rows.map(d => {
-                const doorPrice = doorChoice.find(dp => { return dp.type === d.TypeName })
-                assert(doorPrice, 'no price found for ' + d.TypeName)
+                const door = doorChoice.find(dp => { return dp.type === d.TypeName })
+                assert(door, 'no door found for ' + d.TypeName)
                 return Object.assign({
-                    price: doorPrice ? doorPrice.price : 0
+                    price: door ? door.price : 0,
+                    area: door ? door.area / 1000000 : 0,
+                    type: d.TypeName,
+                    level: d.Level
                 }, d)
             })
             return doors

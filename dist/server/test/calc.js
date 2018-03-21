@@ -22,8 +22,26 @@ describe('calculate test', function () {
             grouped.forEach(function (wall) {
                 var average = wall.price / wall.area;
                 chai_1.expect(average).to.be.greaterThan(2000);
-                console.log('The house has ', wall.area, ' of ', wall.type, '. Total price: ', wall.price, '. Average price: ', average);
+                console.log('The house has ', wall.area, ' of ', wall.type, '. Total price: ', wall.price, '. Average price: ', average, '. resistance:', wall.resistance, '. isolation:', wall.isolation);
             });
+            console.log('and then with further grouping');
+            var groupFull = calc_1.groupByTypeString(grouped, ['CLT-15/15', 'Steypt', 'Gluggi']);
+            groupFull.forEach(function (wall) {
+                var average = wall.price / wall.area;
+                chai_1.expect(average).to.be.greaterThan(2000);
+                console.log('The house has ', wall.area, ' of ', wall.type, '. Total price: ', wall.price, '. Average price: ', average, '. resistance:', wall.resistance, '. isolation:', wall.isolation);
+            });
+        });
+    });
+    it('should get roofs, group by type and print average', function () {
+        return roof_1.getRoofs().then(function (roofs) {
+            var grouped = calc_1.groupByType(roofs);
+            grouped.forEach(function (roof) {
+                var average = roof.price / roof.area;
+                chai_1.expect(average).to.be.greaterThan(2000);
+                console.log('The house has ', roof.area, ' of ', roof.type, '. Total price: ', roof.price, '. Average price: ', average, '. resistance:', roof.resistance, '. isolation:', roof.isolation);
+            });
+            console.log('roofs : ', grouped);
         });
     });
     describe('should do materials grouping', function () {
@@ -32,27 +50,41 @@ describe('calculate test', function () {
                 area: 2,
                 family: 'Basic Roof',
                 type: 'Generic - 400mm',
-                materials: []
+                materials: [],
+                resistance: 0,
+                isolation: 0
             },
             {
                 price: 10,
                 area: 20,
                 family: 'Basic Roof',
                 type: 'Generic - 400mm',
-                materials: []
+                materials: [],
+                resistance: 0,
+                isolation: 0
             },
             {
                 price: 100,
                 area: 200,
                 family: 'Basic Roof',
                 type: 'Other Roof',
-                materials: []
+                materials: [],
+                resistance: 0,
+                isolation: 0,
             }];
         it('should be able to group by type', function () {
             var grouped = calc_1.groupByType(example);
             chai_1.expect(grouped).to.deep.eq([
-                { price: 11, area: 22, family: 'Basic Roof', type: 'Generic - 400mm', materials: [] },
-                { price: 100, area: 200, family: 'Basic Roof', type: 'Other Roof', materials: [] }
+                {
+                    price: 11, area: 22, family: 'Basic Roof', type: 'Generic - 400mm', materials: [],
+                    resistance: 0,
+                    isolation: 0,
+                },
+                {
+                    price: 100, area: 200, family: 'Basic Roof', type: 'Other Roof', materials: [],
+                    resistance: 0,
+                    isolation: 0,
+                }
             ]);
         });
         it('should be able to group all', function () {
@@ -61,10 +93,10 @@ describe('calculate test', function () {
         });
     });
     describe('schedule data', function () {
-        it.only('should get matshlutar', function () {
-            return Promise.all([room_1.getRooms(), wall_1.getWalls(), roof_1.getRoofs(), floor_1.getFloors()]).then(function (_a) {
-                var rooms = _a[0], walls = _a[1], roofs = _a[2], floors = _a[3];
-                var matshlutar = calc_1.calculateMatshlutar(rooms, walls, roofs, floors);
+        it('should get matshlutar', function () {
+            return Promise.all([room_1.getRooms(), wall_1.getWalls(), roof_1.getRoofs(), floor_1.getFloors(), door_1.getDoors()]).then(function (_a) {
+                var rooms = _a[0], walls = _a[1], roofs = _a[2], floors = _a[3], doors = _a[4];
+                var matshlutar = calc_1.calculateMatshlutar(rooms, walls, roofs, floors, doors);
                 console.log('Debug matshlutar: ', matshlutar);
                 fs_1.writeFileSync(__dirname + '/../../../export/matshlutar.json', JSON.stringify(matshlutar));
             });

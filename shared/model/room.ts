@@ -27,7 +27,6 @@ export interface Room extends AreaType, RoomDimensions {
     area: number
     level: string,
     volume: number,
-    elevation: number,
     number: number,
     name: string
 }
@@ -59,7 +58,6 @@ export const createGetRooms: (db: DB) => { query: () => Promise<Room[]> } = (db:
                 let res: Room = {
                     area: room.area,
                     level: room.level,
-                    elevation: room.elevation,
                     number: room.number,
                     name: room.name,
                     type,

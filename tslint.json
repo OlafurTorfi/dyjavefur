@@ -10,7 +10,7 @@
         "class-name": true,
         "cyclomatic-complexity": [
             true,
-            5
+            8
         ],
         "comment-format": [
             true,

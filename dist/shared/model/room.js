@@ -79,7 +79,6 @@ exports.createGetRooms = function (db) {
                             var res = {
                                 area: room.area,
                                 level: room.level,
-                                elevation: room.elevation,
                                 number: room.number,
                                 name: room.name,
                                 type: type,

@@ -36,6 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
+var wall_1 = require("./wall");
 exports.createGetPrice = function (doorDB, floorDB, roofDB, wallDB) {
     var getDoors = doorDB; // createGetDoors(doorDB).query
     var getFloors = floorDB; // createGetFloors(floorDB).query
@@ -72,6 +73,39 @@ exports.createGetPrice = function (doorDB, floorDB, roofDB, wallDB) {
         }); }
     };
 };
+exports.groupByTypeString = function (items, groups) {
+    var result = groups.map(function (group) {
+        var area = 0;
+        var price = 0;
+        var materials = [];
+        var type = '';
+        var family = '';
+        var resistance = 0;
+        var isolation = 0;
+        items.forEach(function (item) {
+            if (item.type.indexOf(group) !== -1) {
+                console.log('item in group', group, ' found. ', item.area, ' big, type was ', item.type);
+                price += item.price;
+                area += item.area;
+                materials = item.materials;
+                type = group;
+                family = item.family;
+                resistance = item.resistance;
+                isolation = item.isolation;
+            }
+        });
+        return {
+            type: type,
+            area: area,
+            price: price,
+            materials: materials,
+            family: family,
+            resistance: resistance,
+            isolation: isolation
+        };
+    });
+    return result;
+};
 exports.groupByType = function (items) {
     var distinct = [];
     items.forEach(function (item) {
@@ -85,6 +119,8 @@ exports.groupByType = function (items) {
         var materials = [];
         var type = '';
         var family = '';
+        var resistance = 0;
+        var isolation = 0;
         items.forEach(function (item) {
             if (item.type === dist) {
                 price += item.price;
@@ -92,6 +128,8 @@ exports.groupByType = function (items) {
                 materials = item.materials;
                 type = item.type;
                 family = item.family;
+                resistance = item.resistance;
+                isolation = item.isolation;
             }
         });
         return {
@@ -99,7 +137,9 @@ exports.groupByType = function (items) {
             area: area,
             price: price,
             materials: materials,
-            family: family
+            family: family,
+            resistance: resistance,
+            isolation: isolation
         };
     });
     return result;
@@ -147,7 +187,7 @@ var getH3Volume = function (bath) {
     console.log('Debug h3Plate: ', h3Plate);
     return le * be * (h1e + h2) / 2 + lw * bw * (h1w + h2) + bath.volume;
 };
-exports.calculateMatshlutar = function (rooms, walls, roofs, floors) {
+exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
     var levels = rooms.reduce(function (prev, curr) {
         if (prev.indexOf(curr.level) === -1) {
             return prev.concat(curr.level);
@@ -169,10 +209,40 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors) {
     var bRoomsVolume = sumVolume(bRooms);
     var aRoomsArea = sumArea(aRooms);
     var bRoomsArea = sumArea(bRooms);
+    var findFloorByLevelAndType = function (floors, level, type) {
+        var tempFloors = floors.filter(function (f) { return (f.level === level && f.type === type); });
+        return tempFloors[0];
+    };
+    var getMaxHeight = function (rooms) {
+        return rooms.reduce(function (prev, curr) {
+            var hm = curr.heightMax;
+            return Math.max(prev, curr.heightMax);
+        }, 0);
+    };
+    var getMinHeight = function (rooms) {
+        return rooms.reduce(function (prev, curr) {
+            var hm = curr.heightMin;
+            return Math.min(prev, curr.heightMin);
+        }, 999);
+    };
+    var getAverageHeight = function (rooms) {
+        var totalVolume = rooms.reduce(function (prev, curr) {
+            return prev + curr.avgHeight * curr.area;
+        }, 0);
+        var totalArea = rooms.reduce(function (prev, curr) {
+            return prev + curr.area;
+        }, 0);
+        return totalVolume / totalArea;
+    };
     var bilskurRooms = rooms.filter(function (r) { return r.level === 'Bílskúr'; });
     var h1Rooms = rooms.filter(function (r) { return r.level === '1. Hæð'; });
     var h2Rooms = rooms.filter(function (r) { return r.level === '2. Hæð'; });
     var h3Rooms = rooms.filter(function (r) { return r.level === '3. Hæð'; });
+    var bilskurDoors = doors.filter(function (d) { return d.level === 'Bílskúr'; });
+    var h1Doors = doors.filter(function (d) { return d.level === '1. Hæð'; });
+    var h2Doors = doors.filter(function (d) { return d.level === '2. Hæð'; });
+    var h3Doors = doors.filter(function (d) { return d.level === '3. Hæð'; });
+    var gluggar = walls.filter(function (w) { return w.type === 'Gluggi'; });
     var inngangsskjol = findRoomByName(bRooms, 'Inngangsskjól');
     var idurgardur = findRoomByName(bRooms, 'Iðurgarður');
     var svalir = findRoomByName(cRooms, 'Svalir');
@@ -190,32 +260,6 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors) {
     var bilskursStigiArea = 750 * 1100 / 1000000;
     var burdarvirkiArea = 11.2;
     var sudArea = 11.1;
-    var findFloorByLevelAndType = function (floors, level, type) {
-        var tempFloors = floors.filter(function (f) { return (f.level === level && f.type === type); });
-        return tempFloors[0];
-    };
-    var getMaxHeight = function (rooms) {
-        return rooms.reduce(function (prev, curr) {
-            var hm = curr.heightMax;
-            return Math.max(prev, curr.heightMax);
-        }, 0);
-    };
-    var getMinHeight = function (rooms) {
-        return rooms.reduce(function (prev, curr) {
-            console.log('Debug curr.heightMin: ', curr.heightMin);
-            var hm = curr.heightMin;
-            return Math.min(prev, curr.heightMin);
-        }, 999);
-    };
-    var getAverageHeight = function (rooms) {
-        var totalVolume = rooms.reduce(function (prev, curr) {
-            return prev + curr.avgHeight * curr.area;
-        }, 0);
-        var totalArea = rooms.reduce(function (prev, curr) {
-            return prev + curr.area;
-        }, 0);
-        return totalVolume / totalArea;
-    };
     var bilskurFloor = findFloorByLevelAndType(floors, 'Bílskúr', 'Generic 150mm');
     var h1Floor = findFloorByLevelAndType(floors, '1. Hæð', 'Generic 150mm');
     var h2Floor = findFloorByLevelAndType(floors, '2. Hæð', 'Generic 150mm');
@@ -225,13 +269,19 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors) {
     var totalVolume = bilskurFloor.area * 3.6 + h1Floor.area * 3 + h2Volume + h3Volume;
     var botnfloturM2 = sumArea(floors.filter(function (f) { return f.type === 'CLT Floor' || f.type === 'Generic 150mm'; }));
     var botnplataM2 = bilskurFloor.area + h1Floor.area;
-    console.log('Debug h3Rooms: ', h3Rooms);
+    // console.log('Debug bilskurRooms: ', rooms);
     return {
+        botnplataRooms: formatNumber(sumArea(h1Rooms) + sumArea(bilskurRooms) - idurgardur.area - inngangsskjol.area),
         botnplataRummal: formatNumber(botnplataM2 * 0.2),
         botnplataFlatarmal: formatNumber(botnplataM2),
-        utveggir: sumArea(walls.filter(function (w) { return w.purpose === 'Útveggur'; })),
-        gluggar: sumArea(walls.filter(function (w) { return w.type === 'Gluggi'; })),
+        utveggir: wall_1.groupWall(walls.filter(function (w) { return w.purpose === 'Útveggur'; })),
+        gluggar: wall_1.groupWall(gluggar),
+        cltExternalWalls: wall_1.groupWall(walls.filter(function (w) { return w.type.indexOf('CLT-15/15') !== -1; }).filter(function (w) { return w.purpose === 'Útveggur'; })),
+        stoneExternalWalls: wall_1.groupWall(walls.filter(function (w) { return w.type.indexOf('Steypt m.') !== -1; }).filter(function (w) { return w.purpose === 'Útveggur'; })),
         þakFlotur: sumArea(roofs),
+        gfDoors: sumArea(h1Doors) + sumArea(bilskurDoors),
+        topDoors: sumArea(h2Doors) + sumArea(h3Doors),
+        externalDoors: sumArea(doors.filter(function (d) { return d.type !== '1200 x 2100mm'; }).filter(function (d) { return d.type.indexOf('Innihurð') === -1; })),
         þakgluggar: 0,
         A: {
             Botnflotur: formatNumber(botnfloturM2),

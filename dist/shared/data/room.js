@@ -17,7 +17,7 @@ exports.roomAllocations = [
         }
     },
     {
-        number: 67,
+        number: 129,
         name: 'Geymsla',
         type: 'A'
     },
@@ -37,12 +37,12 @@ exports.roomAllocations = [
         type: 'A'
     },
     {
-        number: 74,
+        number: 133,
         name: 'Iðurgarður',
         type: 'B'
     },
     {
-        number: 77,
+        number: 131,
         name: 'Þvottahús',
         type: 'A'
     },
@@ -79,12 +79,12 @@ exports.roomAllocations = [
         type: 'A'
     },
     {
-        number: 91,
+        number: 130,
         name: 'Bílskúr',
         type: 'A'
     },
     {
-        number: 92,
+        number: 132,
         name: 'Líkamsrækt',
         type: 'A'
     },
