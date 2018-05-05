@@ -49,13 +49,17 @@ exports.createGetRoofs = function (db) {
                     case 1:
                         res = _a.sent();
                         roofs = res.rows.map(function (roof) {
-                            var roofType = roof_1.roofChoices.find(function (Roofp) { return Roofp.type === roof.TypeName; });
-                            assert(roofType, 'no price found for ' + roof.TypeName);
-                            var calc = roofType && roofType.materials.reduce(function (prev, curr) {
-                                var materialType = materials_1.materials.find(function (materialp) { return materialp.type === curr.type; });
-                                assert(materialType, 'no price found for ' + curr.type);
-                                return prev + curr.amount * (materialType ? materialType.price : 0);
-                            }, 0);
+                            var roofType = roof_1.roofChoices.find(function (Roofp) {
+                                return Roofp.type === roof.TypeName;
+                            });
+                            assert(roofType, "no price found for " + roof.TypeName);
+                            var calc = roofType &&
+                                roofType.materials.reduce(function (prev, curr) {
+                                    var materialType = materials_1.materials.find(function (materialp) { return materialp.type === curr.type; });
+                                    assert(materialType, "no price found for " + curr.type);
+                                    return prev + curr.amount * (materialType ? materialType.price : 0);
+                                }, 0);
+                            roof.Area = roof.Area || (roofType && roofType.areaOverride);
                             var price = (calc ? calc : 0) * roof.Area;
                             return Object.assign({
                                 price: price,

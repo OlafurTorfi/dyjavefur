@@ -1,0 +1,79 @@
+
+Byggingarlýsing: 
+Lóð: Dýjagata 7, Garðabæ.
+Staðgreinir: 22.916.203. 
+Landnúmer: 212.018.
+Fastanúmer: 232-9747
+Hnit: { X: 20811.3, Y: 9187.2 },
+Nýtingarhlutfall: 0,73
+Lóðarstærð:794,0 m2
+Auðkennisnúmer: 1300-1-14500050
+Einbýlishús á þremur hæðum. Á fyrstu hæð eru rúmgóð dagrými, tómstundarými og bílskúr.
+Á annarri hæð eru svefnrými, stofa og eldhús. 
+Á þriðju hæð er svefnherbergisálma, að miklu leiti undir súð.
+Húsinu er ætlað að hýsa stóra fjölskyldu, með sveigjanleika til að geta komið til móts við þarfir t.d. barna inn í fullorðinsárin eða aldraðra inn í elliárin.
+Hjólastóla aðgengi er greitt að fyrstu tveimur hæðum hússins um bílskúr, aðalinngang og pall að aftan.
+Húsið endurspeglar umhverfisvænan hugsunarhátt hverfisins, bæði með því að hafa kolvetnis-fótspor sitt í huga við efnisval og með því nýta efni úr jarðveginum í hönnun garðsins. Vegna þess að CLT er unnið úr timbri, er þar verið að binda 676 kg af CO2 á hvern m3 af CLT.  Það vegur upp á móti meirihlutana þeirrar losunar sem verður til við aðra byggingarliði. 
+Klæðningar
+Múrklæddar trefjaplötur klæða útveggi húsins nema í innskotum og jarðhæð suðurhluta. Svartir múrsteinar klæða jarðhæð suðurhluta, en timburklæðning í innskotum. Múrklæðningin er að mestu hvít nema á hverri hlið, eru fáeinir veggir í fölum regnbogans litum (gulum, rauðum, grænum, og bláum). Þó þannig að ekki er hægt frá neinni hlið hússins, að sjá fleiri en tvo litaða veggi.
+Í innskotum er veðurkápa útveggja úr timbri.
+Þak er varið með þakpappa og dökk-gráu bárujárni.
+Einangrun:
+Botnplata er einangruð með 100mm plasteinangrun.
+utaná alla útveggi kemur 100mm steinullar einangrun
+Þak er einangrað með 200mm þakull.
+Gler í gluggum er tvöfalt K-gler með hitageislavörn.
+Heildarflatarmál hjúpflata er 1265.1 með botnplötu og þaki. Meðal varmaleiðni er 0.4 W/m2K og heildar varmatap því 505.1 W/K
+Burðarvirki:
+Sökklar og botnplata eru staðsteypt með járnbentri steinsteypu.
+Útveggir og burðarveggir fyrstu hæðar eru staðsteyptir úr járnbentri steinsteypu, með 20cm þykkum steypukjarna.
+Útveggir og burðarveggir annarrar og þriðju hæðar eru úr CLT samlokueiningum.
+Léttir inn-veggir á fyrstu hæð eru úr timbri, ýmist klæddir með gips eða crossviðar plötum. En léttir innveggir á 2.hæð og 3.hæð eru úr CLT samlokueiningum.
+Veggur milli íbúðar og bílskúrs er EI90 og bílskúrshurð EICS30.
+Þak er úr timbursperrum, krossviðsklæðningu, nema undir þaksvölum, þar sem það er úr CLT samlokueiningum.
+Innviðir:
+Aðkoma að húsi er í yfirbyggðu timburklæddu innskoti við bílastæði á suð-vestur hluta lóðar. Hurð verður úr timbri í samræmi við klæðningu, en opnast inní rými þar sem útveggir og burðarveggir eru gráir steypuveggir með timbur áferð, en léttir innveggir klæddir með ómáluðum krossviðar plötum, eða máluðum gips klæðningu eftir því sem við á.
+Á fyrstu hæð er gestasalerni, anddyri og rúmgott dag- og kvöldrými, í góðri fjarlægð frá svefnrýmum húss til að minnka ónæði vegna viðveru, þar er pláss fyrir lítinn bar og billjarð borð og rennihurð að garði.. Gólflísar eru frá anddyri inn í gestasalerni og yfir barsvæði en parket tekur við í suðvesturhluta fyrstu hæðar.
+Steinsteyptur stigi er úr anddyri upp á aðra hæð og niður á bílskúrshæð um millirými á bílskúrshæð.
+Millirými á bílskúrshæð er opið inn í líkamsrækt, rennihurð er að þvottahúsi og timburhurð að bílskúr. Frá þvottahúsi eru bakdyr inn að yfirbyggðum iðurgarði, þar sem hægt er að hengja upp þvott. Frá líkamsrækt eru gler rennidyr að iðurgarði. Ofan fyrstu hæðar eru burðarveggir og léttir inn-veggir úr CLT samlokueiningum, gólfið parketlagt. Notast er við mjög ljósbrún eða dökk húsgögn, baðherbergis-flísar og eldhúss-innréttingar til móts við timburútlit veggja. Rúmgóðar stofur, eldhús á fyrstu og annarri ætlað að hýsa fjölskylduviðburði s.s. afmæli, útskriftir etc. með allt að 30 manns. Enda fleiri en tveir brunaútgangar á þeim rýmum (stigagangur, pall-, garð-, svalar-, útidyr)
+Pallur er á 2.hæð að garði húss, um pallinn er bæði gler rennihurð að hjónaherbergi og timbur dyr í samræmi við klæðningu iðurpalls að eldhúsi. Í norðurhluta 2. Hæðar eru 2 baðherbergi, annað við gang að svefnherbergis-álmu, hitt inn af hjónaherbergi. Timbur stigi liggur á milli annarrar og þriðju hæðar þar sem hol, lýst upp af glugga efst á vegg leiðir áfram í aðra svefnherbergis-álmu undir súð, auk geymslu.
+Allir gangar húss eru breiðari en 1.6m, auk þess er hjólastóla aðgengi um pall á 2. Hæð.
+Brunavarnir
+Úr öllum rýmum húss eru amk. tvær útgönguleiðir. Þó gluggaútgangar á norðvestari hlið séu hæst með 7 metra fallhæð, er þar með góðu hægt að bjarga lífi sínu á flótta undan eldsvoða, Reykskynjarar eru í öllum dvalarrýmum.
+Allir veggir nema fáinir léttir innveggir á 1 hæð eru annaðhvort úr steinsteypu eða CLT. 
+CLT er með brunaflokkun ETA-06/138. Veggir eru ekki klæddir sérstaklega að innan, hrein steypan og CLT eru yfirborðs-meðhöndluð eftir þörfum.
+Slökkvitæki er undir eldhúsvaski, en brunateppi í holi á 3.hæð og gangi að líkamsrækt á Bílskúrshæð.
+Upphitun, lagnir og loftræsting:
+Hitaveita, gólfhitalagnir í öllum rýmum ásamt ofnum á baðherbergjum.
+Eina gluggalausa rýmið er baðherbergi á þriðju hæð, en þar eru loftop að svölum og stórum stofu/eldhús rými á 2. hæð.
+Lóðréttar lagnir fyrir eldhús á 2. hæð eru í stokk á bak við bar. Lóðréttar lagnir fyrir baðherbergi við stiga
+Láréttar lagnir eru undir gólfplötu og í veggjum. á 2. Hæð, eru í stokk inn af þvottahúsi, þaðan fara þær um falskt loft á 2. Hæð að baðherbergi 3.hæðar.. Lagnir að baðherbergi innaf hjónaherbergi eru meðfram lofti inní bílskúr og í gegnum botnplötu í geymslu inn af bílskúr.
+Vifta í loftopi í stokk við bar á 1. Hæð sogar loft beint út úr eldhúsi á 2. Hæð og bar á 1. Hæð og inn í iðurgarð. Gert er ráð fyrir að koma megi fyrir loftrörum í gólfplötu yfir bílskúr til að lofta fersku lofti, soguðu um loftop yfir bílskúrshurð og blásið inn í stofu og um stokk í hjónabaðherbergi inn í svefnherbergi um falskt loft á 2.hæð.
+Snjóbræðsla við inngang og bílastæði.
+
+Stigar:
+Lítill þriggja þrepa stigi liggur frá líkamsrækt að anddyri fyrstu hæðar. 1.1m breiður L-laga stigi liggur milli fyrstu, annarrar og þriðju hæðar. Steinsteyptur á milli fyrstu og annarrar. Úr timbri á milli annarrar og þriðju. Handriði stiga eru alls staðar úr timbri.
+Öryggiskerfi:
+Heimasmíðað öryggiskerfi verður í húsinu sem felur í sér m.a. myndavélum beindum að aðkomum, göngum húss og iðursvæðum (garði, palli og svölum). Hreyfiskynjarar eru á við innganga og fjarlægðarskynjarar við rennihurðir. Rakaskynjarar eru við gólf í þvottahúsi, baðherbergjum, eldhúsi og bar. Öryggiskerfi sendir viðvaranir og áminningar sjálfvirkt í síma íbúa hússins og getur haft samband við viðbragðsaðila, sé ekki brugðist við viðvörunum í tæka tíð.
+
+
+
+ 
+
+4.6.1 Bílastæði, Griðingar, Gróður, forgarðar, lóðarmörk, frágangur og ofanvatn
+3 rúmgóð 3 metra breið bílastæði eru framan við hús, 2 í 68m2 bílskúr í vesturhluta byggingarreits.
+Mis-gegndreypar hellur eru notaðar í bland við inngang og bílastæði framan við hús.
+Gegndreypi í hellum er minnkað alveg við hús, til að koma í veg fyrir aðkomu vatns að sökklum eins og unnt er.
+Aftan við hús verður gras með náttúrulegum flötum steinum öðru hvoru frá stíg að norð-vestan að palli. Aðrir fletir allt í kringum hús er almennt líka úr náttúrulegum gegndreypum efnum sem geta tekið við vatni. Litlir regnvatns garðar eru sunnan, norðan og austan megin við hús. 
+Regnvatni frá þaki er beint í regngarða sunnan og austan en regnvatns púkkur að suð-austan og regngarður geta einnig tekið við vatni og leitt yfirfall með náttúrulegri regnvatns lögn við yfirborð í ofanvatnsrás við götu.
+Gróðursett verður lyng í holtagrjóts halla að suð-austan, en holtagrjót myndar stalla frá palli að iðurgarði.
+Holtagrjóti og efni úr út greftri fyrir húsi verður hlaðið í hól í austurhluta garðs. Hann nær ekki út fyrir lóðarmörkin en myndar litla sleðabrekku niður að iðurgarði fyrir yngsta fólkið.
+Á lóðarmörkum sunnan megin verður gróðursett veglegt tré og runnar. Þeir skyggja ekki á dvalarsvæði aðliggjandi lóða, enda við bílastæði nágrannalóðar, götu og með landhalla upp frá götu.
+Látlaus LED lýsing við aðalinngang, bílastæði og sorpskýli.
+
+4.6.2 Bílgeymsla, hljóðvistir, skyggni, sorpgeymslur, veggsvalir og gluggar.
+68 m2, 244 m3 bílgeymsla er ofan við bílastæði að vestan. Bílskúrshurð er inndregin 70cm  frá vegg, Frá bílgeymslu er EICS30 hurð að bílastæðum. Vinnusvæði er  í útskoti í suðvesturhluta og lítil niðurgrafin viðgerðargryfja undir öðru bílastæðinu. Í enda bílgeymslu eru bakdyr og geymsla.
+Hljóði er haldið frá svefnherbergjum með því að hafa þau í sér álmum, og með því að hafa í neðri hlutum húss. Hús veldur hóflegri hljóðmengun fyrir nágranna, enda snúa dagrými til móts við götu. CLT veggur er hafður til móts við fyrri hluta á milli annarrar og þriðju hæðar, til að minnka hljóðburð frá eldhúsi að svefnherbergisálmu.
+Útisvæði húss eru með skyggni að hluta. Þak gengur yfir svalir að hluta, pallur er með sólskýli, aðalinngangur inndreginn og undir svölum, iðurgarður er sá hluti garðs sem er undir palli. Pallur er á steyptum grunni og með gervigrasi, handriði og sólskýli eru úr timbri. Þakskegg gengur yfir svalir að hluta en handriði svalar eru steypt fyrstu 600mm með ál-handriði ofaná.
+Gert er ráð fyrir fjórum ruslatunnum í sorpskýli við bílastæði norðan megin húss
+Gluggar eru á öllum rýmum hús nema baðherbergi þriðju hæðar, þar eru þess í stað rimluð loftop í stofu, eldhús og út á svalir.

@@ -61,16 +61,24 @@ exports.createGetRooms = function (db) {
                             var alloc = room_1.roomAllocations.find(function (roomAlloc) {
                                 return roomAlloc.number === room.number;
                             });
-                            assert(alloc, 'unable to find allocation for room number: ' + room.number + ' room.Level: ' + room.level + ' room.name: ' + room.name);
+                            assert(alloc, "unable to find allocation for room number: " +
+                                room.number +
+                                " room.Level: " +
+                                room.level +
+                                " room.name: " +
+                                room.name);
                             var dims = {
                                 heightMax: 3,
                                 heightMin: 3,
                                 avgHeight: 3,
                                 volume: room.volume
                             };
-                            var type = '';
+                            var type = "";
                             if (alloc) {
-                                assert(alloc.name === room.name, 'alloc.name must match room.name. Alloc: ' + JSON.stringify(alloc) + ' room.name: ' + room.name);
+                                assert(alloc.name === room.name, "alloc.name must match room.name. Alloc: " +
+                                    JSON.stringify(alloc) +
+                                    " room.name: " +
+                                    room.name);
                                 type = alloc.type;
                                 if (alloc.volumeOverride) {
                                     dims = alloc.volumeOverride(room.area);
@@ -83,7 +91,7 @@ exports.createGetRooms = function (db) {
                                 name: room.name,
                                 type: type,
                                 price: 0,
-                                family: '',
+                                family: "",
                                 heightMax: dims.heightMax,
                                 heightMin: dims.heightMin,
                                 avgHeight: dims.avgHeight,

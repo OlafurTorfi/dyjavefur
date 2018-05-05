@@ -63,6 +63,7 @@ exports.createGetFloors = function (db) {
                                 family: floor.FamilyName,
                                 level: floor.Level,
                                 type: floor.TypeName,
+                                comments: floor.Comments,
                                 materials: floorType ? floorType.materials : []
                             }, floor);
                         });

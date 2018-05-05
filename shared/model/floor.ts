@@ -3,7 +3,7 @@ import { materials, Material, MaterialType, MaterialAmount, LevelType } from '..
 import { DB } from '../db'
 import { floorChoices } from '../data/floor'
 
-export interface Floor extends LevelType { }
+export interface Floor extends LevelType { comments: string }
 
 export const createGetFloors: (db: DB) => { query: () => Promise<Floor[]> } = (db: DB) => {
     return {
@@ -25,6 +25,7 @@ export const createGetFloors: (db: DB) => { query: () => Promise<Floor[]> } = (d
                     family: floor.FamilyName,
                     level: floor.Level,
                     type: floor.TypeName,
+                    comments: floor.Comments,
                     materials: floorType ? floorType.materials : []
                 }, floor)
             })

@@ -4,6 +4,7 @@
   "description": "Torfhóll on the web",
   "main": "./lib/index",
   "scripts": {
+    "export-model": "node dist/server/exportData.js",
     "server-test": "mocha dist/server/test/*.js -w",
     "shared-test": "mocha dist/shared/test/*.js -w",
     "test": "npm run server-test",
