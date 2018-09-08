@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.floorChoices = [
     {
-        type: "Generic 150mm",
-        materials: [{ type: "Steypa", amount: 0.15 }]
+        type: "Generic 200mm",
+        materials: [{ type: "Steypa", amount: 0.2 }]
     },
     {
         type: "Concrete 200mm",
@@ -28,6 +28,10 @@ exports.floorChoices = [
     {
         type: "Viðarklæðning",
         materials: [{ type: "Parket", amount: 1 }]
+    },
+    {
+        type: "Viðarþrep",
+        materials: [{ type: "Parket", amount: 1 }, { type: "Timbur", amount: 1 }]
     },
     {
         type: "CLT Floor",

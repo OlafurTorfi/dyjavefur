@@ -249,7 +249,7 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
     var opFlotur = rooms.filter(function (r) { return r.name === "Op"; }).reduce(function (prev, curr) {
         return prev + curr.area;
     }, 0);
-    var bilskurRooms = rooms.filter(function (r) { return r.level === "Bílskúr"; });
+    var bilskurRooms = rooms.filter(function (r) { return r.level === "Bílgeymsla"; });
     var h1Rooms = rooms.filter(function (r) { return r.level === "1. Hæð"; });
     var h2Rooms = rooms.filter(function (r) { return r.level === "2. Hæð"; });
     var h3Rooms = rooms.filter(function (r) { return r.level === "Háaloft"; });
@@ -284,6 +284,7 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
     var idurpallurBrutto = findFloorByComment(maeligolf, "Iðurpallur");
     var bilskurFloor = findFloorByComment(maeligolf, "Bílskúr");
     var hjolageymsla = findRoomByName(rooms, "Hjólageymsla");
+    var geymsla = findRoomByName(rooms, "Geymsla");
     var hjolageymslaBrutto = findFloorByComment(maeligolf, "Hjólageymsla");
     var eldhus = findRoomByName(h2Rooms, "Eldhús");
     var stofa = findRoomByName(h2Rooms, "Stofa");
@@ -293,9 +294,8 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
         area: 2.05 * 1.2 + 0.6 * 0.3
     };
     var op = findRoomByName(h2Rooms.filter(function (r) { return r.level === "2. Hæð"; }), "Op");
-    var bilskur = findRoomByName(h1Rooms, "Bílskúr");
-    var vinnurymi = findRoomByName(h1Rooms, "Vinnurými");
-    var idursvalir = findRoomByName(h2Rooms, "Iðursvalir");
+    var bilskur = findRoomByName(h1Rooms, "Bílgeymsla");
+    var vinnurymi = findRoomByName(h1Rooms, "Vinnu/Föndur-rými");
     var idursvalirFloor = findFloorByComment(maeligolf, "Iðursvalir");
     var lowestPointOfRoof = 50.2;
     var highestPointOfRoof = 53.9;
@@ -346,6 +346,10 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
         }
     };
     var gryfjaU18 = 1.2 * 3.4;
+    var gryfja = {
+        netto: 1 * 4.25,
+        brutto: 1.4 * 4.6
+    };
     var h2Volume = (h2Floor.area - stofa.area) * 3 + stofa.volume + h3Volume;
     var totalVolume = h1Floor.area * 3 + h2Volume;
     var botnplataM2 = h1Floor.area;
@@ -354,6 +358,13 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
         .filter(function (d) { return d.type.indexOf("Innihurð") === -1; }));
     var utveggir = wall_1.groupWall(walls.filter(function (w) { return w.purpose === "Útveggur"; }));
     var þakgluggi = { area: 4.2 };
+    var nettofloturH1 = formatNumber(sumArea(filterType(h1Rooms, "A")) -
+        stigi1h.area -
+        bilskur.area -
+        vinnurymi.area -
+        geymsla.area);
+    var nettofloturBilskur = formatNumber(bilskur.area + vinnurymi.area + geymsla.area) -
+        stigiBilskur.area;
     return {
         timburklaedning: formatNumber(sumArea(walls.filter(function (w) { return w.materials.some(function (m) { return m.type === "Timbur"; }); }))),
         botnplataRooms: formatNumber(sumArea(h1Rooms) - idurgardur.area - inngangsskjol.area),
@@ -363,9 +374,11 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
         cltExternalWalls: wall_1.groupWall(walls
             .filter(function (w) { return w.type.indexOf("CLT-15/15") !== -1; })
             .filter(function (w) { return w.purpose === "Útveggur"; })),
+        cltInternalWalls: wall_1.groupWall(walls.filter(function (w) { return w.type === "CLT150mm" || w.type === "CLT100mm"; })),
         stoneExternalWalls: wall_1.groupWall(walls
             .filter(function (w) { return w.type.indexOf("Steypt m.") !== -1; })
             .filter(function (w) { return w.purpose === "Útveggur"; })),
+        cltFloors: sumArea(floors.filter(function (f) { return f.type === "CLT Floor"; })),
         þakFlotur: sumArea(roofs),
         gfDoors: sumArea(h1Doors) + sumArea(bilskurDoors),
         topDoors: sumArea(h2Doors),
@@ -375,18 +388,15 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
         doorsAndWindowsArea: externalDoors + sumArea(gluggar) + þakgluggi.area,
         totalExternalArea: formatNumber(utveggir.area + externalDoors + sumArea(roofs) + botnplataM2),
         Einingar: {
+            botnplata: formatNumber(h1Floor.area),
             h1: {
                 botnflotur: formatNumber(h1Floor.area - bilskurFloor.area),
                 stigar: formatNumber(stigi1h.area),
-                nettoflotur: formatNumber(sumArea(filterType(h1Rooms, "A")) -
-                    stigi1h.area -
-                    bilskur.area -
-                    vinnurymi.area),
-                botnplata: formatNumber(h1Floor.area)
+                nettoflotur: nettofloturH1
             },
             bilskur: {
                 botnflotur: formatNumber(bilskurFloor.area),
-                nettoflotur: formatNumber(bilskur.area + vinnurymi.area) - stigiBilskur.area,
+                nettoflotur: nettofloturBilskur,
                 stigar: stigiBilskur.area
             },
             h2: {
@@ -402,7 +412,7 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
             },
             svalir: {
                 nettoflotur: formatNumber(svalir.area),
-                brutto: formatNumber(svalirFloor.area)
+                brutto: formatNumber(svalirFloor.area + idursvalirFloor.area)
             },
             inngangsskjol: {
                 nettoflotur: formatNumber(inngangsskjol.area),
@@ -417,16 +427,20 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
                 brutto: formatNumber(pallurBrutto.area)
             },
             Idurpallur: {
-                nettoflotur: formatNumber(idurpallur.area + 0.4),
+                nettoflotur: formatNumber(idurpallur.area),
                 brutto: formatNumber(idurpallurBrutto.area)
             },
             idursvalir: {
-                nettoflotur: formatNumber(idursvalir.area),
-                brutto: formatNumber(idursvalirFloor.area)
+                nettoflotur: formatNumber(svalir.area),
+                brutto: formatNumber(idursvalirFloor.area + svalirFloor.area)
             },
             hjolageymsla: {
                 nettoflotur: formatNumber(hjolageymsla.area),
                 brutto: formatNumber(hjolageymslaBrutto.area)
+            },
+            skridkjallari: {
+                netto: formatNumber(nettofloturH1 + nettofloturBilskur - gryfja.brutto),
+                brutto: formatNumber(h1Floor.area - gryfja.netto)
             }
         }
     };

@@ -15,6 +15,10 @@ export const roofChoices: {
     ]
   },
   {
+    type: "Cold Roof - Concrete",
+    materials: [{ type: "Steypa", amount: 0.1 }]
+  },
+  {
     type: "Sloped Glazing",
     materials: [{ type: "Gler", amount: 1 }, { type: "Ál-listar", amount: 6 }],
     areaOverride: 17

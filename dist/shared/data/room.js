@@ -219,7 +219,7 @@ exports.roomAllocations = [
     },
     {
         number: 157,
-        name: "Bílskúr",
+        name: "Bílgeymsla",
         type: "A"
     },
     {
@@ -234,7 +234,7 @@ exports.roomAllocations = [
     },
     {
         number: 160,
-        name: "Vinnurými",
+        name: "Vinnu/Föndur-rými",
         type: "A"
     },
     {
@@ -290,6 +290,16 @@ exports.roomAllocations = [
     {
         number: 176,
         name: "Lesstofa",
+        type: "A"
+    },
+    {
+        number: 181,
+        name: "Skrifstofa",
+        type: "A"
+    },
+    {
+        number: 182,
+        name: "Geymsla",
         type: "A"
     },
     {

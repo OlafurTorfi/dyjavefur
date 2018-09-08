@@ -38,16 +38,16 @@ var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var pg_1 = require("pg");
 var pool = new pg_1.Pool({
-    database: 'schedules',
-    host: 'localhost',
-    password: 'olivici',
+    database: "postgres",
+    host: "localhost",
+    password: "olivici",
     port: 5432,
-    user: 'postgres',
+    user: "postgres"
 });
 // the pool with emit an error on behalf of any idle clients
 // it contains if a backend error or network partition happens
-pool.on('error', function (err, client) {
-    console.error('Unexpected error on idle client', err);
+pool.on("error", function (err, client) {
+    console.error("Unexpected error on idle client", err);
     process.exit(-1);
 });
 // async/await - check out a client

@@ -1,8 +1,8 @@
 import { MaterialAmount } from "./materials";
 export const floorChoices: { type: string; materials: MaterialAmount[] }[] = [
   {
-    type: "Generic 150mm",
-    materials: [{ type: "Steypa", amount: 0.15 }]
+    type: "Generic 200mm",
+    materials: [{ type: "Steypa", amount: 0.2 }]
   },
   {
     type: "Concrete 200mm",
@@ -27,6 +27,10 @@ export const floorChoices: { type: string; materials: MaterialAmount[] }[] = [
   {
     type: "Viðarklæðning",
     materials: [{ type: "Parket", amount: 1 }]
+  },
+  {
+    type: "Viðarþrep",
+    materials: [{ type: "Parket", amount: 1 }, { type: "Timbur", amount: 1 }]
   },
   {
     type: "CLT Floor",

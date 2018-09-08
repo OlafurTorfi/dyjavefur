@@ -166,6 +166,11 @@ export const wallChoices: {
     purpose: "Handrið"
   },
   {
+    type: "Generic - 250mm yellow",
+    materials: [{ type: "Steypa", amount: 0.25 }],
+    purpose: "Handrið"
+  },
+  {
     type: "Varmamót-5/15/5-Völun",
     materials: [
       { type: "Völun", amount: 1 },
@@ -201,6 +206,11 @@ export const wallChoices: {
     purpose: "Útveggur"
   },
   {
+    type: "CembritKlæðning",
+    materials: [{ type: "Cembrit", amount: 1 }],
+    purpose: "Útveggur"
+  },
+  {
     type: "Generic - 200mm",
     materials: [{ type: "Steypa", amount: 0.2 }],
     purpose: "Innveggur"
@@ -224,6 +234,11 @@ export const wallChoices: {
       { type: "Gips", amount: 1 }
     ],
     purpose: "Útveggur"
+  },
+  {
+    type: "Einangrun",
+    materials: [{ type: "Steinull", amount: 0.1 }],
+    purpose: "Einangrun"
   },
   {
     type: "Gluggi",
