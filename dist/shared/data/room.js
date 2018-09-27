@@ -18,7 +18,7 @@ exports.roomAllocations = [
     },
     {
         number: 143,
-        name: "Iðurpallur",
+        name: "Svalir",
         type: "B"
     },
     {
@@ -63,7 +63,7 @@ exports.roomAllocations = [
     },
     {
         number: 123,
-        name: "Pallur",
+        name: "Svalir",
         type: "C"
     },
     {
@@ -221,11 +221,6 @@ exports.roomAllocations = [
         number: 157,
         name: "Bílgeymsla",
         type: "A"
-    },
-    {
-        number: 158,
-        name: "Hjólageymsla",
-        type: "B"
     },
     {
         number: 159,

@@ -59,6 +59,14 @@ exports.wallChoices = [
         purpose: "Útveggur"
     },
     {
+        type: "Steypt m. Sto Ventec 15/15 White",
+        materials: [
+            { amount: 0.15, type: "Steypa" },
+            { amount: 0.1, type: "Sto Venturi" }
+        ],
+        purpose: "Útveggur"
+    },
+    {
         type: "Steypt m. Sto Ventec 20/15 Green",
         materials: [
             { amount: 0.2, type: "Steypa" },
@@ -83,9 +91,25 @@ exports.wallChoices = [
         purpose: "Útveggur"
     },
     {
+        type: "Steypt m. Sto Ventec 15/15 Red",
+        materials: [
+            { amount: 0.15, type: "Steypa" },
+            { amount: 0.1, type: "Sto Venturi" }
+        ],
+        purpose: "Útveggur"
+    },
+    {
         type: "Steypt m. Sto Ventec 20/15 Blue",
         materials: [
             { amount: 0.2, type: "Steypa" },
+            { amount: 0.1, type: "Sto Venturi" }
+        ],
+        purpose: "Útveggur"
+    },
+    {
+        type: "Steypt m. Sto Ventec 15/15 Blue",
+        materials: [
+            { amount: 0.15, type: "Steypa" },
             { amount: 0.1, type: "Sto Venturi" }
         ],
         purpose: "Útveggur"
@@ -120,6 +144,16 @@ exports.wallChoices = [
     },
     {
         type: "CLT100mm",
+        materials: [
+            {
+                type: "CLT",
+                amount: 1
+            }
+        ],
+        purpose: "Innveggur"
+    },
+    {
+        type: "CLT100mm 2",
         materials: [
             {
                 type: "CLT",
@@ -229,6 +263,15 @@ exports.wallChoices = [
             { type: "Steinull", amount: 0.1 },
             { type: "Steypa", amount: 0.2 },
             { type: "Gips", amount: 1 }
+        ],
+        purpose: "Útveggur"
+    },
+    {
+        type: "Steypt m. timbri 15/15",
+        materials: [
+            { type: "Timbur", amount: 1 },
+            { type: "Steinull", amount: 0.1 },
+            { type: "Steypa", amount: 0.15 }
         ],
         purpose: "Útveggur"
     },

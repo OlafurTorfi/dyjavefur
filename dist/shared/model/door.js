@@ -48,13 +48,16 @@ exports.createGetDoors = function (db) {
                     case 1:
                         res = _a.sent();
                         doors = res.rows.map(function (d) {
-                            var door = door_1.doorChoice.find(function (dp) { return dp.type === d.TypeName; });
-                            assert(door, 'no door found for ' + d.TypeName);
+                            var door = door_1.doorChoice.find(function (dp) {
+                                return dp.type === d.TypeName;
+                            });
+                            assert(door, "no door found for " + d.TypeName);
                             return Object.assign({
                                 price: door ? door.price : 0,
                                 area: door ? door.area / 1000000 : 0,
                                 type: d.TypeName,
-                                level: d.Level
+                                level: d.Level,
+                                comments: d.Comments
                             }, d);
                         });
                         return [2 /*return*/, doors];

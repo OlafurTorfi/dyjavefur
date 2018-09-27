@@ -5,6 +5,7 @@ import {
   calculateMatshlutar,
   groupByTypeString
 } from "../../shared/model/calc";
+import { sumArea, findByComment } from "../../shared/model/util";
 import { expect } from "chai";
 import { MaterialType } from "../../shared/data/materials";
 import { getWalls } from "../components/wall";
@@ -13,6 +14,8 @@ import { getFloors } from "../components/floor";
 import { getRoofs } from "../components/roof";
 import { getRooms } from "../components/room";
 import { writeFileSync, write } from "fs";
+import { groupBy } from "lodash";
+import { map } from "lodash";
 
 export const getPrice = createGetPrice(getDoors, getFloors, getRoofs, getWalls)
   .getPrice;
@@ -154,7 +157,34 @@ describe("calculate test", () => {
       expect(grouped).to.deep.eq({ price: 111, area: 222 });
     });
   });
-  describe("schedule data", () => {
+  describe("postgres data", () => {
+    it("should calculate wall area", () => {
+      return Promise.all([getWalls(), getDoors()]).then(([walls, doors]) => {
+        const groups = groupBy(walls, "comments");
+        const doorGroups = groupBy(doors, "comments");
+        const doorAreas = map(doorGroups, arr => {
+          return { area: sumArea(arr), comments: arr[0].comments };
+        });
+        const areasByGroup = map(groups, arr => {
+          return { area: sumArea(arr), comments: arr[0].comments };
+        });
+        const SteyptirUtveggir =
+          findByComment(doorAreas, "ISteyptumUtvegg").area +
+          findByComment(areasByGroup, "SteypturUtveggur").area +
+          findByComment(areasByGroup, "ISteyptumUtvegg").area;
+        const SteyptirInnveggir =
+          findByComment(doorAreas, "ISteyptumInnvegg").area +
+          findByComment(areasByGroup, "SteypturInnveggur").area;
+        const StodveggirOgHandridi =
+          findByComment(areasByGroup, "Handriði").area +
+          findByComment(areasByGroup, "Stoðveggur").area;
+        console.log("Debug doorAreas: ", doorAreas);
+        console.log("Debug areasByGroup: ", areasByGroup);
+        console.log("Debug SteyptirUtveggir: ", SteyptirUtveggir);
+        console.log("Debug SteyptirInnveggir: ", SteyptirInnveggir);
+        console.log("Debug StodveggirOgHandridi: ", StodveggirOgHandridi);
+      });
+    });
     it.only("should get matshlutar", () => {
       return Promise.all([
         getRooms(),

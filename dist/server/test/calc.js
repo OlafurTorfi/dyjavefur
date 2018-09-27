@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var calc_1 = require("../../shared/model/calc");
+var util_1 = require("../../shared/model/util");
 var chai_1 = require("chai");
 var wall_1 = require("../components/wall");
 var door_1 = require("../components/door");
@@ -8,6 +9,8 @@ var floor_1 = require("../components/floor");
 var roof_1 = require("../components/roof");
 var room_1 = require("../components/room");
 var fs_1 = require("fs");
+var lodash_1 = require("lodash");
+var lodash_2 = require("lodash");
 exports.getPrice = calc_1.createGetPrice(door_1.getDoors, floor_1.getFloors, roof_1.getRoofs, wall_1.getWalls)
     .getPrice;
 describe("calculate test", function () {
@@ -107,7 +110,32 @@ describe("calculate test", function () {
             chai_1.expect(grouped).to.deep.eq({ price: 111, area: 222 });
         });
     });
-    describe("schedule data", function () {
+    describe("postgres data", function () {
+        it("should calculate wall area", function () {
+            return Promise.all([wall_1.getWalls(), door_1.getDoors()]).then(function (_a) {
+                var walls = _a[0], doors = _a[1];
+                var groups = lodash_1.groupBy(walls, "comments");
+                var doorGroups = lodash_1.groupBy(doors, "comments");
+                var doorAreas = lodash_2.map(doorGroups, function (arr) {
+                    return { area: util_1.sumArea(arr), comments: arr[0].comments };
+                });
+                var areasByGroup = lodash_2.map(groups, function (arr) {
+                    return { area: util_1.sumArea(arr), comments: arr[0].comments };
+                });
+                var SteyptirUtveggir = util_1.findByComment(doorAreas, "ISteyptumUtvegg").area +
+                    util_1.findByComment(areasByGroup, "SteypturUtveggur").area +
+                    util_1.findByComment(areasByGroup, "ISteyptumUtvegg").area;
+                var SteyptirInnveggir = util_1.findByComment(doorAreas, "ISteyptumInnvegg").area +
+                    util_1.findByComment(areasByGroup, "SteypturInnveggur").area;
+                var StodveggirOgHandridi = util_1.findByComment(areasByGroup, "Handriði").area +
+                    util_1.findByComment(areasByGroup, "Stoðveggur").area;
+                console.log("Debug doorAreas: ", doorAreas);
+                console.log("Debug areasByGroup: ", areasByGroup);
+                console.log("Debug SteyptirUtveggir: ", SteyptirUtveggir);
+                console.log("Debug SteyptirInnveggir: ", SteyptirInnveggir);
+                console.log("Debug StodveggirOgHandridi: ", StodveggirOgHandridi);
+            });
+        });
         it.only("should get matshlutar", function () {
             return Promise.all([
                 room_1.getRooms(),

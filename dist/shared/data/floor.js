@@ -6,6 +6,10 @@ exports.floorChoices = [
         materials: [{ type: "Steypa", amount: 0.2 }]
     },
     {
+        type: "Generic 150mm - Filled",
+        materials: [{ type: "Steypa", amount: 0.15 }]
+    },
+    {
         type: "Concrete 200mm",
         materials: [{ type: "Steypa", amount: 0.2 }]
     },
@@ -20,6 +24,10 @@ exports.floorChoices = [
     {
         type: "Flísar",
         materials: [{ type: "Gólfflísar", amount: 1 }]
+    },
+    {
+        type: "Pallur",
+        materials: [{ type: "Timbur", amount: 1 }]
     },
     {
         type: "Viðargólf",

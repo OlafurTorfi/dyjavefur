@@ -198,6 +198,12 @@ export const doorChoice: DoorChoice[] = [
     external: true
   },
   {
+    type: "2000 x 2400mm",
+    price: choose("Byko sliding glass door"),
+    area: 2000 * 2400,
+    external: true
+  },
+  {
     type: "2000 x 2130mm",
     price: choose("sliding internal door"),
     area: 2000 * 2130,
@@ -217,6 +223,12 @@ export const doorChoice: DoorChoice[] = [
   },
   {
     type: "Innihurð 850 x 2134mm",
+    price: choose("Byko internal door"),
+    area: 850 * 2134,
+    external: false
+  },
+  {
+    type: "Innihurð 850 x 2080mm",
     price: choose("Byko internal door"),
     area: 850 * 2134,
     external: false

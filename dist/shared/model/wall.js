@@ -43,11 +43,10 @@ exports.groupWall = function (items) {
     var area = 0;
     var price = 0;
     var materials = [];
-    var type = '';
-    var family = '';
+    var type = "";
+    var family = "";
     var resistenceArea = 0;
     var isolationArea = 0;
-    var level = '';
     items.forEach(function (item) {
         price += item.price;
         area += item.area;
@@ -77,18 +76,22 @@ exports.createGetWalls = function (db) {
                     case 1:
                         res = _a.sent();
                         walls = res.rows.map(function (wall) {
-                            var wallType = wall_1.wallChoices.find(function (wallp) { return wallp.type === wall.TypeName; });
-                            assert(wallType, 'no type found for ' + wall.TypeName);
+                            var wallType = wall_1.wallChoices.find(function (wallp) {
+                                return wallp.type === wall.TypeName;
+                            });
+                            assert(wallType, "no type found for " + wall.TypeName);
                             if (!wallType) {
-                                throw new Error('no type found for ' + wall.TypeName);
+                                throw new Error("no type found for " + wall.TypeName);
                             }
                             var calc = wallType.materials.reduce(function (prev, curr) {
                                 var material = materials_1.materials.find(function (materialp) { return materialp.type === curr.type; });
-                                assert(material, 'no price found for ' + curr.type);
+                                assert(material, "no price found for " + curr.type);
                                 if (material) {
                                     return {
-                                        price: prev.price + (curr.amount * material.price),
-                                        resistance: material.lambda ? prev.resistance + (curr.amount / material.lambda) : prev.resistance
+                                        price: prev.price + curr.amount * material.price,
+                                        resistance: material.lambda
+                                            ? prev.resistance + curr.amount / material.lambda
+                                            : prev.resistance
                                     };
                                 }
                                 return prev;
@@ -100,7 +103,8 @@ exports.createGetWalls = function (db) {
                                 family: wall.FamilyName,
                                 type: wall.TypeName,
                                 level: wall.Level,
-                                purpose: wallType ? wallType.purpose : '',
+                                comments: wall.Comments,
+                                purpose: wallType ? wallType.purpose : "",
                                 materials: wallType ? wallType.materials : [],
                                 resistance: calc.resistance,
                                 isolation: calc.resistance !== 0 ? 1 / calc.resistance : 0
