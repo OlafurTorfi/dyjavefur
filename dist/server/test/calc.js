@@ -28,17 +28,6 @@ describe("calculate test", function () {
                 chai_1.expect(average).to.be.greaterThan(2000);
                 console.log("The house has ", wall.area, " of ", wall.type, ". Total price: ", wall.price, ". Average price: ", average, ". resistance:", wall.resistance, ". isolation:", wall.isolation);
             });
-            console.log("and then with further grouping");
-            var groupFull = calc_1.groupByTypeString(grouped, [
-                "CLT-15/15",
-                "Steypt",
-                "Gluggi"
-            ]);
-            groupFull.forEach(function (wall) {
-                var average = wall.price / wall.area;
-                chai_1.expect(average).to.be.greaterThan(2000);
-                console.log("The house has ", wall.area, " of ", wall.type, ". Total price: ", wall.price, ". Average price: ", average, ". resistance:", wall.resistance, ". isolation:", wall.isolation);
-            });
         });
     });
     it("should get roofs, group by type and print average", function () {
@@ -115,28 +104,32 @@ describe("calculate test", function () {
             return Promise.all([wall_1.getWalls(), door_1.getDoors()]).then(function (_a) {
                 var walls = _a[0], doors = _a[1];
                 var groups = lodash_1.groupBy(walls, "comments");
-                var doorGroups = lodash_1.groupBy(doors, "comments");
-                var doorAreas = lodash_2.map(doorGroups, function (arr) {
-                    return { area: util_1.sumArea(arr), comments: arr[0].comments };
-                });
+                // const doorGroups = groupBy(doors, "comments");
+                // const doorAreas = map(doorGroups, arr => {
+                //   return { area: sumArea(arr), comments: arr[0].comments };
+                // });
                 var areasByGroup = lodash_2.map(groups, function (arr) {
                     return { area: util_1.sumArea(arr), comments: arr[0].comments };
                 });
-                var SteyptirUtveggir = util_1.findByComment(doorAreas, "ISteyptumUtvegg").area +
-                    util_1.findByComment(areasByGroup, "SteypturUtveggur").area +
-                    util_1.findByComment(areasByGroup, "ISteyptumUtvegg").area;
-                var SteyptirInnveggir = util_1.findByComment(doorAreas, "ISteyptumInnvegg").area +
-                    util_1.findByComment(areasByGroup, "SteypturInnveggur").area;
+                var SteyptirUtveggir = 
+                // findByComment(doorAreas, "ISteyptumUtvegg").area +
+                util_1.findByComment(areasByGroup, "SteypturUtveggur").area; // +
+                // findByComment(areasByGroup, "ISteyptumUtvegg").area;
+                var SteyptirInnveggir = 
+                // findByComment(doorAreas, "ISteyptumInnvegg").area +
+                util_1.findByComment(areasByGroup, "SteypturInnveggur").area;
                 var StodveggirOgHandridi = util_1.findByComment(areasByGroup, "Handriði").area +
                     util_1.findByComment(areasByGroup, "Stoðveggur").area;
-                console.log("Debug doorAreas: ", doorAreas);
+                //  const CLTVeggir = findByComment(areasByGroup, "CLTVeggur").area;
+                // console.log("Debug doorAreas: ", doorAreas);
                 console.log("Debug areasByGroup: ", areasByGroup);
+                // console.log("Debug CLTVeggir: ", CLTVeggir);
                 console.log("Debug SteyptirUtveggir: ", SteyptirUtveggir);
                 console.log("Debug SteyptirInnveggir: ", SteyptirInnveggir);
                 console.log("Debug StodveggirOgHandridi: ", StodveggirOgHandridi);
             });
         });
-        it.only("should get matshlutar", function () {
+        it("should get matshlutar", function () {
             return Promise.all([
                 room_1.getRooms(),
                 wall_1.getWalls(),

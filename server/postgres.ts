@@ -1,20 +1,23 @@
 import { Pool, QueryResult } from "pg";
 import { DB } from "../shared/db";
 
-const pool = new Pool({
-  database: "postgres",
-  host: "localhost",
-  password: "olivici",
-  port: 5432,
-  user: "postgres"
-});
+export const createPool = (database: string = "postgres") => {
+  return new Pool({
+    database,
+    host: "localhost",
+    password: "olivici",
+    port: 5432,
+    user: "postgres"
+  });
+};
 
-// the pool with emit an error on behalf of any idle clients
-// it contains if a backend error or network partition happens
+const pool = createPool("DyjagataStripped");
 pool.on("error", (err, client) => {
   console.error("Unexpected error on idle client", err);
   process.exit(-1);
 });
+// the pool with emit an error on behalf of any idle clients
+// it contains if a backend error or network partition happens
 // async/await - check out a client
 export const createFinder = (qstring: string, params?: any[]): DB => {
   return {

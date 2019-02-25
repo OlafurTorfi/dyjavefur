@@ -222,9 +222,11 @@ export const calculateMatshlutar = (
     .reduce((prev, curr) => {
       return prev + curr.area;
     }, 0);
-  const opFlotur = rooms.filter(r => r.name === "Op").reduce((prev, curr) => {
-    return prev + curr.area;
-  }, 0);
+  const opFlotur = rooms
+    .filter(r => r.name === "Op")
+    .reduce((prev, curr) => {
+      return prev + curr.area;
+    }, 0);
 
   const h1Rooms = rooms.filter(r => r.level === "1. Hæð");
   const h2Rooms = rooms.filter(r => r.level === "2. Hæð");
@@ -361,8 +363,8 @@ export const calculateMatshlutar = (
         brutto: formatNumber(idurpallurBrutto.area)
       },
       skridkjallari: {
-        netto: formatNumber(nettofloturH1 + nettofloturBilskur - gryfja.brutto),
-        brutto: formatNumber(h1Floor.area - gryfja.netto)
+        netto: formatNumber(nettofloturH1),
+        brutto: formatNumber(h1Floor.area - bilskurFloor.area)
       },
       rummal: {
         h1Volume: formatNumber(h1Volume),

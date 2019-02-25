@@ -37,19 +37,23 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var pg_1 = require("pg");
-var pool = new pg_1.Pool({
-    database: "postgres",
-    host: "localhost",
-    password: "olivici",
-    port: 5432,
-    user: "postgres"
-});
-// the pool with emit an error on behalf of any idle clients
-// it contains if a backend error or network partition happens
+exports.createPool = function (database) {
+    if (database === void 0) { database = "postgres"; }
+    return new pg_1.Pool({
+        database: database,
+        host: "localhost",
+        password: "olivici",
+        port: 5432,
+        user: "postgres"
+    });
+};
+var pool = exports.createPool("DyjagataStripped");
 pool.on("error", function (err, client) {
     console.error("Unexpected error on idle client", err);
     process.exit(-1);
 });
+// the pool with emit an error on behalf of any idle clients
+// it contains if a backend error or network partition happens
 // async/await - check out a client
 exports.createFinder = function (qstring, params) {
     return {

@@ -53,12 +53,19 @@ export const materials: Material[] = [
   { type: "Steypa", price: 25000, unit: "cubem", lambda: 1.6 },
   { type: "Timbur", price: 4000, unit: "sqrm" },
   { type: "Tjöruolía", price: 500, unit: "sqrm" },
+  { type: "Þrifalag", price: 500, unit: "sqrm" },
   { type: "Völun", price: 5000, unit: "sqrm" },
   { type: "Tjörupappi", price: 2000, unit: "sqrm" },
   { type: "Bárujárn", price: 5000, unit: "sqrm" },
+  { type: "Krossviður", price: 2500, unit: "sqrm" },
   { type: "Varmamót", price: 7900, unit: "sqrm" },
+  { type: "Lerkipanell", price: 7900, unit: "sqrm" },
+  { type: "Vinklar, skrúfur og lekta", price: 7900, unit: "sqrm" },
   { type: "CLT", price: 20000, unit: "cubem", lambda: 0.12 },
   { type: "Þaksvalaklæðning", price: 5000, unit: "sqrm" },
+  { type: "Triple S undirkerfi", price: 1500, unit: "sqrm" },
+  { type: "Álklæðning", price: 4000, unit: "fermeter", lambda: 0.034 },
   { type: "Sto Venturi", price: 80000, unit: "cubem", lambda: 0.034 },
-  { type: "Sto Venturi Brick", price: 130000, unit: "cubem", lambda: 0.034 }
+  { type: "Sto Venturi Brick", price: 130000, unit: "cubem", lambda: 0.034 },
+  { type: "Timburveggur", price: 12000, unit: "sqrm", lambda: 0.034 }
 ];

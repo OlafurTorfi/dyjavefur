@@ -186,6 +186,12 @@ export const doorChoice: DoorChoice[] = [
     external: true
   },
   {
+    type: "ÚH-2, Bílskúr 1000 x 2180mm",
+    price: choose("Byko garage door"),
+    area: 2000 * 2200,
+    external: true
+  },
+  {
     type: "1800 x 2500mm",
     price: choose("Byko sliding glass door"),
     area: 1800 * 2500,

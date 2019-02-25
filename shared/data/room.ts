@@ -76,7 +76,7 @@ export const roomAllocations: RoomAllocation[] = [
   },
   {
     number: 123,
-    name: "Svalir",
+    name: "Pallur",
     type: "C"
   },
   {
@@ -257,7 +257,7 @@ export const roomAllocations: RoomAllocation[] = [
   },
   {
     number: 164,
-    name: "Stofa",
+    name: "Alrými",
     type: "A"
   },
   {
@@ -307,6 +307,16 @@ export const roomAllocations: RoomAllocation[] = [
   },
   {
     number: 182,
+    name: "Geymsla",
+    type: "A"
+  },
+  {
+    number: 184,
+    name: "Geymsla",
+    type: "A"
+  },
+  {
+    number: 185,
     name: "Geymsla",
     type: "A"
   },

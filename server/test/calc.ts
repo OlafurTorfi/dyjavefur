@@ -5,6 +5,7 @@ import {
   calculateMatshlutar,
   groupByTypeString
 } from "../../shared/model/calc";
+import { createPool } from "../postgres";
 import { sumArea, findByComment } from "../../shared/model/util";
 import { expect } from "chai";
 import { MaterialType } from "../../shared/data/materials";
@@ -31,30 +32,6 @@ describe("calculate test", () => {
     return getWalls().then(walls => {
       const grouped = groupByType(walls);
       grouped.forEach(wall => {
-        const average = wall.price / wall.area;
-        expect(average).to.be.greaterThan(2000);
-        console.log(
-          "The house has ",
-          wall.area,
-          " of ",
-          wall.type,
-          ". Total price: ",
-          wall.price,
-          ". Average price: ",
-          average,
-          ". resistance:",
-          wall.resistance,
-          ". isolation:",
-          wall.isolation
-        );
-      });
-      console.log("and then with further grouping");
-      const groupFull = groupByTypeString(grouped, [
-        "CLT-15/15",
-        "Steypt",
-        "Gluggi"
-      ]);
-      groupFull.forEach(wall => {
         const average = wall.price / wall.area;
         expect(average).to.be.greaterThan(2000);
         console.log(
@@ -161,31 +138,33 @@ describe("calculate test", () => {
     it("should calculate wall area", () => {
       return Promise.all([getWalls(), getDoors()]).then(([walls, doors]) => {
         const groups = groupBy(walls, "comments");
-        const doorGroups = groupBy(doors, "comments");
-        const doorAreas = map(doorGroups, arr => {
-          return { area: sumArea(arr), comments: arr[0].comments };
-        });
+        // const doorGroups = groupBy(doors, "comments");
+        // const doorAreas = map(doorGroups, arr => {
+        //   return { area: sumArea(arr), comments: arr[0].comments };
+        // });
         const areasByGroup = map(groups, arr => {
           return { area: sumArea(arr), comments: arr[0].comments };
         });
         const SteyptirUtveggir =
-          findByComment(doorAreas, "ISteyptumUtvegg").area +
-          findByComment(areasByGroup, "SteypturUtveggur").area +
-          findByComment(areasByGroup, "ISteyptumUtvegg").area;
+          // findByComment(doorAreas, "ISteyptumUtvegg").area +
+          findByComment(areasByGroup, "SteypturUtveggur").area; // +
+        // findByComment(areasByGroup, "ISteyptumUtvegg").area;
         const SteyptirInnveggir =
-          findByComment(doorAreas, "ISteyptumInnvegg").area +
+          // findByComment(doorAreas, "ISteyptumInnvegg").area +
           findByComment(areasByGroup, "SteypturInnveggur").area;
         const StodveggirOgHandridi =
           findByComment(areasByGroup, "Handriði").area +
           findByComment(areasByGroup, "Stoðveggur").area;
-        console.log("Debug doorAreas: ", doorAreas);
+        //  const CLTVeggir = findByComment(areasByGroup, "CLTVeggur").area;
+        // console.log("Debug doorAreas: ", doorAreas);
         console.log("Debug areasByGroup: ", areasByGroup);
+        // console.log("Debug CLTVeggir: ", CLTVeggir);
         console.log("Debug SteyptirUtveggir: ", SteyptirUtveggir);
         console.log("Debug SteyptirInnveggir: ", SteyptirInnveggir);
         console.log("Debug StodveggirOgHandridi: ", StodveggirOgHandridi);
       });
     });
-    it.only("should get matshlutar", () => {
+    it("should get matshlutar", () => {
       return Promise.all([
         getRooms(),
         getWalls(),

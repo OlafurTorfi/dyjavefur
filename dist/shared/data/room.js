@@ -63,7 +63,7 @@ exports.roomAllocations = [
     },
     {
         number: 123,
-        name: "Svalir",
+        name: "Pallur",
         type: "C"
     },
     {
@@ -244,7 +244,7 @@ exports.roomAllocations = [
     },
     {
         number: 164,
-        name: "Stofa",
+        name: "Alrými",
         type: "A"
     },
     {
@@ -294,6 +294,16 @@ exports.roomAllocations = [
     },
     {
         number: 182,
+        name: "Geymsla",
+        type: "A"
+    },
+    {
+        number: 184,
+        name: "Geymsla",
+        type: "A"
+    },
+    {
+        number: 185,
         name: "Geymsla",
         type: "A"
     },

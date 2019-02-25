@@ -5,6 +5,10 @@ export const floorChoices: { type: string; materials: MaterialAmount[] }[] = [
     materials: [{ type: "Steypa", amount: 0.2 }]
   },
   {
+    type: "Generic Floor - 200mm",
+    materials: [{ type: "Steypa", amount: 0.2 }]
+  },
+  {
     type: "Generic 150mm - Filled",
     materials: [{ type: "Steypa", amount: 0.15 }]
   },
@@ -33,6 +37,14 @@ export const floorChoices: { type: string; materials: MaterialAmount[] }[] = [
     materials: [{ type: "Parket", amount: 1 }]
   },
   {
+    type: "Þrifalag",
+    materials: [{ type: "Steypa", amount: 0.1 }]
+  },
+  {
+    type: "Crossvidur",
+    materials: [{ type: "Krossviður", amount: 1 }]
+  },
+  {
     type: "Viðarklæðning",
     materials: [{ type: "Parket", amount: 1 }]
   },
@@ -43,6 +55,10 @@ export const floorChoices: { type: string; materials: MaterialAmount[] }[] = [
   {
     type: "CLT Floor",
     materials: [{ type: "CLT", amount: 2 }]
+  },
+  {
+    type: "CLT Ceiling",
+    materials: [{ type: "CLT", amount: 1.6 }]
   },
   {
     type: "Hiti í gólfi",

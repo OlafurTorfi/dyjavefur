@@ -219,7 +219,9 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
         .reduce(function (prev, curr) {
         return prev + curr.area;
     }, 0);
-    var opFlotur = rooms.filter(function (r) { return r.name === "Op"; }).reduce(function (prev, curr) {
+    var opFlotur = rooms
+        .filter(function (r) { return r.name === "Op"; })
+        .reduce(function (prev, curr) {
         return prev + curr.area;
     }, 0);
     var h1Rooms = rooms.filter(function (r) { return r.level === "1. Hæð"; });
@@ -326,8 +328,8 @@ exports.calculateMatshlutar = function (rooms, walls, roofs, floors, doors) {
                 brutto: formatNumber(idurpallurBrutto.area)
             },
             skridkjallari: {
-                netto: formatNumber(nettofloturH1 + nettofloturBilskur - gryfja.brutto),
-                brutto: formatNumber(h1Floor.area - gryfja.netto)
+                netto: formatNumber(nettofloturH1),
+                brutto: formatNumber(h1Floor.area - bilskurFloor.area)
             },
             rummal: {
                 h1Volume: formatNumber(h1Volume),
